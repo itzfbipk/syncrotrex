@@ -5868,10 +5868,10 @@ var Rr,
     h("style", {
         dangerouslySetInnerHTML: {
             __html: `
-                @keyframes pulsePath {
-                    0% { stroke-dashoffset: 24; opacity: 0.3; }
-                    50% { opacity: 1; }
-                    100% { stroke-dashoffset: 0; opacity: 0.3; }
+                @keyframes pulseLine {
+                    0% { height: 0%; opacity: 0; }
+                    50% { height: 100%; opacity: 1; }
+                    100% { height: 100%; opacity: 0; }
                 }
                 .workflow-minimal * { box-sizing: border-box; }
             `
@@ -5882,8 +5882,7 @@ var Rr,
         style: {
             display: "flex", flexDirection: "column", width: "100%", height: "100%",
             backgroundColor: "#050505", overflow: "hidden", 
-            fontFamily: "'Inter', sans-serif", color: "white", padding: "0",
-            position: "relative"
+            fontFamily: "'Inter', sans-serif", color: "white", padding: "0"
         },
         children: [
             h("div", {
@@ -5893,7 +5892,7 @@ var Rr,
                         style: { display: "flex", gap: "10px", alignItems: "center" },
                         children: [
                             h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(189, 78, 255, 0.4)" } }),
-                            h("div", { style: { fontSize: "12px", fontWeight: "600", color: "rgba(255,255,255,0.9)", letterSpacing: "0.5px" }, children: "Data Sync Pipeline" })
+                            h("div", { style: { fontSize: "12px", fontWeight: "600", color: "rgba(255,255,255,0.9)", letterSpacing: "0.5px" }, children: "Data Pipeline" })
                         ]
                     }),
                     h("div", {
@@ -5906,65 +5905,62 @@ var Rr,
                 ]
             }),
             h("div", {
-                style: { flex: 1, position: "relative", padding: "20px" },
+                style: { flex: 1, padding: "20px", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" },
                 children: [
+                    // Step 1
                     h("div", {
-                        style: { position: "absolute", top: "40px", left: "20px", width: "140px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.02)", display: "flex", flexDirection: "column", gap: "8px", zIndex: 10 },
+                        style: { width: "180px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.02)", display: "flex", alignItems: "center", gap: "12px" },
                         children: [
-                            h("div", { style: { display: "flex", alignItems: "center", gap: "6px" }, children: [
-                                h("div", { style: { width: "12px", height: "12px", borderRadius: "3px", backgroundColor: "rgba(255,255,255,0.2)" } }),
-                                h("div", { style: { fontSize: "10px", fontWeight: "600", color: "white" }, children: "Webhook" })
-                            ]}),
-                            h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Listens for new entries" })
-                        ]
-                    }),
-                    h("div", {
-                        style: { position: "absolute", top: "140px", left: "100px", width: "140px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(189, 78, 255, 0.3)", backgroundColor: "rgba(189, 78, 255, 0.05)", display: "flex", flexDirection: "column", gap: "8px", zIndex: 10 },
-                        children: [
-                            h("div", { style: { display: "flex", alignItems: "center", gap: "6px" }, children: [
-                                h("div", { style: { width: "12px", height: "12px", borderRadius: "3px", backgroundColor: "rgba(189, 78, 255, 0.6)" } }),
-                                h("div", { style: { fontSize: "10px", fontWeight: "600", color: "#c96ef0" }, children: "Transform" })
-                            ]}),
-                            h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Format data structure" })
-                        ]
-                    }),
-                    h("div", {
-                        style: { position: "absolute", top: "40px", right: "20px", width: "140px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.02)", display: "flex", flexDirection: "column", gap: "8px", zIndex: 10 },
-                        children: [
-                            h("div", { style: { display: "flex", alignItems: "center", gap: "6px" }, children: [
-                                h("div", { style: { width: "12px", height: "12px", borderRadius: "3px", backgroundColor: "rgba(255,255,255,0.2)" } }),
-                                h("div", { style: { fontSize: "10px", fontWeight: "600", color: "white" }, children: "Database" })
-                            ]}),
-                            h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Insert new records" })
-                        ]
-                    }),
-                    h("svg", {
-                        style: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 1 },
-                        children: [
-                            h("path", {
-                                d: "M 90 95 C 90 120, 170 115, 170 140",
-                                fill: "none",
-                                stroke: "rgba(189, 78, 255, 0.5)",
-                                strokeWidth: "2",
-                                strokeDasharray: "4 4",
-                                style: { animation: "pulsePath 1s linear infinite" }
-                            }),
-                            h("path", {
-                                d: "M 170 200 C 170 230, 290 150, 290 95",
-                                fill: "none",
-                                stroke: "rgba(189, 78, 255, 0.5)",
-                                strokeWidth: "2",
-                                strokeDasharray: "4 4",
-                                style: { animation: "pulsePath 1s linear infinite reverse" }
+                            h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.1)" } }),
+                            h("div", {
+                                style: { display: "flex", flexDirection: "column", gap: "4px" },
+                                children: [
+                                    h("div", { style: { fontSize: "11px", fontWeight: "600", color: "white" }, children: "Webhook" }),
+                                    h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Data received" })
+                                ]
                             })
                         ]
                     }),
+                    
+                    // Connector
                     h("div", {
-                        style: { position: "absolute", bottom: "16px", left: "16px", right: "16px", padding: "10px", borderRadius: "6px", backgroundColor: "rgba(0,0,0,0.4)", border: "1px solid rgb(34,34,34)", display: "flex", flexDirection: "column", gap: "4px" },
+                        style: { width: "2px", height: "16px", backgroundColor: "rgba(255,255,255,0.05)", position: "relative" },
+                        children: h("div", { style: { position: "absolute", top: 0, left: 0, width: "100%", backgroundColor: "#c96ef0", animation: "pulseLine 2s infinite" } })
+                    }),
+                    
+                    // Step 2
+                    h("div", {
+                        style: { width: "180px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(189, 78, 255, 0.4)", backgroundColor: "rgba(189, 78, 255, 0.05)", display: "flex", alignItems: "center", gap: "12px" },
                         children: [
-                            h("div", { style: { fontSize: "8px", color: "rgba(255,255,255,0.3)", fontFamily: "monospace" }, children: "> [14:02:44] Webhook received payload (2.4kb)" }),
-                            h("div", { style: { fontSize: "8px", color: "#c96ef0", fontFamily: "monospace" }, children: "> [14:02:45] Transformation successful. Mapped 14 fields." }),
-                            h("div", { style: { fontSize: "8px", color: "rgba(255,255,255,0.3)", fontFamily: "monospace" }, children: "> [14:02:46] Pushing to Database..." })
+                            h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(189, 78, 255, 0.8)", boxShadow: "0 0 8px rgba(189, 78, 255, 0.5)" } }),
+                            h("div", {
+                                style: { display: "flex", flexDirection: "column", gap: "4px" },
+                                children: [
+                                    h("div", { style: { fontSize: "11px", fontWeight: "600", color: "#c96ef0" }, children: "Transform" }),
+                                    h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Formatting JSON" })
+                                ]
+                            })
+                        ]
+                    }),
+                    
+                    // Connector
+                    h("div", {
+                        style: { width: "2px", height: "16px", backgroundColor: "rgba(255,255,255,0.05)", position: "relative" },
+                        children: h("div", { style: { position: "absolute", top: 0, left: 0, width: "100%", backgroundColor: "#c96ef0", animation: "pulseLine 2s infinite 1s" } })
+                    }),
+                    
+                    // Step 3
+                    h("div", {
+                        style: { width: "180px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.02)", display: "flex", alignItems: "center", gap: "12px" },
+                        children: [
+                            h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.1)" } }),
+                            h("div", {
+                                style: { display: "flex", flexDirection: "column", gap: "4px" },
+                                children: [
+                                    h("div", { style: { fontSize: "11px", fontWeight: "600", color: "white" }, children: "Database" }),
+                                    h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Syncing records" })
+                                ]
+                            })
                         ]
                     })
                 ]
@@ -30496,4 +30492,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v22.mjs.map
+//# sourceMappingURL=xELU-v23.mjs.map
