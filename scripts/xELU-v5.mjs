@@ -30664,9 +30664,7 @@ e(() => {
                         }),
                       ],
                     }),
-                    h(`section`, {
-                      className: `framer-5y9jte`,
-                      "data-framer-name": `Case studies`,
+                    null && h(`section`, { className: `framer-5y9jte`, "data-framer-name": `Case studies`,
                       id: D,
                       ref: O,
                       children: [
@@ -32427,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v4.mjs.map
+//# sourceMappingURL=xELU-v5.mjs.map
