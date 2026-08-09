@@ -10064,7 +10064,7 @@ var $i,
         `framer-e2lQX`,
       )),
       (Ca = Sa),
-      (Sa.displayName = `AI Development`),
+      (Sa.displayName = `Design & Develop`),
       (Sa.defaultProps = { height: 180, width: 280 }),
       me(
         Sa,
@@ -29483,7 +29483,7 @@ e(() => {
                                     children: _(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `We design and develop SaaS platforms, custom software, digital presence, web applications, and business systems built to solve real problems and make work easier.`,
+                                      children: `We turn ideas and business requirements into scalable software built to solve real problems.`,
                                     }),
                                   }),
                                   className: `framer-sk03rn`,
@@ -30256,7 +30256,7 @@ e(() => {
                                     children: _(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `We design and develop SaaS platforms, custom software, digital presence, web applications, and business systems built to solve real problems and make work easier.`,
+                                      children: `We turn ideas and business requirements into scalable software built to solve real problems.`,
                                     }),
                                   }),
                                   className: `framer-1ua34k3`,
@@ -30317,7 +30317,7 @@ e(() => {
                                             children: _(`p`, {
                                               className: `framer-styles-preset-owv810`,
                                               "data-styles-preset": `Ag1SUJs5E`,
-                                              children: `Smart Analyzing`,
+                                              children: `Understand & Plan`,
                                             }),
                                           }),
                                           className: `framer-cwbhjp`,
@@ -30333,7 +30333,7 @@ e(() => {
                                         children: _(`p`, {
                                           className: `framer-styles-preset-16w1u5n`,
                                           "data-styles-preset": `csUbUKGQ_`,
-                                          children: `We assess your needs and identify AI solutions to streamline workflows and improve efficiency.`,
+                                          children: `We learn how your business works, define the requirements, and plan the right solution before development begins.`,
                                         }),
                                       }),
                                       className: `framer-r8q8w3`,
@@ -30414,7 +30414,7 @@ e(() => {
                                             children: _(`p`, {
                                               className: `framer-styles-preset-owv810`,
                                               "data-styles-preset": `Ag1SUJs5E`,
-                                              children: `AI Development`,
+                                              children: `Design & Develop`,
                                             }),
                                           }),
                                           className: `framer-nkd09l`,
@@ -30430,7 +30430,7 @@ e(() => {
                                         children: _(`p`, {
                                           className: `framer-styles-preset-16w1u5n`,
                                           "data-styles-preset": `csUbUKGQ_`,
-                                          children: `Our team builds intelligent automation systems tailored to your business processes.`,
+                                          children: `We design the experience and build the core software around your requirements, from the interface to the underlying functionality.`,
                                         }),
                                       }),
                                       className: `framer-1ay56zx`,
@@ -30511,7 +30511,7 @@ e(() => {
                                             children: _(`p`, {
                                               className: `framer-styles-preset-owv810`,
                                               "data-styles-preset": `Ag1SUJs5E`,
-                                              children: `Seamless Integration`,
+                                              children: `Test & Refine`,
                                             }),
                                           }),
                                           className: `framer-dxf9xo`,
@@ -30527,7 +30527,7 @@ e(() => {
                                         children: _(`p`, {
                                           className: `framer-styles-preset-16w1u5n`,
                                           "data-styles-preset": `csUbUKGQ_`,
-                                          children: `We smoothly integrate AI solutions into your existing infrastructure with minimal disruption.`,
+                                          children: `We test the product, fix issues, improve performance, and make sure everything works smoothly across devices and workflows.`,
                                         }),
                                       }),
                                       className: `framer-f61s73`,
@@ -30608,7 +30608,7 @@ e(() => {
                                             children: _(`p`, {
                                               className: `framer-styles-preset-owv810`,
                                               "data-styles-preset": `Ag1SUJs5E`,
-                                              children: `Continuous Optimization`,
+                                              children: `Launch & Scale`,
                                             }),
                                           }),
                                           className: `framer-12va0vp`,
@@ -30624,7 +30624,7 @@ e(() => {
                                         children: _(`p`, {
                                           className: `framer-styles-preset-16w1u5n`,
                                           "data-styles-preset": `csUbUKGQ_`,
-                                          children: `We refine performance, analyze insights, and enhance automation for long-term growth.`,
+                                          children: `We deploy your product and continue improving it as your business grows, adding features and optimizing the experience over time.`,
                                         }),
                                       }),
                                       className: `framer-gg8han`,
@@ -32427,4 +32427,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v3.mjs.map
+//# sourceMappingURL=xELU-v4.mjs.map
