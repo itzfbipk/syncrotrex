@@ -700,7 +700,7 @@ e(() => {
                                     children: c(`h1`, {
                                       className: `framer-styles-preset-q2gmjp`,
                                       "data-styles-preset": `K0tuspaT8`,
-                                      children: `Unlock AI Insights with Us`,
+                                      children: `Unlock Software & Tech Insights`,
                                     }),
                                   }),
                                   className: `framer-vm4m3e`,
@@ -715,7 +715,7 @@ e(() => {
                                     children: c(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `Stay informed with the latest AI trends, insights, and strategies to drive innovation and business growth.`,
+                                      children: `Stay informed with the latest trends in SaaS, custom software, digital products, and growth strategies.`,
                                     }),
                                   }),
                                   className: `framer-1xjo8ph`,
@@ -1028,4 +1028,4 @@ e(() => {
     }));
 })();
 export { Qe as __FramerMetadata__, Ze as default };
-//# sourceMappingURL=GIole-v2.mjs.map
+//# sourceMappingURL=GIole-v3.mjs.map
