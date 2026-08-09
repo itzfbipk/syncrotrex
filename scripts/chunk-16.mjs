@@ -1567,7 +1567,7 @@ var at,
         ...o
       }) => ({
         ...o,
-        aBab7jJnS: a ?? o.aBab7jJnS ?? `Basic workflow automation`,
+        aBab7jJnS: a ?? o.aBab7jJnS ?? `Modern landing page or website`,
         bROCjlOP4:
           t ??
           o.bROCjlOP4 ??
@@ -1667,7 +1667,7 @@ var at,
                           style: {
                             "--framer-text-color": `var(--esyncrotrexed-r6o4lv, var(--variable-reference-juPs7tgMz-sFWwVQ4sW))`,
                           },
-                          children: `Basic workflow automation`,
+                          children: `Modern landing page or website`,
                         }),
                       }),
                       className: `framer-1c5vbfx`,
@@ -1706,7 +1706,7 @@ var at,
       ($.defaultProps = { height: 22, width: 300 }),
       P($, {
         aBab7jJnS: {
-          defaultValue: `Basic workflow automation`,
+          defaultValue: `Modern landing page or website`,
           displayTextArea: !1,
           title: `Title`,
           type: j.String,
