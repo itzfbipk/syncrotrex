@@ -32084,7 +32084,7 @@ e(() => {
                                     children: _(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `Quick answers to your AI automation questions.`,
+                                      children: `Get clear answers about our services, development process, and what we can build for your business.`,
                                     }),
                                   }),
                                   className: `framer-1quyr0l`,
@@ -32119,21 +32119,21 @@ e(() => {
                               rendersWithMotion: !0,
                               scopeId: `augiA20Il`,
                               children: _(ct, {
-                                EgcB91oLO: `Not at all! Our platform is user-friendly and built for all skill levels. We provide onboarding, tutorials, and customer support to ensure you can easily navigate and use the system.`,
-                                eSMc1PeSB: `Do I need technical knowledge to use AI automation?`,
+                                EgcB91oLO: `Yes. We can connect your software with APIs, databases, third-party platforms, and existing business tools where supported.`,
+                                eSMc1PeSB: `Can you integrate with my existing tools?`,
                                 height: `100%`,
-                                HVaoF8fJz: `What industries can benefit from AI automation?`,
-                                i3xcpbF7k: `Is AI automation difficult to integrate?`,
+                                HVaoF8fJz: `Can you turn my idea into a working product?`,
+                                i3xcpbF7k: `Can you build software for my specific industry?`,
                                 id: `qPsRr_JWX`,
-                                jrcf9OQo5: `How can AI automation help my business?`,
-                                jyRLQhg5l: `AI automation eliminates repetitive tasks, improves efficiency, and reduces errors. It allows your team to focus on high-value work while increasing productivity and lowering operational costs.`,
+                                jrcf9OQo5: `What types of software do you build?`,
+                                jyRLQhg5l: `We build SaaS platforms, custom business software, CRMs, web applications, PWAs, and modern websites.`,
                                 layoutId: `qPsRr_JWX`,
-                                pKHctQEOr: `AI automation is beneficial across various industries, including marketing, sales, finance, healthcare, customer support, and operations. Any business looking to improve efficiency can leverage AI.`,
+                                pKHctQEOr: `Absolutely. We can take an idea from planning and design through development, testing, and deployment.`,
                                 style: { maxWidth: `100%`, width: `100%` },
-                                UROQiff2m: `No! Our AI solutions are designed for seamless integration with your existing tools and workflows. We provide step-by-step guidance to ensure a smooth and hassle-free setup.`,
-                                v_eKSVNqr: `We offer comprehensive support, including onboarding assistance, troubleshooting, and ongoing updates. Our team is available to help with any questions or technical issues you may have.`,
+                                UROQiff2m: `Yes. We can tailor the system around your industry's workflows, requirements, users, and business processes.`,
+                                v_eKSVNqr: `Yes. We can provide ongoing maintenance, improvements, bug fixes, and new features depending on your project.`,
                                 width: `100%`,
-                                xjvxuRkyX: `What kind of support do you offer?`,
+                                xjvxuRkyX: `Do you provide support after launch?`,
                               }),
                             }),
                           }),
@@ -32158,7 +32158,7 @@ e(() => {
                                   style: {
                                     "--framer-text-alignment": `center`,
                                   },
-                                  children: `Let AI do the Work so you can Scale Faster`,
+                                  children: `Turn Your Idea Into Reality`,
                                 }),
                               }),
                               className: `framer-owllpi`,
@@ -32172,7 +32172,7 @@ e(() => {
                                 children: _(`p`, {
                                   className: `framer-styles-preset-trq6qq`,
                                   "data-styles-preset": `Qjp1AZZMc`,
-                                  children: `Book a Call Today and Start Automating`,
+                                  children: `Have a project in mind? Let's build the right solution for your business.`,
                                 }),
                               }),
                               className: `framer-b4pob5`,
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v9.mjs.map
+//# sourceMappingURL=xELU-v10.mjs.map
