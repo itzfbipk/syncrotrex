@@ -27537,12 +27537,12 @@ e(() => {
         }
     `}}),
     h("div", {
-        style: { width: "100%", height: "100%", padding: "16px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)" },
+        style: { width: "100%", padding: "12px 16px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)" },
         children: [
             h("div", {
-                style: { display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "8px", marginBottom: "12px" },
+                style: { display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "6px", marginBottom: "8px" },
                 children: [
-                    h("div", { style: { fontSize: "12px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px", lineHeight: 1 }, children: "Strategic Roadmap" }),
+                    h("div", { style: { fontSize: "11px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px", lineHeight: 1 }, children: "Strategic Roadmap" }),
                     h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)", fontFamily: "monospace", lineHeight: 1 }, children: "PHASE 1" })
                 ]
             }),
@@ -27554,7 +27554,7 @@ e(() => {
                     h("div", { style: { position: "absolute", left: "14px", top: "6px", width: "1px", backgroundColor: "#c96ef0", animation: "drawLine 1s ease-out forwards" } }),
                     
                     h("div", {
-                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "8px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.2s" },
+                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "6px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.2s" },
                         children: [
                             h("div", { style: { position: "absolute", left: "0px", top: "4px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "#c96ef0", animation: "pulseDotPurple 2s infinite", zIndex: 2 } }),
                             h("div", {
@@ -27562,7 +27562,7 @@ e(() => {
                                 children: [
                                     h("div", { style: { fontSize: "11px", fontWeight: "600", color: "white", lineHeight: 1 }, children: "Discovery & Requirements" }),
                                     h("div", {
-                                        style: { padding: "6px 10px", backgroundColor: "rgba(201, 110, 240, 0.05)", border: "1px solid rgba(201, 110, 240, 0.2)", borderRadius: "6px", marginTop: "6px" },
+                                        style: { padding: "4px 8px", backgroundColor: "rgba(201, 110, 240, 0.05)", border: "1px solid rgba(201, 110, 240, 0.2)", borderRadius: "6px", marginTop: "4px" },
                                         children: [
                                             h("div", { style: { fontSize: "9px", color: "#e3a8ff", marginBottom: "4px", lineHeight: 1 }, children: "Analyzing workflow..." }),
                                             h("div", { style: { height: "2px", width: "100%", backgroundColor: "rgba(255,255,255,0.05)", borderRadius: "2px", overflow: "hidden", position: "relative" }, children: 
@@ -27576,7 +27576,7 @@ e(() => {
                     }),
                     
                     h("div", {
-                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "8px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.4s" },
+                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "6px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.4s" },
                         children: [
                             h("div", { style: { position: "absolute", left: "1px", top: "4px", width: "3px", height: "3px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.2)", zIndex: 2 } }),
                             h("div", {
