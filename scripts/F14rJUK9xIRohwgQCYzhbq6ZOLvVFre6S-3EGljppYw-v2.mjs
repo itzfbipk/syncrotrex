@@ -233,7 +233,7 @@ e(() => {
                                 children: a(`h1`, {
                                   className: `framer-styles-preset-q2gmjp`,
                                   "data-styles-preset": `K0tuspaT8`,
-                                  children: `AI Couldn’t Predict This One!`,
+                                  children: `Looks Like You’re Off Track`,
                                 }),
                               }),
                               className: `framer-1solky8`,
@@ -248,7 +248,7 @@ e(() => {
                                 children: a(`p`, {
                                   className: `framer-styles-preset-trq6qq`,
                                   "data-styles-preset": `Qjp1AZZMc`,
-                                  children: `Even AI isn’t perfect—this page seems to be missing! Let’s get you back on track. Head back home.`,
+                                  children: `The page you're looking for doesn't exist or may have been moved. Let's get you back to where you need to be.`,
                                 }),
                               }),
                               className: `framer-kfp8ts`,
@@ -301,7 +301,7 @@ e(() => {
                                       id: `D4qQW1O_4`,
                                       IHCtoN6iC: !0,
                                       layoutId: `D4qQW1O_4`,
-                                      NAbd17i0q: `Go Back Home`,
+                                      NAbd17i0q: `Back to Home ↗`,
                                       t90xdY6CE: e[0],
                                       width: `100%`,
                                       yt52UU3wF: 15,
@@ -455,4 +455,4 @@ e(() => {
     }));
 })();
 export { $ as __FramerMetadata__, Q as default };
-//# sourceMappingURL=F14rJUK9xIRohwgQCYzhbq6ZOLvVFre6S-3EGljppYw.mjs.map
+//# sourceMappingURL=F14rJUK9xIRohwgQCYzhbq6ZOLvVFre6S-3EGljppYw-v2.mjs.map
