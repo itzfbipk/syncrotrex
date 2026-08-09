@@ -30845,7 +30845,7 @@ e(() => {
                                                   {
                                                     pixelHeight: 43,
                                                     pixelWidth: 239,
-                                                    src: `/images/z9LpkMxEAhAZUReskTlqLmORPM.svg`,
+                                                    src: `/images/syncrotrex-logo-v2.svg`,
                                                   },
                                                   ``,
                                                 ),
@@ -30920,7 +30920,7 @@ e(() => {
                                                   {
                                                     pixelHeight: 43,
                                                     pixelWidth: 239,
-                                                    src: `/images/z9LpkMxEAhAZUReskTlqLmORPM.svg`,
+                                                    src: `/images/syncrotrex-logo-v2.svg`,
                                                   },
                                                   ``,
                                                 ),
@@ -31130,7 +31130,7 @@ e(() => {
                                             {
                                               pixelHeight: 43,
                                               pixelWidth: 239,
-                                              src: `/images/z9LpkMxEAhAZUReskTlqLmORPM.svg`,
+                                              src: `/images/syncrotrex-logo-v2.svg`,
                                             },
                                             ``,
                                           ),
@@ -31286,7 +31286,7 @@ e(() => {
                                             {
                                               pixelHeight: 43,
                                               pixelWidth: 239,
-                                              src: `/images/z9LpkMxEAhAZUReskTlqLmORPM.svg`,
+                                              src: `/images/syncrotrex-logo-v2.svg`,
                                             },
                                             ``,
                                           ),
