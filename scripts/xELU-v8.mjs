@@ -31830,7 +31830,7 @@ e(() => {
                                       style: {
                                         "--framer-text-alignment": `center`,
                                       },
-                                      children: `Why Businesses Love Our AI Solutions`,
+                                      children: `Why Businesses Choose Us`,
                                     }),
                                   }),
                                   className: `framer-1glxvud`,
@@ -31844,7 +31844,7 @@ e(() => {
                                     children: _(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `Real businesses, real results with AI automation.`,
+                                      children: `Real clients. Real projects. Real results.`,
                                     }),
                                   }),
                                   className: `framer-j6brww`,
@@ -31884,7 +31884,7 @@ e(() => {
                                   scopeId: `augiA20Il`,
                                   children: _(yi, {
                                     EE65OJc6R: `CEO at TechFlow Solutions`,
-                                    gdVtD7Q8q: `"AI automation transformed our operations by eliminating repetitive tasks and improving efficiency. Scaling our workflow has never been easier!"`,
+                                    gdVtD7Q8q: `"They understood exactly what we needed and turned our workflow into a system that is much easier for our team to manage."`,
                                     height: `100%`,
                                     id: `f2uus1ktW`,
                                     layoutId: `f2uus1ktW`,
@@ -31919,7 +31919,7 @@ e(() => {
                                   scopeId: `augiA20Il`,
                                   children: _(yi, {
                                     EE65OJc6R: `Operations Manager at NexaCorp`,
-                                    gdVtD7Q8q: `"With AI, we cut manual work and improved accuracy. Our team now focuses on high-impact tasks while automation handles the rest!"`,
+                                    gdVtD7Q8q: `"The entire process was smooth from start to finish. The final product was fast, clean, and exactly what we were looking for."`,
                                     height: `100%`,
                                     id: `nsGUsACpz`,
                                     kGOLOSKIR: D_(
@@ -31962,7 +31962,7 @@ e(() => {
                                   scopeId: `augiA20Il`,
                                   children: _(yi, {
                                     EE65OJc6R: `Head of Sales at GrowthPeak`,
-                                    gdVtD7Q8q: `"AI-driven insights doubled our sales efficiency. We now engage leads at the right time with smarter, data-backed decisions!"`,
+                                    gdVtD7Q8q: `"We needed a custom platform built around our business, and they delivered something that made our day-to-day operations significantly easier."`,
                                     height: `100%`,
                                     id: `pCDHxpqEY`,
                                     kGOLOSKIR: D_(
@@ -32005,7 +32005,7 @@ e(() => {
                                   scopeId: `augiA20Il`,
                                   children: _(yi, {
                                     EE65OJc6R: `Customer Success Lead at SupportHive`,
-                                    gdVtD7Q8q: `"Customer support is now seamless. Our response time improved drastically, and satisfaction levels are at an all-time high, thanks to syncrotrex"`,
+                                    gdVtD7Q8q: `"From the first idea to the final product, communication was great and the system works exactly the way our team needed it to.thanks to syncrotrex"`,
                                     height: `100%`,
                                     id: `iF9uM2Zun`,
                                     layoutId: `iF9uM2Zun`,
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v7.mjs.map
+//# sourceMappingURL=xELU-v8.mjs.map
