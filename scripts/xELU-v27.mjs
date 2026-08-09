@@ -2348,67 +2348,44 @@ var At,
                   ref: r,
                   style: { ...s },
                   children: [
-    h("style", { dangerouslySetInnerHTML: { __html: `
-        @keyframes rotateDash {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        @keyframes pulseGlow {
-            0% { box-shadow: 0 0 20px rgba(39, 201, 63, 0.2); }
-            50% { box-shadow: 0 0 40px rgba(39, 201, 63, 0.4); }
-            100% { box-shadow: 0 0 20px rgba(39, 201, 63, 0.2); }
-        }
-        @keyframes floatUp1 {
-            0% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(-5px) scale(1.02); }
-            100% { transform: translateY(0) scale(1); }
-        }
-        @keyframes floatUp2 {
-            0% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(5px) scale(1.02); }
-            100% { transform: translateY(0) scale(1); }
-        }
-        .premium-test * { box-sizing: border-box; }
-    `}}),
     h("div", {
-        className: "premium-test",
-        style: { width: "100%", height: "100%", position: "relative", backgroundColor: "#020202", backgroundImage: "radial-gradient(circle at 50% 50%, rgba(39,201,63,0.05) 0%, transparent 60%)", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" },
+        style: { width: "100%", height: "100%", padding: "20px", display: "flex", flexDirection: "column", gap: "12px", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box" },
         children: [
-            // Center Circle
             h("div", {
-                style: { position: "relative", width: "140px", height: "140px", borderRadius: "50%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", backgroundColor: "rgba(0,0,0,0.4)", border: "1px solid rgba(255,255,255,0.05)", animation: "pulseGlow 4s infinite ease-in-out", zIndex: 1, backdropFilter: "blur(10px)" },
+                style: { display: "flex", alignItems: "center", gap: "6px", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "10px" },
                 children: [
-                    h("svg", {
-                        style: { position: "absolute", top: -1, left: -1, width: "142px", height: "142px", animation: "rotateDash 10s linear infinite" },
-                        children: h("circle", { cx: "71", cy: "71", r: "70", fill: "none", stroke: "url(#gradTest)", strokeWidth: "2", strokeDasharray: "150 150", strokeLinecap: "round" })
-                    }),
-                    h("svg", {
-                        style: { position: "absolute", width: "0", height: "0" },
-                        children: h("defs", { children: h("linearGradient", { id: "gradTest", x1: "0%", y1: "0%", x2: "100%", y2: "100%", children: [
-                            h("stop", { offset: "0%", stopColor: "#27c93f" }),
-                            h("stop", { offset: "100%", stopColor: "rgba(39,201,63,0)" })
-                        ]}) })
-                    }),
-                    h("div", { style: { fontSize: "32px", fontWeight: "700", color: "white", letterSpacing: "-1px" }, children: "100" }),
-                    h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)", textTransform: "uppercase", letterSpacing: "1px", marginTop: "2px" }, children: "Health Score" })
+                    h("div", { style: { width: "8px", height: "8px", borderRadius: "2px", backgroundColor: "rgba(255,255,255,0.2)" } }),
+                    h("div", { style: { fontSize: "12px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px" }, children: "QA Checklist" })
                 ]
             }),
-            
-            // Floating Pill 1 (Top Right)
             h("div", {
-                style: { position: "absolute", top: "25%", right: "10%", padding: "8px 14px", backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "30px", backdropFilter: "blur(12px)", display: "flex", alignItems: "center", gap: "8px", zIndex: 2, animation: "floatUp1 6s ease-in-out infinite" },
+                style: { display: "flex", flexDirection: "column", gap: "10px", marginTop: "4px" },
                 children: [
-                    h("div", { style: { width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#27c93f", boxShadow: "0 0 8px #27c93f" } }),
-                    h("div", { style: { fontSize: "11px", fontWeight: "500", color: "white" }, children: "0 Errors Found" })
-                ]
+                    { name: "Unit tests", time: "12ms" },
+                    { name: "Integration", time: "89ms" },
+                    { name: "E2E workflows", time: "1.2s" },
+                    { name: "Performance", time: "100 score" }
+                ].map((item, i) => h("div", {
+                    key: i,
+                    style: { display: "flex", justifyContent: "space-between", alignItems: "center" },
+                    children: [
+                        h("div", { style: { display: "flex", alignItems: "center", gap: "10px" }, children: [
+                            h("div", { style: { display: "flex", alignItems: "center", justifyContent: "center", width: "14px", height: "14px", borderRadius: "50%", backgroundColor: "rgba(39,201,63,0.15)" }, children: 
+                                h("svg", { width: "8", height: "8", viewBox: "0 0 10 10", fill: "none", children: 
+                                    h("path", { d: "M2 5L4 7L8 3", stroke: "#27c93f", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })
+                                })
+                            }),
+                            h("div", { style: { fontSize: "11px", color: "rgba(255,255,255,0.6)", fontWeight: "400" }, children: item.name })
+                        ]}),
+                        h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.3)", fontFamily: "monospace" }, children: item.time })
+                    ]
+                }))
             }),
-            
-            // Floating Pill 2 (Bottom Left)
             h("div", {
-                style: { position: "absolute", bottom: "25%", left: "10%", padding: "8px 14px", backgroundColor: "rgba(189, 78, 255, 0.05)", border: "1px solid rgba(189, 78, 255, 0.2)", borderRadius: "30px", backdropFilter: "blur(12px)", display: "flex", alignItems: "center", gap: "8px", zIndex: 2, animation: "floatUp2 7s ease-in-out infinite" },
+                style: { marginTop: "auto", padding: "8px", borderRadius: "6px", backgroundColor: "rgba(39,201,63,0.05)", border: "1px solid rgba(39,201,63,0.1)", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" },
                 children: [
-                    h("div", { style: { fontSize: "12px" }, children: "⚡" }),
-                    h("div", { style: { fontSize: "11px", fontWeight: "500", color: "#e3a8ff" }, children: "120ms Latency" })
+                    h("div", { style: { width: "4px", height: "4px", borderRadius: "50%", backgroundColor: "#27c93f", boxShadow: "0 0 4px #27c93f" } }),
+                    h("div", { style: { fontSize: "10px", fontWeight: "500", color: "#27c93f" }, children: "All checks passed" })
                 ]
             })
         ]
@@ -6612,109 +6589,53 @@ var Si,
                   ref: r,
                   style: { ...s },
                   children: [
-    h("style", { dangerouslySetInnerHTML: { __html: `
-        @keyframes drawChart {
-            0% { stroke-dashoffset: 400; }
-            100% { stroke-dashoffset: 0; }
-        }
-        @keyframes fadeInChart {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        @keyframes pulseDot {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(189, 78, 255, 0.7); }
-            70% { transform: scale(1.1); box-shadow: 0 0 0 10px rgba(189, 78, 255, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(189, 78, 255, 0); }
-        }
-        .premium-scale * { box-sizing: border-box; }
-        
-        .grid-bg {
-            background-size: 20px 20px;
-            background-image: 
-                linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
-        }
-    `}}),
     h("div", {
-        className: "premium-scale",
-        style: { width: "100%", height: "100%", position: "relative", backgroundColor: "#020202", display: "flex", flexDirection: "column", overflow: "hidden" },
+        style: { width: "100%", height: "100%", padding: "20px", display: "flex", flexDirection: "column", gap: "16px", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box" },
         children: [
-            h("div", { className: "grid-bg", style: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, opacity: 0.5, zIndex: 0 } }),
-            
-            // Header
             h("div", {
-                style: { position: "relative", zIndex: 10, display: "flex", justifyContent: "space-between", alignItems: "flex-start", padding: "20px" },
+                style: { display: "flex", justifyContent: "space-between", alignItems: "center" },
                 children: [
-                    h("div", {
-                        style: { display: "flex", flexDirection: "column", gap: "6px" },
-                        children: [
-                            h("div", { style: { display: "flex", alignItems: "center", gap: "8px" }, children: [
-                                h("div", { style: { width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#c96ef0", boxShadow: "0 0 8px #c96ef0" } }),
-                                h("div", { style: { fontSize: "14px", fontWeight: "600", color: "white" }, children: "Global Scaling" })
-                            ]}),
-                            h("div", { style: { fontSize: "11px", color: "rgba(255,255,255,0.5)", marginLeft: "16px" }, children: "Live traffic & requests" })
-                        ]
-                    }),
-                    h("div", {
-                        style: { padding: "6px 10px", borderRadius: "6px", backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.1)", backdropFilter: "blur(10px)", display: "flex", alignItems: "center", gap: "6px" },
-                        children: [
-                            h("div", { style: { width: "12px", height: "12px" }, children: 
-                                h("svg", { viewBox: "0 0 24 24", fill: "none", stroke: "rgba(255,255,255,0.7)", strokeWidth: "2", strokeLinecap: "round", strokeLinejoin: "round", children: [
-                                    h("path", { d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }),
-                                    h("polyline", { points: "3.27 6.96 12 12.01 20.73 6.96" }),
-                                    h("line", { x1: "12", y1: "22.08", x2: "12", y2: "12" })
-                                ]})
-                            }),
-                            h("div", { style: { fontSize: "10px", fontWeight: "500", color: "rgba(255,255,255,0.8)" }, children: "v2.0 Active" })
-                        ]
-                    })
+                    h("div", { style: { fontSize: "12px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px" }, children: "System Metrics" }),
+                    h("div", { style: { display: "flex", alignItems: "center", gap: "4px", padding: "4px 8px", backgroundColor: "rgba(189, 78, 255, 0.1)", borderRadius: "4px", border: "1px solid rgba(189, 78, 255, 0.2)" }, children: [
+                        h("div", { style: { width: "4px", height: "4px", borderRadius: "50%", backgroundColor: "#c96ef0", boxShadow: "0 0 4px #c96ef0" } }),
+                        h("div", { style: { fontSize: "9px", color: "#e3a8ff", fontWeight: "500" }, children: "LIVE" })
+                    ]})
                 ]
             }),
-            
-            // Chart Area
             h("div", {
-                style: { flex: 1, position: "relative", zIndex: 1, display: "flex", alignItems: "flex-end" },
+                style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" },
                 children: [
+                    h("div", { style: { padding: "10px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.05)", display: "flex", flexDirection: "column", gap: "4px" }, children: [
+                        h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.4)" }, children: "Uptime" }),
+                        h("div", { style: { fontSize: "14px", fontWeight: "600", color: "white" }, children: "99.99%" })
+                    ]}),
+                    h("div", { style: { padding: "10px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.05)", display: "flex", flexDirection: "column", gap: "4px" }, children: [
+                        h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.4)" }, children: "Latency" }),
+                        h("div", { style: { fontSize: "14px", fontWeight: "600", color: "white" }, children: "45ms" })
+                    ]})
+                ]
+            }),
+            h("div", {
+                style: { flex: 1, backgroundColor: "rgba(255,255,255,0.02)", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.05)", padding: "12px", display: "flex", flexDirection: "column", justifyContent: "flex-end", position: "relative", overflow: "hidden" },
+                children: [
+                    h("div", { style: { position: "absolute", top: "10px", left: "12px", fontSize: "10px", color: "rgba(255,255,255,0.4)" }, children: "Traffic (Last 24h)" }),
                     h("svg", {
-                        style: { width: "100%", height: "80%", overflow: "visible", position: "absolute", bottom: 0, left: 0 },
-                        viewBox: "0 0 300 100",
+                        style: { width: "100%", height: "40px", overflow: "visible", marginTop: "10px" },
+                        viewBox: "0 0 100 30",
                         preserveAspectRatio: "none",
                         children: [
-                            // Gradient Fill
-                            h("defs", {
-                                children: h("linearGradient", { id: "chartFill", x1: "0%", y1: "0%", x2: "0%", y2: "100%", children: [
-                                    h("stop", { offset: "0%", stopColor: "rgba(189, 78, 255, 0.3)" }),
-                                    h("stop", { offset: "100%", stopColor: "rgba(189, 78, 255, 0)" })
-                                ]})
-                            }),
-                            // Fill Path
                             h("path", {
-                                d: "M 0 100 L 0 70 C 40 70, 60 40, 100 50 C 140 60, 160 20, 200 30 C 240 40, 260 10, 300 20 L 300 100 Z",
-                                fill: "url(#chartFill)",
-                                style: { animation: "fadeInChart 1s ease-out forwards" }
+                                d: "M 0 30 L 0 20 L 20 15 L 40 22 L 60 10 L 80 18 L 100 5 L 100 30 Z",
+                                fill: "rgba(189, 78, 255, 0.15)"
                             }),
-                            // Line Path
                             h("path", {
-                                d: "M 0 70 C 40 70, 60 40, 100 50 C 140 60, 160 20, 200 30 C 240 40, 260 10, 300 20",
+                                d: "M 0 20 L 20 15 L 40 22 L 60 10 L 80 18 L 100 5",
                                 fill: "none",
                                 stroke: "#c96ef0",
-                                strokeWidth: "3",
-                                strokeDasharray: "400",
+                                strokeWidth: "1.5",
                                 strokeLinecap: "round",
-                                style: { animation: "drawChart 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards" }
+                                strokeLinejoin: "round"
                             })
-                        ]
-                    }),
-                    // Pulse Dot on Peak
-                    h("div", {
-                        style: { position: "absolute", top: "18%", right: "32%", width: "12px", height: "12px", backgroundColor: "#fff", borderRadius: "50%", border: "3px solid #c96ef0", animation: "pulseDot 2s infinite" }
-                    }),
-                    // Tooltip
-                    h("div", {
-                        style: { position: "absolute", top: "2%", right: "25%", padding: "8px 12px", backgroundColor: "rgba(30,30,30,0.9)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "6px", backdropFilter: "blur(8px)", boxShadow: "0 10px 20px rgba(0,0,0,0.5)", display: "flex", flexDirection: "column", gap: "2px", zIndex: 10, transform: "translateY(-10px)", animation: "floatUp1 4s ease-in-out infinite" },
-                        children: [
-                            h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)" }, children: "Current Load" }),
-                            h("div", { style: { fontSize: "13px", fontWeight: "700", color: "white" }, children: "24,892 req/s" })
                         ]
                     })
                 ]
