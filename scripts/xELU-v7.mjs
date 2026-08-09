@@ -31512,7 +31512,7 @@ e(() => {
                                       Dg1mLwpEL: `24/7 Availability`,
                                       height: `100%`,
                                       id: `rpYj54qTZ`,
-                                      IsqDIGJdG: `Give your team and customers access to the tools they need, whenever they need them.`,
+                                      IsqDIGJdG: `Give your team and customers access to the tools they need, whenever they need them, from anywhere and on any device.`,
                                       layoutId: `rpYj54qTZ`,
                                       pD65dKDNK: `Clock`,
                                       style: { width: `100%` },
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v6.mjs.map
+//# sourceMappingURL=xELU-v7.mjs.map
