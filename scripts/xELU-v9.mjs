@@ -31919,7 +31919,7 @@ e(() => {
                                   scopeId: `augiA20Il`,
                                   children: _(yi, {
                                     EE65OJc6R: `Operations Manager at NexaCorp`,
-                                    gdVtD7Q8q: `"The entire process was smooth from start to finish. The final product was fast, clean, and exactly what we were looking for."`,
+                                    gdVtD7Q8q: `"The entire process was smooth from start to finish. The final product was fast, clean, and exactly what we were looking for. Special Thanks to syncrotrex to make it this easy"`,
                                     height: `100%`,
                                     id: `nsGUsACpz`,
                                     kGOLOSKIR: D_(
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v8.mjs.map
+//# sourceMappingURL=xELU-v9.mjs.map
