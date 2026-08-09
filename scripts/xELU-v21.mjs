@@ -3420,14 +3420,14 @@ var nr,
                         style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" },
                         children: [
                             h("div", {
-                                style: { height: "70px", borderRadius: "8px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", justify-content: "space-between" },
+                                style: { height: "70px", borderRadius: "8px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", justifyContent: "space-between" },
                                 children: [
                                     h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)" }, children: "MRR Growth" }),
                                     h("div", { style: { fontSize: "16px", fontWeight: "600", color: "#c96ef0" }, children: "+24.8%" })
                                 ]
                             }),
                             h("div", {
-                                style: { height: "70px", borderRadius: "8px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", justify-content: "space-between" },
+                                style: { height: "70px", borderRadius: "8px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", justifyContent: "space-between" },
                                 children: [
                                     h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)" }, children: "Churn Rate" }),
                                     h("div", { style: { fontSize: "16px", fontWeight: "600", color: "white" }, children: "1.2%" })
