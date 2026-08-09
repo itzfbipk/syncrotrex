@@ -29696,7 +29696,7 @@ e(() => {
                                             children: _(`h3`, {
                                               className: `framer-styles-preset-gb7odv`,
                                               "data-styles-preset": `fkWhWxW4E`,
-                                              children: `Build software people subscribe to`,
+                                              children: `Save Time Daily`,
                                             }),
                                           }),
                                           className: `framer-gjzflx`,
