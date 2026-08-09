@@ -507,4 +507,4 @@ e(() => {
     }));
 })();
 export { $ as __FramerMetadata__, Te as default };
-//# sourceMappingURL=chunk-15.mjs.map
+//# sourceMappingURL=chunk-15-v2.mjs.map
