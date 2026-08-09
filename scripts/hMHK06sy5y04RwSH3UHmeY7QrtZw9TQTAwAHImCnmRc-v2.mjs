@@ -753,7 +753,7 @@ e(() => {
                                     children: l(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `Have questions or need AI solutions? Let us know by filling out the form, and we’ll be in touch!`,
+                                      children: `Have a project in mind or need a custom digital solution? Tell us what you're looking to build and we'll get back to you.`,
                                     }),
                                   }),
                                   className: `framer-vc2ess`,
@@ -1309,4 +1309,4 @@ e(() => {
     }));
 })();
 export { $e as __FramerMetadata__, Qe as default };
-//# sourceMappingURL=hMHK06sy5y04RwSH3UHmeY7QrtZw9TQTAwAHImCnmRc.mjs.map
+//# sourceMappingURL=hMHK06sy5y04RwSH3UHmeY7QrtZw9TQTAwAHImCnmRc-v2.mjs.map
