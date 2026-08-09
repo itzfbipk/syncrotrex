@@ -147,7 +147,7 @@ var V,
         VnNfoGcKy:
           a ??
           o.VnNfoGcKy ??
-          `The Future of AI Automation: How It’s Changing Business Operations`,
+          `The Future of Custom Software: How Custom Systems Drive Growth`,
       })),
       (Pe = (e, t) =>
         e.layoutDependency ? t.join(`-`) + e.layoutDependency : t.join(`-`)),
@@ -346,7 +346,7 @@ var V,
                             children: c(f.p, {
                               className: `framer-styles-preset-owv810`,
                               "data-styles-preset": `Ag1SUJs5E`,
-                              children: `The Future of AI Automation: How It’s Changing Business Operations`,
+                              children: `The Future of Custom Software: How Custom Systems Drive Growth`,
                             }),
                           }),
                           className: `framer-eekct`,
@@ -400,7 +400,7 @@ var V,
           type: C.String,
         },
         VnNfoGcKy: {
-          defaultValue: `The Future of AI Automation: How It’s Changing Business Operations`,
+          defaultValue: `The Future of Custom Software: How Custom Systems Drive Growth`,
           displayTextArea: !1,
           title: `Title`,
           type: C.String,
@@ -1028,4 +1028,4 @@ e(() => {
     }));
 })();
 export { Qe as __FramerMetadata__, Ze as default };
-//# sourceMappingURL=GIole-v3.mjs.map
+//# sourceMappingURL=GIole-v4.mjs.map

@@ -873,7 +873,7 @@ e(() => {
                                       style: {
                                         "--framer-text-alignment": `left`,
                                       },
-                                      children: `The Future of AI Automation: How It’s Changing Business Operations`,
+                                      children: `The Future of Custom Software: How Custom Systems Drive Growth`,
                                     }),
                                   }),
                                   className: `framer-1dhn0qs`,
@@ -892,7 +892,7 @@ e(() => {
                                       style: {
                                         "--framer-text-alignment": `left`,
                                       },
-                                      children: `AI automation is transforming the way businesses operate, from streamlining workflows to enhancing decision-making. In this article, we explore the latest trends, innovations, and real-world applications that are reshaping industries worldwide.`,
+                                      children: `Custom software is transforming the way businesses operate, from streamlining workflows to enhancing business efficiency. In this article, we explore the latest trends, innovations, and real-world applications that are reshaping industries worldwide.`,
                                     }),
                                   }),
                                   className: `framer-vc1b5x`,
@@ -1122,4 +1122,4 @@ e(() => {
     }));
 })();
 export { _t as __FramerMetadata__, gt as default };
-//# sourceMappingURL=lG4pK-v2.mjs.map
+//# sourceMappingURL=lG4pK-v3.mjs.map
