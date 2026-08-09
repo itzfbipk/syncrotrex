@@ -27442,6 +27442,65 @@ e(() => {
                               "data-border": !0,
                               "data-framer-name": `Strategy card`,
                               children: [
+    h(`div`, {
+        className: `framer-c01dmm`,
+        "data-framer-name": `Name and description`,
+        children: [
+        h(`div`, {
+            className: `framer-dl7x21`,
+            "data-framer-name": `Top`,
+            children: [
+            _(`div`, {
+                className: `framer-xy61sn`,
+                "data-border": !0,
+                "data-framer-name": `step 1`,
+                children: _(j, {
+                __fromCanvasComponent: !0,
+                children: _(u, {
+                    children: _(`p`, {
+                    className: `framer-styles-preset-1kdv3c8`,
+                    "data-styles-preset": `PDoVxFHq4`,
+                    children: `Step 1`,
+                    }),
+                }),
+                className: `framer-1j06itp`,
+                fonts: [`Inter`],
+                verticalAlignment: `top`,
+                withExternalLayout: !0,
+                }),
+            }),
+            _(j, {
+                __fromCanvasComponent: !0,
+                children: _(u, {
+                children: _(`p`, {
+                    className: `framer-styles-preset-owv810`,
+                    "data-styles-preset": `Ag1SUJs5E`,
+                    children: `Understand & Plan`,
+                }),
+                }),
+                className: `framer-cwbhjp`,
+                fonts: [`Inter`],
+                verticalAlignment: `top`,
+                withExternalLayout: !0,
+            }),
+            ],
+        }),
+        _(j, {
+            __fromCanvasComponent: !0,
+            children: _(u, {
+            children: _(`p`, {
+                className: `framer-styles-preset-16w1u5n`,
+                "data-styles-preset": `csUbUKGQ_`,
+                children: `We learn how your business works, define the requirements, and plan the right solution before development begins.`,
+            }),
+            }),
+            className: `framer-r8q8w3`,
+            fonts: [`Inter`],
+            verticalAlignment: `top`,
+            withExternalLayout: !0,
+        }),
+        ],
+    }),
     h("style", { dangerouslySetInnerHTML: { __html: `
         @keyframes drawLine {
             0% { height: 0%; opacity: 0; }
@@ -27462,7 +27521,7 @@ e(() => {
         }
     `}}),
     h("div", {
-        style: { width: "100%", height: "100%", padding: "20px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box" },
+        style: { width: "100%", padding: "20px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)", marginTop: "10px" },
         children: [
             h("div", {
                 style: { display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "12px", marginBottom: "16px" },
