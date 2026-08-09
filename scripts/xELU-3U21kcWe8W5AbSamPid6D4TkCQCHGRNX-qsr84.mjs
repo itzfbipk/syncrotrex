@@ -29661,7 +29661,7 @@ e(() => {
                             }),
                             h(`div`, {
                               className: `framer-113nk5s`,
-                              "data-framer-name": `AI Assistant`,
+                              "data-framer-name": `SaaS Development`,
                               id: w,
                               ref: T,
                               children: [
@@ -29676,7 +29676,7 @@ e(() => {
                                         nodeId: `GOCVp6R0b`,
                                         scopeId: `augiA20Il`,
                                         children: _(V, {
-                                          b5FKc3lDF: `AI Assistant`,
+                                          b5FKc3lDF: `SaaS Development`,
                                           height: `100%`,
                                           id: `GOCVp6R0b`,
                                           layoutId: `GOCVp6R0b`,
@@ -29696,7 +29696,7 @@ e(() => {
                                             children: _(`h3`, {
                                               className: `framer-styles-preset-gb7odv`,
                                               "data-styles-preset": `fkWhWxW4E`,
-                                              children: `Delegate Daily Tasks`,
+                                              children: `Build software people subscribe to`,
                                             }),
                                           }),
                                           className: `framer-gjzflx`,
@@ -29710,7 +29710,7 @@ e(() => {
                                             children: _(`p`, {
                                               className: `framer-styles-preset-16w1u5n`,
                                               "data-styles-preset": `csUbUKGQ_`,
-                                              children: `From managing calendars to drafting emails and summarizing meetings, our AI assistants work around the clock to keep your business running smarter and faster.`,
+                                              children: `We design and develop scalable SaaS platforms with subscriptions, user management, dashboards, multi-tenant architecture, and custom features built around your business.`,
                                             }),
                                           }),
                                           className: `framer-26x1qa`,
@@ -29731,7 +29731,7 @@ e(() => {
                                             nodeId: `OM2TX43oC`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Summaries`,
+                                              b5FKc3lDF: `Multi-Tenant SaaS`,
                                               height: `100%`,
                                               id: `OM2TX43oC`,
                                               layoutId: `OM2TX43oC`,
@@ -29748,7 +29748,7 @@ e(() => {
                                             nodeId: `RSPQfru9b`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Scheduling`,
+                                              b5FKc3lDF: `Subscription Systems`,
                                               height: `100%`,
                                               id: `RSPQfru9b`,
                                               layoutId: `RSPQfru9b`,
@@ -29765,7 +29765,7 @@ e(() => {
                                             nodeId: `UK4XUTOOk`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Many more`,
+                                              b5FKc3lDF: `Custom Platforms`,
                                               height: `100%`,
                                               id: `UK4XUTOOk`,
                                               layoutId: `UK4XUTOOk`,
