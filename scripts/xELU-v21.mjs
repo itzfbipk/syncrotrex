@@ -3370,552 +3370,92 @@ var nr,
                     layoutDependency: S,
                     layoutId: `DPLHyPaK4`,
                     children: [
-                      h(C.div, {
-                        className: `framer-131e2eg`,
-                        "data-framer-name": `orb`,
-                        layoutDependency: S,
-                        layoutId: `tBpfgzRA8`,
-                        style: {
-                          filter: `blur(1px)`,
-                          WebkitFilter: `blur(1px)`,
-                        },
+    h("style", {
+        dangerouslySetInnerHTML: {
+            __html: `
+                @keyframes barGrow {
+                    0% { transform: scaleY(0.1); }
+                    100% { transform: scaleY(1); }
+                }
+                .saas-dash-minimal * { box-sizing: border-box; }
+            `
+        }
+    }),
+    h("div", {
+        className: "saas-dash-minimal",
+        style: {
+            display: "flex", width: "100%", height: "100%",
+            backgroundColor: "#050505", overflow: "hidden", 
+            fontFamily: "'Inter', sans-serif", color: "white", padding: "0",
+            position: "relative"
+        },
+        children: [
+            h("div", {
+                style: { width: "45px", borderRight: "1px solid rgb(34,34,34)", display: "flex", flexDirection: "column", alignItems: "center", padding: "16px 0", gap: "16px" },
+                children: [
+                    h("div", { style: { width: "20px", height: "20px", borderRadius: "4px", backgroundColor: "rgba(189, 78, 255, 0.15)", border: "1px solid rgba(189, 78, 255, 0.4)", marginBottom: "10px" } }),
+                    h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.05)" } }),
+                    h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.05)" } }),
+                    h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.05)" } })
+                ]
+            }),
+            h("div", {
+                style: { flex: 1, padding: "24px", display: "flex", flexDirection: "column", gap: "20px" },
+                children: [
+                    h("div", {
+                        style: { display: "flex", flexDirection: "column", gap: "8px" },
                         children: [
-                          _(nr, {
-                            __framer__loop: ur,
-                            __framer__loopEffectEnabled: !0,
-                            __framer__loopRepeatDelay: 0,
-                            __framer__loopRepeatType: `loop`,
-                            __framer__loopTransition: lr,
-                            __perspectiveFX: !1,
-                            __smartComponentFX: !0,
-                            __targetOpacity: 1,
-                            className: `framer-14q1urr`,
-                            "data-framer-name": `small circle`,
-                            layoutDependency: S,
-                            layoutId: `FexqP4k2v`,
-                            style: {
-                              background: `linear-gradient(141deg, var(--token-cd9ad879-0340-4881-8da6-7efa110062d4, rgb(223, 122, 254)) 13%, rgba(201, 110, 240, 0) 35.0235827429153%, rgba(164, 92, 219, 0) 64.17244225559735%, var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200)) 88%)`,
-                              borderBottomLeftRadius: 137,
-                              borderBottomRightRadius: 137,
-                              borderTopLeftRadius: 137,
-                              borderTopRightRadius: 137,
-                            },
-                            transformTemplate: dr,
-                          }),
-                          _(nr, {
-                            __framer__loop: fr,
-                            __framer__loopEffectEnabled: !0,
-                            __framer__loopRepeatDelay: 0,
-                            __framer__loopRepeatType: `loop`,
-                            __framer__loopTransition: lr,
-                            __perspectiveFX: !1,
-                            __smartComponentFX: !0,
-                            __targetOpacity: 1,
-                            className: `framer-ht4zsg`,
-                            "data-framer-name": `Big circle`,
-                            layoutDependency: S,
-                            layoutId: `s6EaNcpXJ`,
-                            style: {
-                              background: `linear-gradient(141deg, rgb(223, 122, 254) 13%, rgba(201, 110, 240, 0) 35.0235827429153%, rgba(164, 92, 219, 0) 64.17244225559735%, var(--token-5987ca59-a0c2-4562-861a-b7e9d2d04a6e, rgb(129, 74, 200)) 88%)`,
-                              borderBottomLeftRadius: 137,
-                              borderBottomRightRadius: 137,
-                              borderTopLeftRadius: 137,
-                              borderTopRightRadius: 137,
-                            },
-                          }),
-                        ],
-                      }),
-                      h(C.div, {
-                        className: `framer-1jc654s`,
-                        "data-framer-name": `Title and description`,
-                        layoutDependency: S,
-                        layoutId: `ojLlKOK3P`,
-                        children: [
-                          _(j, {
-                            __fromCanvasComponent: !0,
-                            children: _(u, {
-                              children: _(C.p, {
-                                className: `framer-styles-preset-16w1u5n`,
-                                "data-styles-preset": `csUbUKGQ_`,
-                                style: {
-                                  "--framer-text-color": `var(--esyncrotrexed-r6o4lv, var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)))`,
-                                },
-                                children: `Workspace Overview`,
-                              }),
-                            }),
-                            className: `framer-9bsz1q`,
-                            fonts: [`Inter`],
-                            layoutDependency: S,
-                            layoutId: `HtXgc4pea`,
-                            style: {
-                              "--esyncrotrexed-r6o4lv": `var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255))`,
-                              "--framer-link-text-color": `rgb(0, 153, 255)`,
-                              "--framer-link-text-decoration": `underline`,
-                            },
-                            verticalAlignment: `top`,
-                            withExternalLayout: !0,
-                          }),
-                          _(j, {
-                            __fromCanvasComponent: !0,
-                            children: _(u, {
-                              children: _(C.p, {
-                                className: `framer-styles-preset-11j7728`,
-                                "data-styles-preset": `nWaHBmz7N`,
-                                style: { "--framer-text-alignment": `center` },
-                                children: `Active Users — 1,284  |  Projects — 24  |  Revenue — $18,420  |  Growth — +24.8%`,
-                              }),
-                            }),
-                            className: `framer-mzaa60`,
-                            fonts: [`Inter`],
-                            layoutDependency: S,
-                            layoutId: `WBnMeV6WT`,
-                            style: {
-                              "--framer-link-text-color": `rgb(0, 153, 255)`,
-                              "--framer-link-text-decoration": `underline`,
-                            },
-                            verticalAlignment: `top`,
-                            withExternalLayout: !0,
-                          }),
-                        ],
-                      }),
-                      h(C.div, {
-                        className: `framer-wob1hz`,
-                        "data-framer-name": `Text area`,
-                        layoutDependency: S,
-                        layoutId: `MjYtzmRst`,
-                        children: [
-                          h(C.div, {
-                            className: `framer-1yj1zdb`,
-                            "data-border": !0,
-                            "data-framer-name": `Top`,
-                            layoutDependency: S,
-                            layoutId: `d9FP8ddzE`,
-                            style: {
-                              "--border-bottom-width": `1px`,
-                              "--border-color": `var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))`,
-                              "--border-left-width": `1px`,
-                              "--border-right-width": `1px`,
-                              "--border-style": `solid`,
-                              "--border-top-width": `1px`,
-                              borderBottomLeftRadius: 4,
-                              borderBottomRightRadius: 4,
-                              borderTopLeftRadius: 4,
-                              borderTopRightRadius: 4,
-                            },
-                            children: [
-                              h(C.div, {
-                                className: `framer-81wzs5`,
-                                "data-framer-name": `Text animation`,
-                                layoutDependency: S,
-                                layoutId: `LjEbraRg_`,
+                            h("div", { style: { fontSize: "14px", fontWeight: "600", color: "white" }, children: "Workspace Overview" }),
+                            h("div", {
+                                style: { display: "flex", gap: "16px", fontSize: "10px", color: "rgba(255,255,255,0.4)" },
                                 children: [
-                                  _(R, {
-                                    children: _(k, {
-                                      className: `framer-vqyd67-container`,
-                                      isAuthoredByUser: !0,
-                                      isModuleExternal: !0,
-                                      layoutDependency: S,
-                                      layoutId: `qz7d9Ej1a-container`,
-                                      nodeId: `qz7d9Ej1a`,
-                                      rendersWithMotion: !0,
-                                      scopeId: `J7VeWVnzG`,
-                                      children: _($n, {
-                                        cursorStyle: {
-                                          blinking: !0,
-                                          color: `var(--token-2cf088f3-ce85-4dcc-af29-885125de2d17, rgba(255, 255, 255, 0.75))`,
-                                          text: `|`,
-                                        },
-                                        delay: 2e3,
-                                        deleteSpeed: 80,
-                                        font: {
-                                          alignItems: `center`,
-                                          color: `var(--token-2cf088f3-ce85-4dcc-af29-885125de2d17, rgba(255, 255, 255, 0.75))`,
-                                          font: {
-                                            fontFamily: `"Figtree", "Figtree Placeholder", sans-serif`,
-                                            fontSize: `12px`,
-                                            fontStyle: `normal`,
-                                            fontWeight: 500,
-                                            letterSpacing: `0em`,
-                                            lineHeight: `1.1em`,
-                                          },
-                                          justifyContent: `center`,
-                                          padding: `0px`,
-                                        },
-                                        height: `100%`,
-                                        id: `qz7d9Ej1a`,
-                                        layoutId: `qz7d9Ej1a`,
-                                        RepeatType: !0,
-                                        RepeatValue: 2,
-                                        showCursor: !0,
-                                        text: [
-                                          `Create a new project`,
-                                          `Create a new project`,
-                                          `Create a new project`,
-                                        ],
-                                        typeSpeed: 150,
-                                        width: `100%`,
-                                      }),
-                                    }),
-                                  }),
-                                  _(C.div, {
-                                    className: `framer-16jjtrq`,
-                                    "data-border": !0,
-                                    "data-framer-name": `Icon holder`,
-                                    layoutDependency: S,
-                                    layoutId: `FJELHHYrs`,
-                                    style: {
-                                      "--border-bottom-width": `1px`,
-                                      "--border-color": `var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))`,
-                                      "--border-left-width": `1px`,
-                                      "--border-right-width": `1px`,
-                                      "--border-style": `solid`,
-                                      "--border-top-width": `1px`,
-                                      backgroundColor: `var(--token-cfb0af42-62a5-486a-837b-9870b5e7030b, rgba(255, 255, 255, 0.05))`,
-                                      borderBottomLeftRadius: 2,
-                                      borderBottomRightRadius: 2,
-                                      borderTopLeftRadius: 2,
-                                      borderTopRightRadius: 2,
-                                    },
-                                    children: _(R, {
-                                      children: _(k, {
-                                        className: `framer-1jc7exa-container`,
-                                        isAuthoredByUser: !0,
-                                        isModuleExternal: !0,
-                                        layoutDependency: S,
-                                        layoutId: `b0MTMkEtb-container`,
-                                        nodeId: `b0MTMkEtb`,
-                                        rendersWithMotion: !0,
-                                        scopeId: `J7VeWVnzG`,
-                                        children: _(z, {
-                                          color: `var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))`,
-                                          height: `100%`,
-                                          iconSearch: `paperplaneright`,
-                                          iconSelection: `House`,
-                                          id: `b0MTMkEtb`,
-                                          layoutId: `b0MTMkEtb`,
-                                          mirrored: !1,
-                                          selectByList: !1,
-                                          style: {
-                                            height: `100%`,
-                                            width: `100%`,
-                                          },
-                                          weight: `regular`,
-                                          width: `100%`,
-                                        }),
-                                      }),
-                                    }),
-                                  }),
-                                ],
-                              }),
-                              _(C.div, {
-                                className: `framer-6o65uv`,
-                                "data-framer-name": `add document`,
-                                layoutDependency: S,
-                                layoutId: `U62Rlb20b`,
-                                children: h(C.div, {
-                                  className: `framer-j79nak`,
-                                  "data-border": !0,
-                                  "data-framer-name": `badge`,
-                                  layoutDependency: S,
-                                  layoutId: `Qnj0pjEQZ`,
-                                  style: {
-                                    "--border-bottom-width": `1px`,
-                                    "--border-color": `rgb(34, 34, 34)`,
-                                    "--border-left-width": `1px`,
-                                    "--border-right-width": `1px`,
-                                    "--border-style": `solid`,
-                                    "--border-top-width": `1px`,
-                                    backgroundColor: `var(--token-cfb0af42-62a5-486a-837b-9870b5e7030b, rgba(255, 255, 255, 0.05))`,
-                                    borderBottomLeftRadius: 8,
-                                    borderBottomRightRadius: 8,
-                                    borderTopLeftRadius: 8,
-                                    borderTopRightRadius: 8,
-                                  },
-                                  children: [
-                                    _(R, {
-                                      children: _(k, {
-                                        className: `framer-gro6nh-container`,
-                                        isAuthoredByUser: !0,
-                                        isModuleExternal: !0,
-                                        layoutDependency: S,
-                                        layoutId: `o4FDEMbXk-container`,
-                                        nodeId: `o4FDEMbXk`,
-                                        rendersWithMotion: !0,
-                                        scopeId: `J7VeWVnzG`,
-                                        children: _(z, {
-                                          color: `var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))`,
-                                          height: `100%`,
-                                          iconSearch: `plus`,
-                                          iconSelection: `House`,
-                                          id: `o4FDEMbXk`,
-                                          layoutId: `o4FDEMbXk`,
-                                          mirrored: !1,
-                                          selectByList: !1,
-                                          style: {
-                                            height: `100%`,
-                                            width: `100%`,
-                                          },
-                                          weight: `regular`,
-                                          width: `100%`,
-                                        }),
-                                      }),
-                                    }),
-                                    _(j, {
-                                      __fromCanvasComponent: !0,
-                                      children: _(u, {
-                                        children: _(C.p, {
-                                          className: `framer-styles-preset-11j7728`,
-                                          "data-styles-preset": `nWaHBmz7N`,
-                                          children: `Add document`,
-                                        }),
-                                      }),
-                                      className: `framer-jldocp`,
-                                      fonts: [`Inter`],
-                                      layoutDependency: S,
-                                      layoutId: `fe7Yyyc_g`,
-                                      style: {
-                                        "--framer-link-text-color": `rgb(0, 153, 255)`,
-                                        "--framer-link-text-decoration": `underline`,
-                                      },
-                                      verticalAlignment: `top`,
-                                      withExternalLayout: !0,
-                                    }),
-                                  ],
-                                }),
-                              }),
-                            ],
-                          }),
-                          _(C.div, {
-                            className: `framer-x83m6i`,
-                            "data-framer-name": `Bottom`,
-                            layoutDependency: S,
-                            layoutId: `lHtKGcDQs`,
-                            style: {
-                              borderBottomLeftRadius: 4,
-                              borderBottomRightRadius: 4,
-                              borderTopLeftRadius: 4,
-                              borderTopRightRadius: 4,
-                            },
-                            children: h(C.div, {
-                              className: `framer-19jgo7f`,
-                              "data-framer-name": `options`,
-                              layoutDependency: S,
-                              layoutId: `ZPEopHU54`,
-                              children: [
-                                h(C.div, {
-                                  className: `framer-1efns0h`,
-                                  "data-border": !0,
-                                  "data-framer-name": `analyze`,
-                                  layoutDependency: S,
-                                  layoutId: `k02TLJeX4`,
-                                  style: {
-                                    "--border-bottom-width": `1px`,
-                                    "--border-color": `var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))`,
-                                    "--border-left-width": `1px`,
-                                    "--border-right-width": `1px`,
-                                    "--border-style": `solid`,
-                                    "--border-top-width": `1px`,
-                                    borderBottomLeftRadius: 8,
-                                    borderBottomRightRadius: 8,
-                                    borderTopLeftRadius: 8,
-                                    borderTopRightRadius: 8,
-                                  },
-                                  children: [
-                                    _(R, {
-                                      children: _(k, {
-                                        className: `framer-qv31nx-container`,
-                                        isAuthoredByUser: !0,
-                                        isModuleExternal: !0,
-                                        layoutDependency: S,
-                                        layoutId: `qETzeTyVf-container`,
-                                        nodeId: `qETzeTyVf`,
-                                        rendersWithMotion: !0,
-                                        scopeId: `J7VeWVnzG`,
-                                        children: _(z, {
-                                          color: `var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))`,
-                                          height: `100%`,
-                                          iconSearch: `chart-line`,
-                                          iconSelection: `House`,
-                                          id: `qETzeTyVf`,
-                                          layoutId: `qETzeTyVf`,
-                                          mirrored: !1,
-                                          selectByList: !1,
-                                          style: {
-                                            height: `100%`,
-                                            width: `100%`,
-                                          },
-                                          weight: `regular`,
-                                          width: `100%`,
-                                        }),
-                                      }),
-                                    }),
-                                    _(j, {
-                                      __fromCanvasComponent: !0,
-                                      children: _(u, {
-                                        children: _(C.p, {
-                                          className: `framer-styles-preset-11j7728`,
-                                          "data-styles-preset": `nWaHBmz7N`,
-                                          children: `Analytics`,
-                                        }),
-                                      }),
-                                      className: `framer-dbw4n4`,
-                                      fonts: [`Inter`],
-                                      layoutDependency: S,
-                                      layoutId: `uyndkPUg1`,
-                                      style: {
-                                        "--framer-link-text-color": `rgb(0, 153, 255)`,
-                                        "--framer-link-text-decoration": `underline`,
-                                      },
-                                      verticalAlignment: `top`,
-                                      withExternalLayout: !0,
-                                    }),
-                                  ],
-                                }),
-                                h(C.div, {
-                                  className: `framer-njys8n`,
-                                  "data-border": !0,
-                                  "data-framer-name": `generate image`,
-                                  layoutDependency: S,
-                                  layoutId: `B2YbRYUeB`,
-                                  style: {
-                                    "--border-bottom-width": `1px`,
-                                    "--border-color": `var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))`,
-                                    "--border-left-width": `1px`,
-                                    "--border-right-width": `1px`,
-                                    "--border-style": `solid`,
-                                    "--border-top-width": `1px`,
-                                    borderBottomLeftRadius: 8,
-                                    borderBottomRightRadius: 8,
-                                    borderTopLeftRadius: 8,
-                                    borderTopRightRadius: 8,
-                                  },
-                                  children: [
-                                    _(R, {
-                                      children: _(k, {
-                                        className: `framer-1w6384t-container`,
-                                        isAuthoredByUser: !0,
-                                        isModuleExternal: !0,
-                                        layoutDependency: S,
-                                        layoutId: `XgKgEuxgL-container`,
-                                        nodeId: `XgKgEuxgL`,
-                                        rendersWithMotion: !0,
-                                        scopeId: `J7VeWVnzG`,
-                                        children: _(z, {
-                                          color: `var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))`,
-                                          height: `100%`,
-                                          iconSearch: `image`,
-                                          iconSelection: `House`,
-                                          id: `XgKgEuxgL`,
-                                          layoutId: `XgKgEuxgL`,
-                                          mirrored: !1,
-                                          selectByList: !1,
-                                          style: {
-                                            height: `100%`,
-                                            width: `100%`,
-                                          },
-                                          weight: `regular`,
-                                          width: `100%`,
-                                        }),
-                                      }),
-                                    }),
-                                    _(j, {
-                                      __fromCanvasComponent: !0,
-                                      children: _(u, {
-                                        children: _(C.p, {
-                                          className: `framer-styles-preset-11j7728`,
-                                          "data-styles-preset": `nWaHBmz7N`,
-                                          children: `Revenue`,
-                                        }),
-                                      }),
-                                      className: `framer-usfrzp`,
-                                      fonts: [`Inter`],
-                                      layoutDependency: S,
-                                      layoutId: `ZNlmEJ3Li`,
-                                      style: {
-                                        "--framer-link-text-color": `rgb(0, 153, 255)`,
-                                        "--framer-link-text-decoration": `underline`,
-                                      },
-                                      verticalAlignment: `top`,
-                                      withExternalLayout: !0,
-                                    }),
-                                  ],
-                                }),
-                                T() &&
-                                  h(C.div, {
-                                    className: `framer-ytz5sw`,
-                                    "data-border": !0,
-                                    "data-framer-name": `Settings`,
-                                    layoutDependency: S,
-                                    layoutId: `ZOyUxzmgG`,
-                                    style: {
-                                      "--border-bottom-width": `1px`,
-                                      "--border-color": `var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))`,
-                                      "--border-left-width": `1px`,
-                                      "--border-right-width": `1px`,
-                                      "--border-style": `solid`,
-                                      "--border-top-width": `1px`,
-                                      borderBottomLeftRadius: 8,
-                                      borderBottomRightRadius: 8,
-                                      borderTopLeftRadius: 8,
-                                      borderTopRightRadius: 8,
-                                    },
-                                    children: [
-                                      _(R, {
-                                        children: _(k, {
-                                          className: `framer-1mgsd1i-container`,
-                                          isAuthoredByUser: !0,
-                                          isModuleExternal: !0,
-                                          layoutDependency: S,
-                                          layoutId: `AjfKKELqR-container`,
-                                          nodeId: `AjfKKELqR`,
-                                          rendersWithMotion: !0,
-                                          scopeId: `J7VeWVnzG`,
-                                          children: _(z, {
-                                            color: `var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))`,
-                                            height: `100%`,
-                                            iconSearch: `file-magnifying-glass`,
-                                            iconSelection: `House`,
-                                            id: `AjfKKELqR`,
-                                            layoutId: `AjfKKELqR`,
-                                            mirrored: !1,
-                                            selectByList: !1,
-                                            style: {
-                                              height: `100%`,
-                                              width: `100%`,
-                                            },
-                                            weight: `regular`,
-                                            width: `100%`,
-                                          }),
-                                        }),
-                                      }),
-                                      _(j, {
-                                        __fromCanvasComponent: !0,
-                                        children: _(u, {
-                                          children: _(C.p, {
-                                            className: `framer-styles-preset-11j7728`,
-                                            "data-styles-preset": `nWaHBmz7N`,
-                                            children: `Settings`,
-                                          }),
-                                        }),
-                                        className: `framer-vafvr5`,
-                                        fonts: [`Inter`],
-                                        layoutDependency: S,
-                                        layoutId: `sJ6MxiHvz`,
-                                        style: {
-                                          "--framer-link-text-color": `rgb(0, 153, 255)`,
-                                          "--framer-link-text-decoration": `underline`,
-                                        },
-                                        verticalAlignment: `top`,
-                                        withExternalLayout: !0,
-                                      }),
-                                    ],
-                                  }),
-                              ],
+                                    h("span", { children: "Active Users: 1,284" }),
+                                    h("span", { children: "Projects: 24" }),
+                                    h("span", { children: "Revenue: $18,420" })
+                                ]
+                            })
+                        ]
+                    }),
+                    h("div", {
+                        style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px" },
+                        children: [
+                            h("div", {
+                                style: { height: "70px", borderRadius: "8px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", justify-content: "space-between" },
+                                children: [
+                                    h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)" }, children: "MRR Growth" }),
+                                    h("div", { style: { fontSize: "16px", fontWeight: "600", color: "#c96ef0" }, children: "+24.8%" })
+                                ]
                             }),
-                          }),
-                        ],
-                      }),
-                    ],
+                            h("div", {
+                                style: { height: "70px", borderRadius: "8px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", justify-content: "space-between" },
+                                children: [
+                                    h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)" }, children: "Churn Rate" }),
+                                    h("div", { style: { fontSize: "16px", fontWeight: "600", color: "white" }, children: "1.2%" })
+                                ]
+                            })
+                        ]
+                    }),
+                    h("div", {
+                        style: { flex: 1, borderRadius: "8px", border: "1px solid rgb(34,34,34)", padding: "16px", display: "flex", alignItems: "flex-end", gap: "8px", justifyContent: "space-between" },
+                        children: [0.3, 0.5, 0.4, 0.7, 0.6, 0.9, 0.8, 1.0].map((hVal, i) => 
+                            h("div", {
+                                key: i,
+                                style: {
+                                    flex: 1,
+                                    height: `${hVal * 100}%`,
+                                    backgroundColor: i === 7 ? "rgba(189, 78, 255, 0.4)" : "rgba(255,255,255,0.05)",
+                                    borderRadius: "2px 2px 0 0",
+                                    transformOrigin: "bottom",
+                                    animation: `barGrow 1s ease-out ${i * 0.1}s both`
+                                }
+                            })
+                        )
+                    })
+                ]
+            })
+        ]
+    })
+],
                   }),
                 }),
               }),
@@ -31214,4 +30754,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v20.mjs.map
+//# sourceMappingURL=xELU-v21.mjs.map
