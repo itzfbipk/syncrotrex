@@ -27521,7 +27521,7 @@ e(() => {
         }
     `}}),
     h("div", {
-        style: { width: "100%", padding: "20px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)", marginTop: "10px" },
+        style: { height: "180px", width: "100%", padding: "20px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)", marginTop: "24px" },
         children: [
             h("div", {
                 style: { display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "12px", marginBottom: "16px" },
@@ -27538,7 +27538,7 @@ e(() => {
                     h("div", { style: { position: "absolute", left: "14px", top: "6px", width: "1px", backgroundColor: "#c96ef0", animation: "drawLine 1s ease-out forwards" } }),
                     
                     h("div", {
-                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "16px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.2s" },
+                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "10px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.2s" },
                         children: [
                             h("div", { style: { position: "absolute", left: "0px", top: "4px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "#c96ef0", animation: "pulseDotPurple 2s infinite", zIndex: 2 } }),
                             h("div", {
@@ -27560,7 +27560,7 @@ e(() => {
                     }),
                     
                     h("div", {
-                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "16px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.4s" },
+                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "10px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.4s" },
                         children: [
                             h("div", { style: { position: "absolute", left: "1px", top: "4px", width: "3px", height: "3px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.2)", zIndex: 2 } }),
                             h("div", {
