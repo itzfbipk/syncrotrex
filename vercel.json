@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/scripts/main-v22.mjs",
+      "source": "/scripts/main-v23.mjs",
       "headers": [
         {
           "key": "Content-Type",
@@ -62,7 +62,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "</scripts/react.mjs>; rel=modulepreload; as=script, </scripts/rolldown-runtime.mjs>; rel=modulepreload; as=script, </scripts/motion.mjs>; rel=modulepreload; as=script, </scripts/core-lib.mjs>; rel=modulepreload; as=script, </scripts/main-v22.mjs>; rel=modulepreload; as=script"
+          "value": "</scripts/react.mjs>; rel=modulepreload; as=script, </scripts/rolldown-runtime.mjs>; rel=modulepreload; as=script, </scripts/motion.mjs>; rel=modulepreload; as=script, </scripts/core-lib.mjs>; rel=modulepreload; as=script, </scripts/main-v23.mjs>; rel=modulepreload; as=script"
         }
       ]
     }
@@ -70,11 +70,11 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/(the-future-of-ai-automation-how-it-s-changing-business-operations|5-must-have-ai-tools-to-streamline-your-business|ai-vs-manual-work-which-one-saves-more-time-money|how-ai-is-transforming-workflow-automation-for-businesses).html",
+      "source": "/(the-future-of-custom-software-how-custom-systems-drive-growth|5-essential-saas-tools-to-streamline-your-business|custom-software-vs-manual-work-how-automation-saves-time-money|how-custom-software-is-transforming-operations).html",
       "destination": "/blog/$1"
     },
     {
-      "source": "/blog/(the-future-of-ai-automation-how-it-s-changing-business-operations|5-must-have-ai-tools-to-streamline-your-business|ai-vs-manual-work-which-one-saves-more-time-money|how-ai-is-transforming-workflow-automation-for-businesses).html",
+      "source": "/blog/(the-future-of-custom-software-how-custom-systems-drive-growth|5-essential-saas-tools-to-streamline-your-business|custom-software-vs-manual-work-how-automation-saves-time-money|how-custom-software-is-transforming-operations).html",
       "destination": "/blog/$1"
     }
   ]
