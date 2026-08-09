@@ -3549,8 +3549,8 @@ var nr,
                                         showCursor: !0,
                                         text: [
                                           `Generate a invoice`,
-                                          `Schedule a 30 day content`,
-                                          `Provide me full report`,
+                                          `Create a new project`,
+                                          `Create a new project`,
                                         ],
                                         typeSpeed: 150,
                                         width: `100%`,
@@ -3666,7 +3666,7 @@ var nr,
                                         children: _(C.p, {
                                           className: `framer-styles-preset-11j7728`,
                                           "data-styles-preset": `nWaHBmz7N`,
-                                          children: `Add document`,
+                                          children: `Create a new project`,
                                         }),
                                       }),
                                       className: `framer-jldocp`,
@@ -3755,7 +3755,7 @@ var nr,
                                         children: _(C.p, {
                                           className: `framer-styles-preset-11j7728`,
                                           "data-styles-preset": `nWaHBmz7N`,
-                                          children: `Analyze`,
+                                          children: `Analytics`,
                                         }),
                                       }),
                                       className: `framer-dbw4n4`,
@@ -3894,7 +3894,7 @@ var nr,
                                           children: _(C.p, {
                                             className: `framer-styles-preset-11j7728`,
                                             "data-styles-preset": `nWaHBmz7N`,
-                                            children: `research`,
+                                            children: `Settings`,
                                           }),
                                         }),
                                         className: `framer-vafvr5`,
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v13.mjs.map
+//# sourceMappingURL=xELU-v14.mjs.map
