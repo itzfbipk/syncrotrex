@@ -2370,9 +2370,9 @@ var At,
                     style: { display: "flex", justifyContent: "space-between", alignItems: "center" },
                     children: [
                         h("div", { style: { display: "flex", alignItems: "center", gap: "10px" }, children: [
-                            h("div", { style: { display: "flex", alignItems: "center", justifyContent: "center", width: "14px", height: "14px", borderRadius: "50%", backgroundColor: "rgba(39,201,63,0.15)" }, children: 
+                            h("div", { style: { display: "flex", alignItems: "center", justifyContent: "center", width: "14px", height: "14px", borderRadius: "50%", backgroundColor: "rgba(189, 78, 255, 0.15)" }, children: 
                                 h("svg", { width: "8", height: "8", viewBox: "0 0 10 10", fill: "none", children: 
-                                    h("path", { d: "M2 5L4 7L8 3", stroke: "#27c93f", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })
+                                    h("path", { d: "M2 5L4 7L8 3", stroke: "#c96ef0", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" })
                                 })
                             }),
                             h("div", { style: { fontSize: "11px", color: "rgba(255,255,255,0.6)", fontWeight: "400" }, children: item.name })
@@ -2382,10 +2382,10 @@ var At,
                 }))
             }),
             h("div", {
-                style: { marginTop: "auto", padding: "8px", borderRadius: "6px", backgroundColor: "rgba(39,201,63,0.05)", border: "1px solid rgba(39,201,63,0.1)", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" },
+                style: { marginTop: "auto", padding: "8px", borderRadius: "6px", backgroundColor: "rgba(189, 78, 255, 0.05)", border: "1px solid rgba(189, 78, 255, 0.15)", display: "flex", alignItems: "center", justifyContent: "center", gap: "6px" },
                 children: [
-                    h("div", { style: { width: "4px", height: "4px", borderRadius: "50%", backgroundColor: "#27c93f", boxShadow: "0 0 4px #27c93f" } }),
-                    h("div", { style: { fontSize: "10px", fontWeight: "500", color: "#27c93f" }, children: "All checks passed" })
+                    h("div", { style: { width: "4px", height: "4px", borderRadius: "50%", backgroundColor: "#c96ef0", boxShadow: "0 0 4px #c96ef0" } }),
+                    h("div", { style: { fontSize: "10px", fontWeight: "500", color: "#e3a8ff" }, children: "All checks passed" })
                 ]
             })
         ]
@@ -6595,49 +6595,30 @@ var Si,
             h("div", {
                 style: { display: "flex", justifyContent: "space-between", alignItems: "center" },
                 children: [
-                    h("div", { style: { fontSize: "12px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px" }, children: "System Metrics" }),
-                    h("div", { style: { display: "flex", alignItems: "center", gap: "4px", padding: "4px 8px", backgroundColor: "rgba(189, 78, 255, 0.1)", borderRadius: "4px", border: "1px solid rgba(189, 78, 255, 0.2)" }, children: [
-                        h("div", { style: { width: "4px", height: "4px", borderRadius: "50%", backgroundColor: "#c96ef0", boxShadow: "0 0 4px #c96ef0" } }),
-                        h("div", { style: { fontSize: "9px", color: "#e3a8ff", fontWeight: "500" }, children: "LIVE" })
-                    ]})
+                    h("div", { style: { fontSize: "12px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px" }, children: "Production Cluster" }),
+                    h("div", { style: { fontSize: "9px", color: "#e3a8ff", border: "1px solid rgba(189, 78, 255, 0.2)", backgroundColor: "rgba(189, 78, 255, 0.05)", padding: "4px 8px", borderRadius: "4px", fontWeight: "500" }, children: "SCALING ACTIVE" })
                 ]
             }),
             h("div", {
-                style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px" },
+                style: { display: "flex", gap: "10px", marginTop: "4px" },
                 children: [
-                    h("div", { style: { padding: "10px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.05)", display: "flex", flexDirection: "column", gap: "4px" }, children: [
-                        h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.4)" }, children: "Uptime" }),
-                        h("div", { style: { fontSize: "14px", fontWeight: "600", color: "white" }, children: "99.99%" })
-                    ]}),
-                    h("div", { style: { padding: "10px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.05)", display: "flex", flexDirection: "column", gap: "4px" }, children: [
-                        h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.4)" }, children: "Latency" }),
-                        h("div", { style: { fontSize: "14px", fontWeight: "600", color: "white" }, children: "45ms" })
-                    ]})
-                ]
+                    { name: "us-east-1" },
+                    { name: "eu-west-1" },
+                    { name: "ap-south-1" }
+                ].map((node, i) => h("div", {
+                    key: i,
+                    style: { flex: 1, height: "64px", borderRadius: "6px", backgroundColor: "rgba(255,255,255,0.02)", border: "1px solid rgba(189, 78, 255, 0.2)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: "8px" },
+                    children: [
+                        h("div", { style: { width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#c96ef0", boxShadow: "0 0 6px rgba(201, 110, 240, 0.5)" } }),
+                        h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.6)", fontFamily: "monospace" }, children: node.name })
+                    ]
+                }))
             }),
             h("div", {
-                style: { flex: 1, backgroundColor: "rgba(255,255,255,0.02)", borderRadius: "6px", border: "1px solid rgba(255,255,255,0.05)", padding: "12px", display: "flex", flexDirection: "column", justifyContent: "flex-end", position: "relative", overflow: "hidden" },
+                style: { marginTop: "auto", padding: "10px 12px", borderRadius: "6px", backgroundColor: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.05)", display: "flex", alignItems: "center", justifyContent: "space-between" },
                 children: [
-                    h("div", { style: { position: "absolute", top: "10px", left: "12px", fontSize: "10px", color: "rgba(255,255,255,0.4)" }, children: "Traffic (Last 24h)" }),
-                    h("svg", {
-                        style: { width: "100%", height: "40px", overflow: "visible", marginTop: "10px" },
-                        viewBox: "0 0 100 30",
-                        preserveAspectRatio: "none",
-                        children: [
-                            h("path", {
-                                d: "M 0 30 L 0 20 L 20 15 L 40 22 L 60 10 L 80 18 L 100 5 L 100 30 Z",
-                                fill: "rgba(189, 78, 255, 0.15)"
-                            }),
-                            h("path", {
-                                d: "M 0 20 L 20 15 L 40 22 L 60 10 L 80 18 L 100 5",
-                                fill: "none",
-                                stroke: "#c96ef0",
-                                strokeWidth: "1.5",
-                                strokeLinecap: "round",
-                                strokeLinejoin: "round"
-                            })
-                        ]
-                    })
+                    h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)" }, children: "Global Requests" }),
+                    h("div", { style: { fontSize: "11px", color: "white", fontWeight: "500" }, children: "+24% this week" })
                 ]
             })
         ]
