@@ -301,7 +301,7 @@ e(() => {
                                       id: `D4qQW1O_4`,
                                       IHCtoN6iC: !0,
                                       layoutId: `D4qQW1O_4`,
-                                      NAbd17i0q: `Back to Home ↗`,
+                                      NAbd17i0q: `Back to Home`,
                                       t90xdY6CE: e[0],
                                       width: `100%`,
                                       yt52UU3wF: 15,
@@ -455,4 +455,4 @@ e(() => {
     }));
 })();
 export { $ as __FramerMetadata__, Q as default };
-//# sourceMappingURL=F14rJUK9xIRohwgQCYzhbq6ZOLvVFre6S-3EGljppYw-v2.mjs.map
+//# sourceMappingURL=F14rJUK9xIRohwgQCYzhbq6ZOLvVFre6S-3EGljppYw-v3.mjs.map
