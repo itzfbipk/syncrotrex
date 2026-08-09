@@ -2365,7 +2365,7 @@ e(() => {
                                     style: { width: `100%` },
                                     tROcSwVFn: `rocket-launch`,
                                     width: `100%`,
-                                    WRf1ayP2O: `We help businesses scale faster with custom systems, reducing manual overhead and unlocking new opportunities.`,
+                                    WRf1ayP2O: `We create software that helps businesses improve efficiency and scale with confidence.`,
                                     yqjkOCtKz: ` Empowering Business Growth`,
                                   }),
                                 }),
@@ -4130,4 +4130,4 @@ e(() => {
     }));
 })();
 export { vn as __FramerMetadata__, _n as default };
-//# sourceMappingURL=2snrshBMMPU1ahGKcLDDD4HdYotrc32ImZBjdInFUZ0-v2.mjs.map
+//# sourceMappingURL=2snrshBMMPU1ahGKcLDDD4HdYotrc32ImZBjdInFUZ0-v3.mjs.map
