@@ -5865,371 +5865,113 @@ var Rr,
                     ...c,
                   },
                   children: [
-                    h(C.div, {
-                      className: `framer-t43b0f`,
-                      "data-framer-name": `Greeting`,
-                      layoutDependency: w,
-                      layoutId: `dM3_4SJ9l`,
-                      children: [
-                        _(j, {
-                          __fromCanvasComponent: !0,
-                          children: _(u, {
-                            children: _(C.p, {
-                              className: `framer-styles-preset-1kdv3c8`,
-                              "data-styles-preset": `PDoVxFHq4`,
-                              children: `Hey David!`,
-                            }),
-                          }),
-                          className: `framer-1do58yz`,
-                          fonts: [`Inter`],
-                          layoutDependency: w,
-                          layoutId: `p79g6bBkD`,
-                          style: {
-                            "--framer-link-text-color": `rgb(0, 153, 255)`,
-                            "--framer-link-text-decoration": `underline`,
-                          },
-                          verticalAlignment: `top`,
-                          withExternalLayout: !0,
-                        }),
-                        _(j, {
-                          __fromCanvasComponent: !0,
-                          children: _(u, {
-                            children: _(C.p, {
-                              className: `framer-styles-preset-11j7728`,
-                              "data-styles-preset": `nWaHBmz7N`,
-                              children: `Here is your Custom project & schedule`,
-                            }),
-                          }),
-                          className: `framer-t0g105`,
-                          fonts: [`Inter`],
-                          layoutDependency: w,
-                          layoutId: `Ps_7zCIC0`,
-                          style: {
-                            "--framer-link-text-color": `rgb(0, 153, 255)`,
-                            "--framer-link-text-decoration": `underline`,
-                          },
-                          verticalAlignment: `top`,
-                          withExternalLayout: !0,
-                        }),
-                      ],
+    h("style", {
+        dangerouslySetInnerHTML: {
+            __html: `
+                @keyframes pulsePath {
+                    0% { stroke-dashoffset: 24; opacity: 0.3; }
+                    50% { opacity: 1; }
+                    100% { stroke-dashoffset: 0; opacity: 0.3; }
+                }
+                .workflow-minimal * { box-sizing: border-box; }
+            `
+        }
+    }),
+    h("div", {
+        className: "workflow-minimal",
+        style: {
+            display: "flex", flexDirection: "column", width: "100%", height: "100%",
+            backgroundColor: "#050505", overflow: "hidden", 
+            fontFamily: "'Inter', sans-serif", color: "white", padding: "0",
+            position: "relative"
+        },
+        children: [
+            h("div", {
+                style: { display: "flex", alignItems: "center", justifyContent: "space-between", padding: "16px 20px", borderBottom: "1px solid rgb(34,34,34)", backgroundColor: "transparent" },
+                children: [
+                    h("div", {
+                        style: { display: "flex", gap: "10px", alignItems: "center" },
+                        children: [
+                            h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(189, 78, 255, 0.4)" } }),
+                            h("div", { style: { fontSize: "12px", fontWeight: "600", color: "rgba(255,255,255,0.9)", letterSpacing: "0.5px" }, children: "Data Sync Pipeline" })
+                        ]
                     }),
-                    h(C.div, {
-                      className: `framer-14gubyk`,
-                      "data-border": !0,
-                      "data-framer-name": `Graph`,
-                      layoutDependency: w,
-                      layoutId: `cRYsXuf7g`,
-                      style: {
-                        "--border-bottom-width": `1px`,
-                        "--border-color": `rgb(34, 34, 34)`,
-                        "--border-left-width": `1px`,
-                        "--border-right-width": `1px`,
-                        "--border-style": `solid`,
-                        "--border-top-width": `1px`,
-                        backgroundColor: `var(--token-cfb0af42-62a5-486a-837b-9870b5e7030b, rgba(255, 255, 255, 0.05))`,
-                        borderBottomLeftRadius: 8,
-                        borderBottomRightRadius: 8,
-                        borderTopLeftRadius: 8,
-                        borderTopRightRadius: 8,
-                      },
-                      children: [
-                        h(C.div, {
-                          className: `framer-1rmtlzm`,
-                          "data-framer-name": `Ongoing project`,
-                          layoutDependency: w,
-                          layoutId: `U_7JN6XNz`,
-                          children: [
-                            h(C.div, {
-                              className: `framer-18e4cw1`,
-                              "data-framer-name": `Icon and heading`,
-                              layoutDependency: w,
-                              layoutId: `h0kh_KtP5`,
-                              children: [
-                                _(R, {
-                                  children: _(k, {
-                                    className: `framer-19w4k3z-container`,
-                                    isAuthoredByUser: !0,
-                                    isModuleExternal: !0,
-                                    layoutDependency: w,
-                                    layoutId: `NtjxCDhpY-container`,
-                                    nodeId: `NtjxCDhpY`,
-                                    rendersWithMotion: !0,
-                                    scopeId: `jHzgcS4xV`,
-                                    children: _(z, {
-                                      color: `var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75))`,
-                                      height: `100%`,
-                                      iconSearch: `sliders-horizontal`,
-                                      iconSelection: `House`,
-                                      id: `NtjxCDhpY`,
-                                      layoutId: `NtjxCDhpY`,
-                                      mirrored: !1,
-                                      selectByList: !1,
-                                      style: { height: `100%`, width: `100%` },
-                                      weight: `fill`,
-                                      width: `100%`,
-                                    }),
-                                  }),
-                                }),
-                                _(j, {
-                                  __fromCanvasComponent: !0,
-                                  children: _(u, {
-                                    children: _(C.p, {
-                                      className: `framer-styles-preset-1kdv3c8`,
-                                      "data-styles-preset": `PDoVxFHq4`,
-                                      children: `On going project : `,
-                                    }),
-                                  }),
-                                  className: `framer-1vvkmp8`,
-                                  fonts: [`Inter`],
-                                  layoutDependency: w,
-                                  layoutId: `AbB32T1Ng`,
-                                  style: {
-                                    "--framer-link-text-color": `rgb(0, 153, 255)`,
-                                    "--framer-link-text-decoration": `underline`,
-                                  },
-                                  verticalAlignment: `top`,
-                                  withExternalLayout: !0,
-                                }),
-                              ],
-                            }),
-                            h(C.div, {
-                              className: `framer-1biqwwi`,
-                              "data-border": !0,
-                              "data-framer-name": `Project details`,
-                              layoutDependency: w,
-                              layoutId: `ZE89uMCVz`,
-                              style: {
-                                "--border-bottom-width": `1px`,
-                                "--border-color": `rgb(34, 34, 34)`,
-                                "--border-left-width": `1px`,
-                                "--border-right-width": `1px`,
-                                "--border-style": `solid`,
-                                "--border-top-width": `1px`,
-                                backgroundColor: `var(--token-cfb0af42-62a5-486a-837b-9870b5e7030b, rgba(255, 255, 255, 0.05))`,
-                                borderBottomLeftRadius: 4,
-                                borderBottomRightRadius: 4,
-                                borderTopLeftRadius: 4,
-                                borderTopRightRadius: 4,
-                              },
-                              children: [
-                                h(C.div, {
-                                  className: `framer-1mjoqj5`,
-                                  "data-framer-name": `Landing Pages`,
-                                  layoutDependency: w,
-                                  layoutId: `Aidf0Tcew`,
-                                  children: [
-                                    _(C.div, {
-                                      className: `framer-15oslw7`,
-                                      "data-framer-name": `Icon holder`,
-                                      layoutDependency: w,
-                                      layoutId: `Hk5vVBg_O`,
-                                      style: {
-                                        backgroundColor: `var(--token-cfb0af42-62a5-486a-837b-9870b5e7030b, rgba(255, 255, 255, 0.05))`,
-                                        borderBottomLeftRadius: 4,
-                                        borderBottomRightRadius: 4,
-                                        borderTopLeftRadius: 4,
-                                        borderTopRightRadius: 4,
-                                      },
-                                      children: _(R, {
-                                        children: _(k, {
-                                          className: `framer-1ywt5kw-container`,
-                                          isAuthoredByUser: !0,
-                                          isModuleExternal: !0,
-                                          layoutDependency: w,
-                                          layoutId: `wdGpWvCoF-container`,
-                                          nodeId: `wdGpWvCoF`,
-                                          rendersWithMotion: !0,
-                                          scopeId: `jHzgcS4xV`,
-                                          children: _(z, {
-                                            color: `var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, rgb(255, 255, 255))`,
-                                            height: `100%`,
-                                            iconSearch: `robot`,
-                                            iconSelection: `House`,
-                                            id: `wdGpWvCoF`,
-                                            layoutId: `wdGpWvCoF`,
-                                            mirrored: !1,
-                                            selectByList: !1,
-                                            style: {
-                                              height: `100%`,
-                                              width: `100%`,
-                                            },
-                                            weight: `regular`,
-                                            width: `100%`,
-                                          }),
-                                        }),
-                                      }),
-                                    }),
-                                    h(C.div, {
-                                      className: `framer-1mrs1hv`,
-                                      "data-framer-name": `task and status`,
-                                      layoutDependency: w,
-                                      layoutId: `kShwP1sX5`,
-                                      children: [
-                                        _(j, {
-                                          __fromCanvasComponent: !0,
-                                          children: _(u, {
-                                            children: _(C.p, {
-                                              className: `framer-styles-preset-1kdv3c8`,
-                                              "data-styles-preset": `PDoVxFHq4`,
-                                              children: `Customer Support Chatbot`,
-                                            }),
-                                          }),
-                                          className: `framer-2zfkl`,
-                                          fonts: [`Inter`],
-                                          layoutDependency: w,
-                                          layoutId: `RvHDhloCA`,
-                                          style: {
-                                            "--framer-link-text-color": `rgb(0, 153, 255)`,
-                                            "--framer-link-text-decoration": `underline`,
-                                          },
-                                          verticalAlignment: `top`,
-                                          withExternalLayout: !0,
-                                        }),
-                                        _(j, {
-                                          __fromCanvasComponent: !0,
-                                          children: _(u, {
-                                            children: _(C.p, {
-                                              className: `framer-styles-preset-11j7728`,
-                                              "data-styles-preset": `nWaHBmz7N`,
-                                              children: `90% Finsihed`,
-                                            }),
-                                          }),
-                                          className: `framer-1jiwsze`,
-                                          fonts: [`Inter`],
-                                          layoutDependency: w,
-                                          layoutId: `r5hIvkqwA`,
-                                          style: {
-                                            "--framer-link-text-color": `rgb(0, 153, 255)`,
-                                            "--framer-link-text-decoration": `underline`,
-                                          },
-                                          verticalAlignment: `top`,
-                                          withExternalLayout: !0,
-                                        }),
-                                      ],
-                                    }),
-                                  ],
-                                }),
-                                _(C.div, {
-                                  className: `framer-131mwd9`,
-                                  "data-framer-name": `Icon holder`,
-                                  layoutDependency: w,
-                                  layoutId: `cpa0QvawZ`,
-                                  style: {
-                                    borderBottomLeftRadius: 4,
-                                    borderBottomRightRadius: 4,
-                                    borderTopLeftRadius: 4,
-                                    borderTopRightRadius: 4,
-                                  },
-                                  children: _(R, {
-                                    children: _(k, {
-                                      className: `framer-1irpflc-container`,
-                                      isAuthoredByUser: !0,
-                                      isModuleExternal: !0,
-                                      layoutDependency: w,
-                                      layoutId: `LxMZ8tKSq-container`,
-                                      nodeId: `LxMZ8tKSq`,
-                                      rendersWithMotion: !0,
-                                      scopeId: `jHzgcS4xV`,
-                                      children: _(z, {
-                                        color: `var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgb(204, 204, 204))`,
-                                        height: `100%`,
-                                        iconSearch: `circle-notch`,
-                                        iconSelection: `House`,
-                                        id: `LxMZ8tKSq`,
-                                        layoutId: `LxMZ8tKSq`,
-                                        mirrored: !1,
-                                        selectByList: !1,
-                                        style: {
-                                          height: `100%`,
-                                          width: `100%`,
-                                        },
-                                        weight: `bold`,
-                                        width: `100%`,
-                                      }),
-                                    }),
-                                  }),
-                                }),
-                              ],
-                            }),
-                          ],
-                        }),
-                        _(C.div, {
-                          className: `framer-1xenzjc`,
-                          "data-framer-name": `divider`,
-                          layoutDependency: w,
-                          layoutId: `IYD1b86e3`,
-                          style: {
-                            background: `linear-gradient(269deg, rgba(255, 255, 255, 0) -0.45045045045045046%, var(--token-d072d1f5-ef86-4b7c-bae1-6c9f6238e10b, rgba(255, 255, 255, 0.75)) 51.05104188661318%, rgba(255, 255, 255, 0) 100%)`,
-                            opacity: 0.6,
-                          },
-                        }),
-                        _(R, {
-                          height:
-                            Math.max(
-                              0,
-                              (Math.max(0, ((s?.height || 300) - 25 - 82) / 1) *
-                                1 -
-                                20 -
-                                85) /
-                                1,
-                            ) * 1,
-                          width: `calc(${s?.width || `100vw`} - 50px)`,
-                          y:
-                            (s?.y || 0) +
-                            15 +
-                            (((s?.height || 300) -
-                              25 -
-                              (72 +
-                                Math.max(
-                                  0,
-                                  ((s?.height || 300) - 25 - 82) / 1,
-                                ) *
-                                  1 +
-                                10)) /
-                              2 +
-                              72 +
-                              10) +
-                            10 +
-                            ((Math.max(0, ((s?.height || 300) - 25 - 82) / 1) *
-                              1 -
-                              20 -
-                              (65 +
-                                Math.max(
-                                  0,
-                                  (Math.max(
-                                    0,
-                                    ((s?.height || 300) - 25 - 82) / 1,
-                                  ) *
-                                    1 -
-                                    20 -
-                                    85) /
-                                    1,
-                                ) *
-                                  1 +
-                                20)) /
-                              2 +
-                              65 +
-                              20),
-                          children: _(k, {
-                            className: `framer-1qqy14g-container`,
-                            layoutDependency: w,
-                            layoutId: `T1PN8YBPI-container`,
-                            nodeId: `T1PN8YBPI`,
-                            rendersWithMotion: !0,
-                            scopeId: `jHzgcS4xV`,
-                            children: _(Yr, {
-                              height: `100%`,
-                              id: `T1PN8YBPI`,
-                              layoutId: `T1PN8YBPI`,
-                              style: { height: `100%`, width: `100%` },
-                              variant: `mQdrktbBq`,
-                              width: `100%`,
-                            }),
-                          }),
-                        }),
-                      ],
+                    h("div", {
+                        style: { display: "flex", gap: "8px", alignItems: "center" },
+                        children: [
+                            h("div", { style: { width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "#27c93f", boxShadow: "0 0 5px #27c93f" } }),
+                            h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)" }, children: "Running" })
+                        ]
+                    })
+                ]
+            }),
+            h("div", {
+                style: { flex: 1, position: "relative", padding: "20px" },
+                children: [
+                    h("div", {
+                        style: { position: "absolute", top: "40px", left: "20px", width: "140px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.02)", display: "flex", flexDirection: "column", gap: "8px", zIndex: 10 },
+                        children: [
+                            h("div", { style: { display: "flex", alignItems: "center", gap: "6px" }, children: [
+                                h("div", { style: { width: "12px", height: "12px", borderRadius: "3px", backgroundColor: "rgba(255,255,255,0.2)" } }),
+                                h("div", { style: { fontSize: "10px", fontWeight: "600", color: "white" }, children: "Webhook" })
+                            ]}),
+                            h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Listens for new entries" })
+                        ]
                     }),
-                  ],
+                    h("div", {
+                        style: { position: "absolute", top: "140px", left: "100px", width: "140px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(189, 78, 255, 0.3)", backgroundColor: "rgba(189, 78, 255, 0.05)", display: "flex", flexDirection: "column", gap: "8px", zIndex: 10 },
+                        children: [
+                            h("div", { style: { display: "flex", alignItems: "center", gap: "6px" }, children: [
+                                h("div", { style: { width: "12px", height: "12px", borderRadius: "3px", backgroundColor: "rgba(189, 78, 255, 0.6)" } }),
+                                h("div", { style: { fontSize: "10px", fontWeight: "600", color: "#c96ef0" }, children: "Transform" })
+                            ]}),
+                            h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Format data structure" })
+                        ]
+                    }),
+                    h("div", {
+                        style: { position: "absolute", top: "40px", right: "20px", width: "140px", padding: "12px", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.02)", display: "flex", flexDirection: "column", gap: "8px", zIndex: 10 },
+                        children: [
+                            h("div", { style: { display: "flex", alignItems: "center", gap: "6px" }, children: [
+                                h("div", { style: { width: "12px", height: "12px", borderRadius: "3px", backgroundColor: "rgba(255,255,255,0.2)" } }),
+                                h("div", { style: { fontSize: "10px", fontWeight: "600", color: "white" }, children: "Database" })
+                            ]}),
+                            h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)" }, children: "Insert new records" })
+                        ]
+                    }),
+                    h("svg", {
+                        style: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%", pointerEvents: "none", zIndex: 1 },
+                        children: [
+                            h("path", {
+                                d: "M 90 95 C 90 120, 170 115, 170 140",
+                                fill: "none",
+                                stroke: "rgba(189, 78, 255, 0.5)",
+                                strokeWidth: "2",
+                                strokeDasharray: "4 4",
+                                style: { animation: "pulsePath 1s linear infinite" }
+                            }),
+                            h("path", {
+                                d: "M 170 200 C 170 230, 290 150, 290 95",
+                                fill: "none",
+                                stroke: "rgba(189, 78, 255, 0.5)",
+                                strokeWidth: "2",
+                                strokeDasharray: "4 4",
+                                style: { animation: "pulsePath 1s linear infinite reverse" }
+                            })
+                        ]
+                    }),
+                    h("div", {
+                        style: { position: "absolute", bottom: "16px", left: "16px", right: "16px", padding: "10px", borderRadius: "6px", backgroundColor: "rgba(0,0,0,0.4)", border: "1px solid rgb(34,34,34)", display: "flex", flexDirection: "column", gap: "4px" },
+                        children: [
+                            h("div", { style: { fontSize: "8px", color: "rgba(255,255,255,0.3)", fontFamily: "monospace" }, children: "> [14:02:44] Webhook received payload (2.4kb)" }),
+                            h("div", { style: { fontSize: "8px", color: "#c96ef0", fontFamily: "monospace" }, children: "> [14:02:45] Transformation successful. Mapped 14 fields." }),
+                            h("div", { style: { fontSize: "8px", color: "rgba(255,255,255,0.3)", fontFamily: "monospace" }, children: "> [14:02:46] Pushing to Database..." })
+                        ]
+                    })
+                ]
+            })
+        ]
+    })
+],
                 }),
               }),
             }),
@@ -30754,4 +30496,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v21.mjs.map
+//# sourceMappingURL=xELU-v22.mjs.map
