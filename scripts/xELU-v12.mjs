@@ -1641,7 +1641,7 @@ var At,
                   ...g,
                   ...te,
                   className: A(T, `framer-g1r6w4`, d, v),
-                  "data-framer-name": `Analyze`,
+                  "data-framer-name": `Users`,
                   layoutDependency: w,
                   layoutId: `ufb3kHskH`,
                   ref: r,
@@ -3440,7 +3440,7 @@ var nr,
                                 style: {
                                   "--framer-text-color": `var(--esyncrotrexed-r6o4lv, var(--token-55fce8bf-ab86-42dc-8b77-6335cf9cf588, rgb(255, 255, 255)))`,
                                 },
-                                children: `What can I help with?`,
+                                children: `Workspace Overview`,
                               }),
                             }),
                             className: `framer-9bsz1q`,
@@ -3462,7 +3462,7 @@ var nr,
                                 className: `framer-styles-preset-11j7728`,
                                 "data-styles-preset": `nWaHBmz7N`,
                                 style: { "--framer-text-alignment": `center` },
-                                children: `Weather you want help in  customer handling or make changes in your system just give me command`,
+                                children: `Active Users — 1,284  |  Projects — 24  |  Revenue — $18,420  |  Growth — +24.8%`,
                               }),
                             }),
                             className: `framer-mzaa60`,
@@ -3824,7 +3824,7 @@ var nr,
                                         children: _(C.p, {
                                           className: `framer-styles-preset-11j7728`,
                                           "data-styles-preset": `nWaHBmz7N`,
-                                          children: `Generate Image`,
+                                          children: `Revenue`,
                                         }),
                                       }),
                                       className: `framer-usfrzp`,
@@ -3844,7 +3844,7 @@ var nr,
                                   h(C.div, {
                                     className: `framer-ytz5sw`,
                                     "data-border": !0,
-                                    "data-framer-name": `research`,
+                                    "data-framer-name": `Settings`,
                                     layoutDependency: S,
                                     layoutId: `ZOyUxzmgG`,
                                     style: {
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v11.mjs.map
+//# sourceMappingURL=xELU-v12.mjs.map
