@@ -66,5 +66,16 @@
         }
       ]
     }
+  ],
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(the-future-of-ai-automation-how-it-s-changing-business-operations|5-must-have-ai-tools-to-streamline-your-business|ai-vs-manual-work-which-one-saves-more-time-money|how-ai-is-transforming-workflow-automation-for-businesses).html",
+      "destination": "/blog/$1"
+    },
+    {
+      "source": "/blog/(the-future-of-ai-automation-how-it-s-changing-business-operations|5-must-have-ai-tools-to-streamline-your-business|ai-vs-manual-work-which-one-saves-more-time-money|how-ai-is-transforming-workflow-automation-for-businesses).html",
+      "destination": "/blog/$1"
+    }
   ]
 }
