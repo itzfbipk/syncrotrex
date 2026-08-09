@@ -30032,7 +30032,7 @@ e(() => {
                                         nodeId: `VjbSZ0E2x`,
                                         scopeId: `augiA20Il`,
                                         children: _(V, {
-                                          b5FKc3lDF: `Custom Projects`,
+                                          b5FKc3lDF: `Custom Software`,
                                           height: `100%`,
                                           id: `VjbSZ0E2x`,
                                           layoutId: `VjbSZ0E2x`,
@@ -30052,7 +30052,7 @@ e(() => {
                                             children: _(`h3`, {
                                               className: `framer-styles-preset-gb7odv`,
                                               "data-styles-preset": `fkWhWxW4E`,
-                                              children: `Build Smarter Systems`,
+                                              children: `Turn your workflow into software`,
                                             }),
                                           }),
                                           className: `framer-ztlhvi`,
@@ -30066,7 +30066,7 @@ e(() => {
                                             children: _(`p`, {
                                               className: `framer-styles-preset-16w1u5n`,
                                               "data-styles-preset": `csUbUKGQ_`,
-                                              children: `Whether you're starting from scratch or enhancing an existing system, we offer strategic consulting and develop custom AI projects aligned with your unique goals.`,
+                                              children: `We build custom software that replaces repetitive manual processes with powerful systems tailored to how your business actually operates.`,
                                             }),
                                           }),
                                           className: `framer-1eoib0c`,
@@ -30087,7 +30087,7 @@ e(() => {
                                             nodeId: `xHghwXQmh`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Strategy`,
+                                              b5FKc3lDF: `Business Systems`,
                                               height: `100%`,
                                               id: `xHghwXQmh`,
                                               layoutId: `xHghwXQmh`,
@@ -30104,7 +30104,7 @@ e(() => {
                                             nodeId: `nka81atkv`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Custom AI`,
+                                              b5FKc3lDF: `Internal Tools`,
                                               height: `100%`,
                                               id: `nka81atkv`,
                                               layoutId: `nka81atkv`,
@@ -30121,7 +30121,7 @@ e(() => {
                                             nodeId: `PaJc7YXFa`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Consulting`,
+                                              b5FKc3lDF: `Automation`,
                                               height: `100%`,
                                               id: `PaJc7YXFa`,
                                               layoutId: `PaJc7YXFa`,
@@ -32427,4 +32427,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-3U21kcWe8W5AbSamPid6D4TkCQCHGRNX-qsr84.mjs.map
+//# sourceMappingURL=xELU-v2.mjs.map
