@@ -689,7 +689,7 @@ var At,
       Ce(H, {
         slots: {
           type: N.Array,
-          title: `Content`,
+          title: `Landing Pages`,
           control: { type: N.ComponentInstance },
         },
         direction: {
@@ -6474,7 +6474,7 @@ var Rr,
                               children: [
                                 h(C.div, {
                                   className: `framer-1mjoqj5`,
-                                  "data-framer-name": `Content`,
+                                  "data-framer-name": `Landing Pages`,
                                   layoutDependency: w,
                                   layoutId: `Aidf0Tcew`,
                                   children: [
@@ -7208,7 +7208,7 @@ var Rr,
         gdVtD7Q8q: {
           defaultValue: `We provided AI-driven workflow automation, reducing manual tasks and improving efficiency across teams.`,
           displayTextArea: !0,
-          title: `Content`,
+          title: `Landing Pages`,
           type: N.String,
         },
         rcimQWe5n: {
@@ -8625,7 +8625,7 @@ var $i,
                     }),
                     h(C.div, {
                       className: `framer-170ubof`,
-                      "data-framer-name": `Content`,
+                      "data-framer-name": `Landing Pages`,
                       layoutDependency: D,
                       layoutId: `Ff4qWO4cD`,
                       children: [
@@ -29107,7 +29107,7 @@ e(() => {
                         }),
                         h(`div`, {
                           className: `framer-1tugo5b`,
-                          "data-framer-name": `Content`,
+                          "data-framer-name": `Landing Pages`,
                           children: [
                             h(`div`, {
                               className: `framer-hq82fe`,
@@ -29321,7 +29321,7 @@ e(() => {
                         __perspectiveFX: !1,
                         __targetOpacity: 1,
                         className: `framer-1pqjofl`,
-                        "data-framer-name": `Content`,
+                        "data-framer-name": `Landing Pages`,
                         children: [
                           _(j, {
                             __fromCanvasComponent: !0,
@@ -29562,7 +29562,7 @@ e(() => {
                                 }),
                                 h(`div`, {
                                   className: `framer-12qnctf`,
-                                  "data-framer-name": `Content`,
+                                  "data-framer-name": `Landing Pages`,
                                   children: [
                                     _(R, {
                                       height: 33,
@@ -29667,7 +29667,7 @@ e(() => {
                               children: [
                                 h(`div`, {
                                   className: `framer-1f47fz3`,
-                                  "data-framer-name": `Content`,
+                                  "data-framer-name": `Landing Pages`,
                                   children: [
                                     _(R, {
                                       height: 33,
@@ -29901,7 +29901,7 @@ e(() => {
                                 }),
                                 h(`div`, {
                                   className: `framer-bod9ft`,
-                                  "data-framer-name": `Content`,
+                                  "data-framer-name": `Landing Pages`,
                                   children: [
                                     _(R, {
                                       height: 33,
@@ -29910,7 +29910,7 @@ e(() => {
                                         nodeId: `x0_n0wZ8E`,
                                         scopeId: `augiA20Il`,
                                         children: _(V, {
-                                          b5FKc3lDF: `Sales & Marketing`,
+                                          b5FKc3lDF: `Web Development`,
                                           height: `100%`,
                                           id: `x0_n0wZ8E`,
                                           layoutId: `x0_n0wZ8E`,
@@ -29930,7 +29930,7 @@ e(() => {
                                             children: _(`h3`, {
                                               className: `framer-styles-preset-gb7odv`,
                                               "data-styles-preset": `fkWhWxW4E`,
-                                              children: `Accelerate Sales Growth`,
+                                              children: `Elevate Your Digital Presence`,
                                             }),
                                           }),
                                           className: `framer-unb9l8`,
@@ -29944,7 +29944,7 @@ e(() => {
                                             children: _(`p`, {
                                               className: `framer-styles-preset-16w1u5n`,
                                               "data-styles-preset": `csUbUKGQ_`,
-                                              children: `AI tools for lead generation, personalized outreach, and automated content creation that scales your sales efforts and builds stronger brand presence.`,
+                                              children: `From high-converting landing pages to complete business websites, we build fast, modern experiences that represent your brand and turn visitors into customers.`,
                                             }),
                                           }),
                                           className: `framer-1uaigos`,
@@ -29965,7 +29965,7 @@ e(() => {
                                             nodeId: `Krkov7XCi`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Leads`,
+                                              b5FKc3lDF: `Business Websites`,
                                               height: `100%`,
                                               id: `Krkov7XCi`,
                                               layoutId: `Krkov7XCi`,
@@ -29982,7 +29982,7 @@ e(() => {
                                             nodeId: `MoFUSZVuh`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Content`,
+                                              b5FKc3lDF: `Landing Pages`,
                                               height: `100%`,
                                               id: `MoFUSZVuh`,
                                               layoutId: `MoFUSZVuh`,
@@ -29999,7 +29999,7 @@ e(() => {
                                             nodeId: `L_LLJZGa0`,
                                             scopeId: `augiA20Il`,
                                             children: _(V, {
-                                              b5FKc3lDF: `Social post`,
+                                              b5FKc3lDF: `Modern UI`,
                                               height: `100%`,
                                               id: `L_LLJZGa0`,
                                               layoutId: `L_LLJZGa0`,
@@ -30023,7 +30023,7 @@ e(() => {
                               children: [
                                 h(`div`, {
                                   className: `framer-1rh66g7`,
-                                  "data-framer-name": `Content`,
+                                  "data-framer-name": `Landing Pages`,
                                   children: [
                                     _(R, {
                                       height: 33,
