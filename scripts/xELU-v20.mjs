@@ -27323,7 +27323,7 @@ var ag,
                     ]}),
                     h("div", {
                         style: { margin: "0 auto", fontSize: "11px", color: "rgba(255,255,255,0.3)", letterSpacing: "0.5px" },
-                        children: "syncrotrex.com / design"
+                        children: "yoursite.com"
                     })
                 ]
             }),
@@ -31214,4 +31214,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v19.mjs.map
+//# sourceMappingURL=xELU-v20.mjs.map
