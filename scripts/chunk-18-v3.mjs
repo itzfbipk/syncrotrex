@@ -2434,7 +2434,7 @@ var qt,
           default: new Wt({
             chunks: [
               new URL(
-                `./VGIpJvAdb-chunk-default-0.framercms`,
+                `./VGIpJvAdb-chunk-default-v2.framercms`,
                 location.origin + `/assets/VGIpJvAdb.js`,
               ).href,
             ],

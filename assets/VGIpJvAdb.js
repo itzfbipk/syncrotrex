@@ -25,7 +25,7 @@ let o = {
     collectionByLocaleId: {
       default: new a({
         chunks: [
-          new URL("./VGIpJvAdb-chunk-default-0.framercms", import.meta.url)
+          new URL("./VGIpJvAdb-chunk-default-v2.framercms", import.meta.url)
             .href,
         ],
         compressionDictionary: null,

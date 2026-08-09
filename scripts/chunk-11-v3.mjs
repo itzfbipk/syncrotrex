@@ -402,13 +402,13 @@ var q,
                       T,
                       A,
                     ),
-                    children: l(m.div, {
+                    children: l("div", {
                       className: `framer-1hhkatf`,
                       "data-framer-name": `Text Container`,
                       layoutDependency: M,
                       layoutId: `aUsk2snBt`,
                       children: [
-                        l(m.div, {
+                        l("div", {
                           className: `framer-15k178i`,
                           "data-framer-name": `1st state`,
                           layoutDependency: M,
@@ -478,7 +478,7 @@ var q,
                               }),
                           ],
                         }),
-                        l(m.div, {
+                        l("div", {
                           className: `framer-4obbbk`,
                           "data-framer-name": `2nd state`,
                           layoutDependency: M,
@@ -565,7 +565,7 @@ var q,
           `.framer-mscS8 .framer-1bob7ie, .framer-mscS8 .framer-134t9n { flex: none; height: auto; position: relative; white-space: pre; width: auto; }`,
           `.framer-mscS8 .framer-1k6b1d-container, .framer-mscS8 .framer-rgp1h6-container { flex: none; height: 16px; position: relative; width: 16px; }`,
           `.framer-mscS8.framer-v-1dhrp5e .framer-1hhkatf { height: 17px; }`,
-          `.framer-mscS8.framer-v-1e5l598.hover .framer-1hhkatf, .framer-mscS8.framer-v-1dhrp5e.hover .framer-1hhkatf { justify-content: flex-end; }`,
+          `.framer-mscS8.framer-v-1e5l598.hover .framer-1hhkatf, .framer-mscS8.framer-v-1dhrp5e.hover .framer-1hhkatf { justify-content: flex-start; }`,
           ...U,
           ...k,
           `.framer-mscS8[data-border="true"]::after, .framer-mscS8 [data-border="true"]::after { content: ""; border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0); border-color: var(--border-color, none); border-style: var(--border-style, none); width: 100%; height: 100%; position: absolute; box-sizing: border-box; left: 0; top: 0; border-radius: inherit; corner-shape: inherit; pointer-events: none; }`,
@@ -678,4 +678,4 @@ var q,
       ));
   });
 export { H as a, U as i, ve as n, G as o, W as r, $ as t };
-//# sourceMappingURL=chunk-11.mjs.map
+//# sourceMappingURL=chunk-11-v3.mjs.map

@@ -1,0 +1,30 @@
+{
+  "routeId": "BrHvGwiT3",
+  "localeId": "default",
+  "breakpoints": [
+    {
+      "hash": "o1tt4e",
+      "mediaQuery": "(min-width: 1200px)"
+    },
+    {
+      "hash": "17oeup9",
+      "mediaQuery": "(min-width: 810px) and (max-width: 1199px)"
+    },
+    {
+      "hash": "1jz6fml",
+      "mediaQuery": "(max-width: 809px)"
+    },
+    {
+      "hash": "1kjwutx",
+      "mediaQuery": "(min-width: 1200px)"
+    },
+    {
+      "hash": "1jtl6r4",
+      "mediaQuery": "(min-width: 810px) and (max-width: 1199.98px)"
+    },
+    {
+      "hash": "h7qui",
+      "mediaQuery": "(max-width: 809.98px)"
+    }
+  ]
+}
