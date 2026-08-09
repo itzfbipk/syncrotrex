@@ -62,7 +62,7 @@ import {
   u as be,
 } from "./shared.mjs";
 import { i as xe, n as Se, r as Ce, t as we } from "./chunk-02.mjs";
-import { i as Te, r as Ee, t as De } from "./chunk-18.mjs";
+import { i as Te, r as Ee, t as De } from "./chunk-18-v2.mjs";
 import { n as Oe, r as z } from "./chunk-05.mjs";
 function B(e, ...t) {
   let n = {};
@@ -1028,4 +1028,4 @@ e(() => {
     }));
 })();
 export { Qe as __FramerMetadata__, Ze as default };
-//# sourceMappingURL=GIolelrpNm0IyohyvNMxrySzv6gpOLliuFqZ90DNCrQ.mjs.map
+//# sourceMappingURL=GIole-v2.mjs.map

@@ -2435,7 +2435,7 @@ var qt,
             chunks: [
               new URL(
                 `./VGIpJvAdb-chunk-default-0.framercms`,
-                `/assets/VGIpJvAdb.js`,
+                location.origin + `/assets/VGIpJvAdb.js`,
               ).href,
             ],
             compressionDictionary: null,
@@ -2556,4 +2556,4 @@ var qt,
       }));
   });
 export { tn as a, on as i, an as n, rn as o, nn as r, en as t };
-//# sourceMappingURL=chunk-18.mjs.map
+//# sourceMappingURL=chunk-18-v2.mjs.map
