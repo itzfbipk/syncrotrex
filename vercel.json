@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/scripts/main-v5.mjs",
+      "source": "/scripts/main-v6.mjs",
       "headers": [
         {
           "key": "Content-Type",
@@ -62,7 +62,7 @@
       "headers": [
         {
           "key": "Link",
-          "value": "</scripts/react.mjs>; rel=modulepreload; as=script, </scripts/rolldown-runtime.mjs>; rel=modulepreload; as=script, </scripts/motion.mjs>; rel=modulepreload; as=script, </scripts/core-lib.mjs>; rel=modulepreload; as=script, </scripts/main-v5.mjs>; rel=modulepreload; as=script"
+          "value": "</scripts/react.mjs>; rel=modulepreload; as=script, </scripts/rolldown-runtime.mjs>; rel=modulepreload; as=script, </scripts/motion.mjs>; rel=modulepreload; as=script, </scripts/core-lib.mjs>; rel=modulepreload; as=script, </scripts/main-v6.mjs>; rel=modulepreload; as=script"
         }
       ]
     }

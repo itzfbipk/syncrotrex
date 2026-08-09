@@ -29469,7 +29469,7 @@ e(() => {
                                       style: {
                                         "--framer-text-alignment": `center`,
                                       },
-                                      children: `AI Solutions That Take Your Business to the Next Level`,
+                                      children: `Solutions That Take Your Business to the Next Level`,
                                     }),
                                   }),
                                   className: `framer-eci4z2`,
@@ -29483,7 +29483,7 @@ e(() => {
                                     children: _(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `We design, develop, and implement automation tools that help you work smarter, not harder`,
+                                      children: `We design and develop SaaS platforms, custom software, digital presence, web applications, and business systems built to solve real problems and make work easier.`,
                                     }),
                                   }),
                                   className: `framer-sk03rn`,
@@ -30256,7 +30256,7 @@ e(() => {
                                     children: _(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `We design, develop, and implement automation tools that help you work smarter, not harder`,
+                                      children: `We design and develop SaaS platforms, custom software, digital presence, web applications, and business systems built to solve real problems and make work easier.`,
                                     }),
                                   }),
                                   className: `framer-1ua34k3`,
@@ -32427,4 +32427,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v2.mjs.map
+//# sourceMappingURL=xELU-v3.mjs.map
