@@ -3548,7 +3548,7 @@ var nr,
                                         RepeatValue: 2,
                                         showCursor: !0,
                                         text: [
-                                          `Generate a invoice`,
+                                          `Create a new project`,
                                           `Create a new project`,
                                           `Create a new project`,
                                         ],
@@ -3666,7 +3666,7 @@ var nr,
                                         children: _(C.p, {
                                           className: `framer-styles-preset-11j7728`,
                                           "data-styles-preset": `nWaHBmz7N`,
-                                          children: `Create a new project`,
+                                          children: `Add document`,
                                         }),
                                       }),
                                       className: `framer-jldocp`,
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v14.mjs.map
+//# sourceMappingURL=xELU-v16.mjs.map
