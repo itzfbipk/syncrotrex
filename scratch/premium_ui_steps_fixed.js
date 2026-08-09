@@ -133,7 +133,7 @@ const testReact = `children: [
                         children: h("defs", { children: h("linearGradient", { id: "gradTest", x1: "0%", y1: "0%", x2: "100%", y2: "100%", children: [
                             h("stop", { offset: "0%", stopColor: "#27c93f" }),
                             h("stop", { offset: "100%", stopColor: "rgba(39,201,63,0)" })
-                        ]})})
+                        ]}) })
                     }),
                     h("div", { style: { fontSize: "32px", fontWeight: "700", color: "white", letterSpacing: "-1px" }, children: "100" }),
                     h("div", { style: { fontSize: "10px", color: "rgba(255,255,255,0.5)", textTransform: "uppercase", letterSpacing: "1px", marginTop: "2px" }, children: "Health Score" })
@@ -289,10 +289,10 @@ const scaleReact = `children: [
                         children: [
                             // Gradient Fill
                             h("defs", {
-                                children: h("linearGradient", { id: "chartFill", x1: "0%", y1: "0%", x2: "0%", y2: "100%" }, [
+                                children: h("linearGradient", { id: "chartFill", x1: "0%", y1: "0%", x2: "0%", y2: "100%", children: [
                                     h("stop", { offset: "0%", stopColor: "rgba(189, 78, 255, 0.3)" }),
                                     h("stop", { offset: "100%", stopColor: "rgba(189, 78, 255, 0)" })
-                                ])
+                                ]})
                             }),
                             // Fill Path
                             h("path", {
@@ -403,6 +403,8 @@ const scaleStyle = `
 replaceComponentChildren("Integration", testReact, testHtml, testStyle);
 replaceComponentChildren("Optimization", scaleReact, scaleHtml, scaleStyle);
 
+// Overwrite v26 to replace the corrupted version
 fs.writeFileSync('scripts/xELU-v26.mjs', code, 'utf8');
+fs.writeFileSync('index.html', indexHtml, 'utf8');
 
-console.log("Fixed syntax and overwrote xELU-v26.mjs!");
+console.log("Regenerated clean v26!");
