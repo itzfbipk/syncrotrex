@@ -1,13 +1,69 @@
 {
   "headers": [
     {
+      "source": "/scripts/main.mjs",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
       "source": "/(.*)\\.mjs",
-      "headers": [{ "key": "Content-Type", "value": "application/javascript" }]
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/(.*)\\.framercms",
       "headers": [
-        { "key": "Content-Type", "value": "application/octet-stream" }
+        {
+          "key": "Content-Type",
+          "value": "application/octet-stream"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*\\.html|.*|/)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</scripts/react.mjs>; rel=modulepreload; as=script, </scripts/rolldown-runtime.mjs>; rel=modulepreload; as=script, </scripts/motion.mjs>; rel=modulepreload; as=script, </scripts/core-lib.mjs>; rel=modulepreload; as=script, </scripts/main.mjs>; rel=modulepreload; as=script"
+        }
       ]
     }
   ]
