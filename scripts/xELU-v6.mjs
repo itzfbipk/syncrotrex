@@ -26676,7 +26676,7 @@ var Ph,
         IsqDIGJdG:
           e ??
           o.IsqDIGJdG ??
-          `Gain actionable insights with AI-driven analytics to improve decision-making and strategy.`,
+          `Streamline repetitive work and give your team software that helps them get more done in less time.`,
         pD65dKDNK: n ?? o.pD65dKDNK ?? `lightning`,
       })),
       (eg = (e, t) =>
@@ -26823,7 +26823,7 @@ var Ph,
                             children: _(C.p, {
                               className: `framer-styles-preset-16w1u5n`,
                               "data-styles-preset": `csUbUKGQ_`,
-                              children: `Gain actionable insights with AI-driven analytics to improve decision-making and strategy.`,
+                              children: `Streamline repetitive work and give your team software that helps them get more done in less time.`,
                             }),
                           }),
                           className: `framer-1hunnhw`,
@@ -26879,7 +26879,7 @@ var Ph,
           type: N.String,
         },
         IsqDIGJdG: {
-          defaultValue: `Gain actionable insights with AI-driven analytics to improve decision-making and strategy.`,
+          defaultValue: `Streamline repetitive work and give your team software that helps them get more done in less time.`,
           displayTextArea: !1,
           title: `Description`,
           type: N.String,
@@ -31371,7 +31371,7 @@ e(() => {
                                     children: _(`p`, {
                                       className: `framer-styles-preset-trq6qq`,
                                       "data-styles-preset": `Qjp1AZZMc`,
-                                      children: `Discover how AI automation enhances efficiency, reduces costs, and drives business growth with smarter, faster processes.`,
+                                      children: `We build reliable digital products that simplify workflows, improve efficiency, and give your business the tools it needs to grow.`,
                                     }),
                                   }),
                                   className: `framer-mpe08i`,
@@ -31418,7 +31418,7 @@ e(() => {
                                     Dg1mLwpEL: `Increased Productivity`,
                                     height: `100%`,
                                     id: `PtWvQHfXs`,
-                                    IsqDIGJdG: `Gain actionable insights with AI-driven analytics to improve decision-making and strategy.`,
+                                    IsqDIGJdG: `Streamline repetitive work and give your team software that helps them get more done in less time.`,
                                     layoutId: `PtWvQHfXs`,
                                     pD65dKDNK: `lightning`,
                                     style: { width: `100%` },
@@ -31463,7 +31463,7 @@ e(() => {
                                       Dg1mLwpEL: `Better Customer Experience`,
                                       height: `100%`,
                                       id: `WHgPMSw2l`,
-                                      IsqDIGJdG: `Personalized AI interactions improve response times, customer engagement, and overall satisfaction.`,
+                                      IsqDIGJdG: `Create smoother digital experiences that make it easier for customers to interact with your business.`,
                                       layoutId: `WHgPMSw2l`,
                                       pD65dKDNK: `handshake`,
                                       style: { width: `100%` },
@@ -31512,7 +31512,7 @@ e(() => {
                                       Dg1mLwpEL: `24/7 Availability`,
                                       height: `100%`,
                                       id: `rpYj54qTZ`,
-                                      IsqDIGJdG: `AI-powered systems operate around the clock, ensuring seamless support and execution without downtime.`,
+                                      IsqDIGJdG: `Give your team and customers access to the tools they need, whenever they need them.`,
                                       layoutId: `rpYj54qTZ`,
                                       pD65dKDNK: `Clock`,
                                       style: { width: `100%` },
@@ -31558,7 +31558,7 @@ e(() => {
                                       Dg1mLwpEL: `Cost Reduction`,
                                       height: `100%`,
                                       id: `ELVQBh282`,
-                                      IsqDIGJdG: `AI automation minimizes manual work, cuts operational costs, and optimizes resource allocation for better profitability.`,
+                                      IsqDIGJdG: `Replace inefficient manual processes with software that saves time, reduces overhead, and improves efficiency.`,
                                       layoutId: `ELVQBh282`,
                                       pD65dKDNK: `currency-dollar-simple`,
                                       style: { width: `100%` },
@@ -31607,7 +31607,7 @@ e(() => {
                                       Dg1mLwpEL: `Data-Driven Insights`,
                                       height: `100%`,
                                       id: `CzizQWKqW`,
-                                      IsqDIGJdG: `Leverage AI to analyze vast data sets, identify trends, and make smarter, faster, and more accurate business decisions.`,
+                                      IsqDIGJdG: `Keep your business information structured, accessible, and ready to use across your systems.`,
                                       layoutId: `CzizQWKqW`,
                                       pD65dKDNK: `chart-donut`,
                                       style: { width: `100%` },
@@ -31656,7 +31656,7 @@ e(() => {
                                       Dg1mLwpEL: `Scalability & Growth`,
                                       height: `100%`,
                                       id: `HMRQXRg5R`,
-                                      IsqDIGJdG: `AI adapts to your business needs, allowing you to scale efficiently without increasing workload or costs.`,
+                                      IsqDIGJdG: `Build systems that can grow with your users, data, teams, and business without holding you back.`,
                                       layoutId: `HMRQXRg5R`,
                                       pD65dKDNK: `chart-bar`,
                                       style: { width: `100%` },
@@ -32425,4 +32425,4 @@ e(() => {
     }));
 })();
 export { I_ as __FramerMetadata__, F_ as default };
-//# sourceMappingURL=xELU-v5.mjs.map
+//# sourceMappingURL=xELU-v6.mjs.map
