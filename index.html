@@ -593,4 +593,45 @@ a[href*="framercommerce.com"] {
 
 
 
+
+<script id="clean-hash-links">
+document.addEventListener("click", function(e) {
+    const a = e.target.closest("a");
+    if (!a) return;
+    
+    const href = a.getAttribute("href");
+    if (!href) return;
+    
+    // Check if it's a hash link on the current page
+    if (href.includes("#")) {
+        const parts = href.split("#");
+        const id = parts[1];
+        const pagePath = parts[0];
+        
+        // If the hash is on the same page (or we are already on the home page and it's index.html#)
+        const isSamePage = !pagePath || 
+                           pagePath === "/" || 
+                           pagePath === "index.html" || 
+                           window.location.pathname === pagePath ||
+                           (window.location.pathname === "/" && pagePath === "");
+                           
+        if (isSamePage && id) {
+            const target = document.getElementById(id);
+            if (target) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                // Scroll smoothly
+                target.scrollIntoView({ behavior: "smooth" });
+                
+                // Ensure URL stays clean by pushing current path without hash
+                setTimeout(() => {
+                    history.replaceState(null, "", window.location.pathname + window.location.search);
+                }, 10);
+            }
+        }
+    }
+}, true); // Use capture phase to beat Framer's internal router
+</script>
+
 </body></html>
