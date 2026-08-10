@@ -25691,10 +25691,10 @@ var ag,
                 style: { display: "flex", alignItems: "center", padding: "10px 14px", borderBottom: "1px solid rgba(255,255,255,0.08)", backgroundColor: "rgba(255,255,255,0.02)", position: "relative", zIndex: 1 },
                 children: [
                     h("div", { style: { display: "flex", gap: "6px" }, children: [
-                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "#ff5f56" } }),
-                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "#ffbd2e" } }),
-                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "#27c93f" } })
-                    ]}),
+                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.15)" } }),
+                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.25)" } }),
+                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "rgba(201,110,240,0.6)" } })
+                    ]),
                     h("div", {
                         style: { margin: "0 auto", fontSize: "11px", color: "rgba(255,255,255,0.65)", letterSpacing: "0.5px", fontWeight: "500" },
                         children: "yoursite.com"
