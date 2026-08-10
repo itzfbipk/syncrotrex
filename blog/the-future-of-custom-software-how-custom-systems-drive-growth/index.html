@@ -400,4 +400,22 @@ document.addEventListener("click", function(e) {
 }, true); // Use capture phase to beat Framer's internal router
 </script>
 
+
+<script id="force-cal-links">
+document.addEventListener("click", function(e) {
+    const a = e.target.closest("a");
+    if (!a) return;
+    
+    const text = a.textContent || "";
+    if (text.includes("Schedule a call") || 
+        text.includes("Book a free call") || 
+        text.includes("Choose this plan")) {
+        
+        e.preventDefault();
+        e.stopPropagation();
+        window.open("https://cal.com/syncrotrex", "_blank");
+    }
+}, true);
+</script>
+
 </body></html>
