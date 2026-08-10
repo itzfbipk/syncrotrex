@@ -851,7 +851,7 @@ e(() => {
                                               style: {
                                                 "--framer-text-alignment": `left`,
                                               },
-                                              children: `Admin@syncrotrex.com`,
+                                              children: `syncrotrex@gmail.com`,
                                             }),
                                           }),
                                           className: `framer-1x85pd0`,
