@@ -426,7 +426,18 @@ document.addEventListener("click", function(e) {
 
 
 
+
 <script id="formspark-hijack">
+// Inject CSS animation for the success message
+const style = document.createElement('style');
+style.innerHTML = `
+    @keyframes successFadeIn { 
+        0% { opacity: 0; transform: translateY(20px); filter: blur(5px); } 
+        100% { opacity: 1; transform: translateY(0); filter: blur(0); } 
+    }
+`;
+document.head.appendChild(style);
+
 document.addEventListener('submit', async function(e) {
     if (e.target.tagName === 'FORM') {
         e.preventDefault();
@@ -434,7 +445,6 @@ document.addEventListener('submit', async function(e) {
 
         const form = e.target;
         
-        // Fix Framer's duplicate "Name" bug by re-mapping names based on placeholders
         const inputs = form.querySelectorAll('input, textarea');
         inputs.forEach(input => {
             const ph = (input.placeholder || '').toLowerCase();
@@ -459,9 +469,10 @@ document.addEventListener('submit', async function(e) {
             originalText = btn.value || btn.innerText;
             if (btn.value) btn.value = "Sending...";
             else btn.innerText = "Sending...";
+            btn.style.opacity = "0.7";
+            btn.style.pointerEvents = "none";
         }
 
-        // Build a BEAUTIFUL Discord Embed
         const emojiMap = {
             'First Name': '👤 First Name',
             'Last Name': '👤 Last Name',
@@ -472,20 +483,18 @@ document.addEventListener('submit', async function(e) {
 
         const fields = Object.entries(data).map(([key, value]) => ({
             name: emojiMap[key] || key,
-            value: `> ${value}`, // Add markdown quote for cleaner reading
-            inline: false // Stack them vertically for better readability on mobile and PC
+            value: `> ${value}`,
+            inline: false
         }));
 
         const discordPayload = {
-            content: null, // Remove plain text content to make it look cleaner
+            content: null,
             embeds: [{
                 title: "🚀 New Website Lead!",
                 description: "A potential client just submitted the contact form.",
-                color: 0x9b59b6, // Sleek purple
+                color: 0x8a2be2,
                 fields: fields,
-                footer: {
-                    text: "Syncrotrex Agency Form"
-                },
+                footer: { text: "Syncrotrex Agency Form" },
                 timestamp: new Date().toISOString()
             }]
         };
@@ -493,24 +502,34 @@ document.addEventListener('submit', async function(e) {
         try {
             await fetch("https://discord.com/api/webhooks/1536521704489091092/119YLvTp-8ZvrdF63jelOzrjjVCBEruCvoUPMwVVjItfBhFsaghOElwDoFfuD_VrIz9I", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(discordPayload),
             });
             
-            // Hide the form and show a clean success message
+            // Hide the form smoothly
             form.style.display = 'none';
+            
+            // Create a gorgeous premium success message matching the dark/purple theme
             const successMsg = document.createElement('div');
-            successMsg.innerText = "Message sent successfully! We will get back to you shortly.";
-            successMsg.style.color = "var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, #ffffff)"; // Match theme
+            successMsg.innerHTML = `
+                <div style="font-size: 3.5rem; margin-bottom: 1rem;">✨</div>
+                <h3 style="font-size: 1.8rem; font-weight: 600; margin-bottom: 0.5rem; color: #ffffff; font-family: 'Figtree', sans-serif; letter-spacing: -0.02em;">Message Sent!</h3>
+                <p style="font-size: 1.1rem; color: rgba(255,255,255,0.7); margin: 0; font-family: 'Figtree', sans-serif;">We've received your request and our team will be in touch shortly.</p>
+            `;
+            
             successMsg.style.textAlign = "center";
-            successMsg.style.padding = "3rem 1rem";
-            successMsg.style.fontSize = "1.2rem";
-            successMsg.style.fontWeight = "500";
-            successMsg.style.border = "1px solid rgba(255,255,255,0.1)";
-            successMsg.style.borderRadius = "12px";
-            successMsg.style.background = "rgba(255,255,255,0.03)";
+            successMsg.style.padding = "4rem 2rem";
+            successMsg.style.border = "1px solid rgba(255,255,255,0.08)";
+            successMsg.style.borderRadius = "20px";
+            successMsg.style.background = "linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(138,43,226,0.12) 100%)";
+            successMsg.style.boxShadow = "0 20px 40px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1)";
+            successMsg.style.display = "flex";
+            successMsg.style.flexDirection = "column";
+            successMsg.style.alignItems = "center";
+            successMsg.style.justifyContent = "center";
+            successMsg.style.width = "100%";
+            successMsg.style.animation = "successFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards";
+            
             form.parentNode.insertBefore(successMsg, form);
 
         } catch (error) {
@@ -518,6 +537,8 @@ document.addEventListener('submit', async function(e) {
             if (btn) {
                 if (btn.value) btn.value = "Error. Try again.";
                 else btn.innerText = "Error. Try again.";
+                btn.style.opacity = "1";
+                btn.style.pointerEvents = "auto";
             }
         }
     }
