@@ -37,7 +37,7 @@ document.addEventListener("click", function(e) {
         
         e.preventDefault();
         e.stopPropagation();
-        window.open("https://cal.com/syncrotrex", "_blank");
+        window.open("https://calendly.com/syncrotrex", "_blank");
     }
 }, true);
 </script>

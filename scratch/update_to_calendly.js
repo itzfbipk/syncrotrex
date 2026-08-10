@@ -10,32 +10,34 @@ function walk(currentDir) {
         const filePath = path.join(currentDir, file);
         const stat = fs.statSync(filePath);
         if (stat && stat.isDirectory()) {
-            if (file !== 'node_modules' && file !== '.git' && file !== 'scratch') {
+            if (file !== 'node_modules' && file !== '.git') {
                 results = results.concat(walk(filePath));
             }
         } else {
-            results.push(filePath);
+            if (filePath.endsWith('.html') || filePath.endsWith('.js')) {
+                results.push(filePath);
+            }
         }
     });
     return results;
 }
 
-const allFiles = walk(dir);
-const htmlFiles = allFiles.filter(f => f.endsWith('.html'));
+const files = walk(dir);
 
 let changedFiles = 0;
 
-htmlFiles.forEach(file => {
+files.forEach(file => {
     let content = fs.readFileSync(file, 'utf8');
-    
-    // Replace exact "https://cal.com" or "https://cal.com/" with "https://calendly.com/syncrotrex"
-    let newContent = content.replace(/"https:\/\/cal\.com\/?([^"]*)"/g, '"https://calendly.com/syncrotrex$1"');
-    
-    if (newContent !== content) {
-        fs.writeFileSync(file, newContent);
+    let original = content;
+
+    // Replace all occurrences of cal.com link with calendly.com link
+    content = content.replace(/https:\/\/cal\.com\/syncrotrex/g, 'https://calendly.com/syncrotrex');
+
+    if (content !== original) {
+        fs.writeFileSync(file, content);
         changedFiles++;
         console.log(`Updated links in: ${path.relative(dir, file)}`);
     }
 });
 
-console.log(`Updated ${changedFiles} files with the new Cal.com link.`);
+console.log(`Updated ${changedFiles} files with the new Calendly link.`);

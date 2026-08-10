@@ -6,7 +6,7 @@ const indexPath = path.join(dir, 'index.html');
 
 let content = fs.readFileSync(indexPath, 'utf8');
 
-// We need to replace href="/" with href="https://cal.com/syncrotrex" for specific buttons.
+// We need to replace href="/" with href="https://calendly.com/syncrotrex" for specific buttons.
 // Since Framer HTML can be messy, a safer way is to do a regex replace that targets anchor tags containing specific text.
 // Or we can just look for the href="/" that comes right before those specific texts.
 
@@ -28,7 +28,7 @@ targetTexts.forEach(text => {
     
     // Actually, in Framer, the structure is usually:
     // <a class="..." href="/" ...><div ...><p>Choose this plan</p></div></a>
-    // We can just globally replace `href="/"` with `href="https://cal.com/syncrotrex"` IF it's in the vicinity of the text.
+    // We can just globally replace `href="/"` with `href="https://calendly.com/syncrotrex"` IF it's in the vicinity of the text.
     // Given the complexity of HTML parsing with regex, a simpler approach for a one-off script:
     // Split the content by `<a `
     let parts = updatedContent.split('<a ');
@@ -39,7 +39,7 @@ targetTexts.forEach(text => {
             let anchorContent = part.substring(0, closingIndex);
             if (anchorContent.includes('href="/"') || anchorContent.includes("href='/'")) {
                 if (anchorContent.includes(text)) {
-                    parts[i] = part.replace(/href=["']\/["']/, 'href="https://cal.com/syncrotrex"');
+                    parts[i] = part.replace(/href=["']\/["']/, 'href="https://calendly.com/syncrotrex"');
                     console.log(`Replaced link for button text: "${text}"`);
                 }
             }
