@@ -422,4 +422,56 @@ document.addEventListener("click", function(e) {
     }
 }, true);
 </script>
-\n</body></html>
+\n
+<script id="formspark-hijack">
+document.addEventListener('submit', async function(e) {
+    if (e.target.tagName === 'FORM') {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+
+        const form = e.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        // Find the submit button to show loading state
+        // Framer uses <a> or <input> or <button> inside the form sometimes
+        const btn = form.querySelector('input[type="submit"], button') || form.parentElement.querySelector('a');
+        let originalText = "Submit";
+        if (btn) {
+            originalText = btn.value || btn.innerText;
+            if (btn.value) btn.value = "Sending...";
+            else btn.innerText = "Sending...";
+        }
+
+        try {
+            await fetch("https://submit-form.com/SudMwVaGT", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+            
+            if (btn) {
+                if (btn.value) btn.value = "Message Sent!";
+                else btn.innerText = "Message Sent!";
+            }
+            form.reset();
+            setTimeout(() => {
+                if (btn) {
+                    if (btn.value) btn.value = originalText;
+                    else btn.innerText = originalText;
+                }
+            }, 3000);
+        } catch (error) {
+            console.error(error);
+            if (btn) {
+                if (btn.value) btn.value = "Error. Try again.";
+                else btn.innerText = "Error. Try again.";
+            }
+        }
+    }
+}, { capture: true });
+</script>
+</body></html>
