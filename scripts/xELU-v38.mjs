@@ -25666,6 +25666,11 @@ var ag,
                     50% { transform: translateY(-3px); }
                     100% { transform: translateY(0px); }
                 }
+                @keyframes pulseGlow {
+                    0% { box-shadow: 0 0 0 0 rgba(201,110,240,0.5); }
+                    70% { box-shadow: 0 0 0 8px rgba(201,110,240,0); }
+                    100% { box-shadow: 0 0 0 0 rgba(201,110,240,0); }
+                }
                 .web-builder-minimal * { box-sizing: border-box; }
             `
         }
@@ -25674,65 +25679,65 @@ var ag,
         className: "web-builder-minimal",
         style: {
             display: "flex", flexDirection: "column", width: "100%", height: "100%",
-            backgroundColor: "#050505", overflow: "hidden", 
+            backgroundColor: "#0c0c12", overflow: "hidden",
             fontFamily: "'Inter', sans-serif", color: "white", padding: "0",
             position: "relative"
         },
         children: [
             h("div", {
-                style: { position: "absolute", top: "-50px", left: "20%", right: "20%", height: "100px", background: "radial-gradient(ellipse at top, rgba(189, 78, 255, 0.15), transparent 70%)", pointerEvents: "none" }
+                style: { position: "absolute", top: "-30px", left: "10%", right: "10%", height: "140px", background: "radial-gradient(ellipse at top, rgba(201,110,240,0.22), transparent 70%)", pointerEvents: "none" }
             }),
             h("div", {
-                style: { display: "flex", alignItems: "center", padding: "12px 16px", borderBottom: "1px solid rgb(34,34,34)", backgroundColor: "transparent" },
+                style: { display: "flex", alignItems: "center", padding: "10px 14px", borderBottom: "1px solid rgba(255,255,255,0.08)", backgroundColor: "rgba(255,255,255,0.02)", position: "relative", zIndex: 1 },
                 children: [
                     h("div", { style: { display: "flex", gap: "6px" }, children: [
-                        h("div", { style: { width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#333" } }),
-                        h("div", { style: { width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#333" } }),
-                        h("div", { style: { width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#333" } })
+                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "#ff5f56" } }),
+                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "#ffbd2e" } }),
+                        h("div", { style: { width: "9px", height: "9px", borderRadius: "50%", backgroundColor: "#27c93f" } })
                     ]}),
                     h("div", {
-                        style: { margin: "0 auto", fontSize: "11px", color: "rgba(255,255,255,0.3)", letterSpacing: "0.5px" },
+                        style: { margin: "0 auto", fontSize: "11px", color: "rgba(255,255,255,0.65)", letterSpacing: "0.5px", fontWeight: "500" },
                         children: "yoursite.com"
                     })
                 ]
             }),
             h("div", {
-                style: { flex: 1, padding: "24px", display: "flex", flexDirection: "column", gap: "20px" },
+                style: { flex: 1, padding: "20px", display: "flex", flexDirection: "column", gap: "16px", position: "relative", zIndex: 1 },
                 children: [
                     h("div", {
-                        style: { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "10px" },
+                        style: { display: "flex", justifyContent: "space-between", alignItems: "center" },
                         children: [
-                            h("div", { style: { width: "24px", height: "24px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.05)" } }),
-                            h("div", { style: { display: "flex", gap: "12px" }, children: [
-                                h("div", { style: { width: "30px", height: "4px", backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "2px" } }),
-                                h("div", { style: { width: "30px", height: "4px", backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "2px" } }),
-                                h("div", { style: { width: "30px", height: "4px", backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "2px" } })
+                            h("div", { style: { width: "22px", height: "22px", borderRadius: "5px", backgroundColor: "rgba(201,110,240,0.15)", border: "1px solid rgba(201,110,240,0.35)" } }),
+                            h("div", { style: { display: "flex", gap: "10px" }, children: [
+                                h("div", { style: { width: "28px", height: "4px", backgroundColor: "rgba(255,255,255,0.25)", borderRadius: "2px" } }),
+                                h("div", { style: { width: "28px", height: "4px", backgroundColor: "rgba(255,255,255,0.25)", borderRadius: "2px" } }),
+                                h("div", { style: { width: "28px", height: "4px", backgroundColor: "rgba(255,255,255,0.25)", borderRadius: "2px" } })
                             ]})
                         ]
                     }),
                     h("div", {
-                        style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "12px", marginTop: "10px", animation: "subtleFloat 6s ease-in-out infinite" },
+                        style: { display: "flex", flexDirection: "column", alignItems: "center", gap: "10px", marginTop: "8px", animation: "subtleFloat 6s ease-in-out infinite" },
                         children: [
-                            h("div", { style: { width: "60%", height: "14px", backgroundColor: "rgba(255,255,255,0.6)", borderRadius: "2px" } }),
-                            h("div", { style: { width: "40%", height: "6px", backgroundColor: "rgba(255,255,255,0.2)", borderRadius: "2px", marginBottom: "16px" } }),
-                            h("div", { style: { padding: "8px 20px", borderRadius: "4px", border: "1px solid rgba(189, 78, 255, 0.3)", backgroundColor: "rgba(189, 78, 255, 0.05)", fontSize: "10px", color: "rgba(255,255,255,0.7)", letterSpacing: "0.5px" }, children: "Publish" })
+                            h("div", { style: { width: "62%", height: "16px", backgroundColor: "rgba(255,255,255,0.85)", borderRadius: "3px", boxShadow: "0 2px 12px rgba(0,0,0,0.5)" } }),
+                            h("div", { style: { width: "42%", height: "7px", backgroundColor: "rgba(255,255,255,0.35)", borderRadius: "3px", marginBottom: "12px" } }),
+                            h("div", { style: { padding: "8px 22px", borderRadius: "5px", border: "1px solid rgba(201,110,240,0.65)", backgroundColor: "rgba(201,110,240,0.18)", fontSize: "10px", fontWeight: "600", color: "#dea8ff", letterSpacing: "0.5px", animation: "pulseGlow 2.2s ease-in-out infinite" }, children: "Publish" })
                         ]
                     }),
                     h("div", {
-                        style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "auto", paddingBottom: "10px" },
+                        style: { display: "grid", gridTemplateColumns: "1fr 1fr", gap: "10px", marginTop: "auto", paddingBottom: "6px" },
                         children: [
                             h("div", {
-                                style: { height: "60px", borderRadius: "6px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", gap: "8px" },
+                                style: { height: "58px", borderRadius: "7px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.03)", padding: "10px", display: "flex", flexDirection: "column", gap: "8px" },
                                 children: [
-                                    h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.03)" } }),
-                                    h("div", { style: { width: "50%", height: "4px", borderRadius: "2px", backgroundColor: "rgba(255,255,255,0.1)" } })
+                                    h("div", { style: { width: "14px", height: "14px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.2)" } }),
+                                    h("div", { style: { width: "55%", height: "5px", borderRadius: "2px", backgroundColor: "rgba(255,255,255,0.22)" } })
                                 ]
                             }),
                             h("div", {
-                                style: { height: "60px", borderRadius: "6px", border: "1px solid rgb(34,34,34)", backgroundColor: "transparent", padding: "12px", display: "flex", flexDirection: "column", gap: "8px" },
+                                style: { height: "58px", borderRadius: "7px", border: "1px solid rgba(255,255,255,0.1)", backgroundColor: "rgba(255,255,255,0.03)", padding: "10px", display: "flex", flexDirection: "column", gap: "8px" },
                                 children: [
-                                    h("div", { style: { width: "16px", height: "16px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.03)" } }),
-                                    h("div", { style: { width: "50%", height: "4px", borderRadius: "2px", backgroundColor: "rgba(255,255,255,0.1)" } })
+                                    h("div", { style: { width: "14px", height: "14px", borderRadius: "4px", backgroundColor: "rgba(255,255,255,0.2)" } }),
+                                    h("div", { style: { width: "55%", height: "5px", borderRadius: "2px", backgroundColor: "rgba(255,255,255,0.22)" } })
                                 ]
                             })
                         ]
