@@ -425,15 +425,19 @@ document.addEventListener("click", function(e) {
 </script>
 
 
+
+
+
 <script id="force-cal-links">
 document.addEventListener("click", function(e) {
     const a = e.target.closest("a");
     if (!a) return;
     
-    const text = a.textContent || "";
+    const text = (a.textContent || "").trim();
     if (text.includes("Schedule a call") || 
         text.includes("Book a free call") || 
-        text.includes("Choose this plan")) {
+        text.includes("Choose this plan") ||
+        text.includes("Book a call")) {
         
         e.preventDefault();
         e.stopPropagation();
@@ -441,5 +445,4 @@ document.addEventListener("click", function(e) {
     }
 }, true);
 </script>
-
-</body></html>
+\n</body></html>
