@@ -25,7 +25,6 @@ document.addEventListener('submit', async function(e) {
 
         const formData = new FormData(form);
         const data = {};
-        // Only include fields that actually have a value to keep dashboard clean
         for (let [key, value] of formData.entries()) {
             if (value && value.trim() !== '') {
                 data[key] = value;
@@ -40,14 +39,30 @@ document.addEventListener('submit', async function(e) {
             else btn.innerText = "Sending...";
         }
 
+        // Build Discord Embed Payload
+        const fields = Object.entries(data).map(([key, value]) => ({
+            name: key,
+            value: value,
+            inline: key !== 'Message'
+        }));
+
+        const discordPayload = {
+            content: "🚀 **New Lead from Website!**",
+            embeds: [{
+                title: "Contact Form Submission",
+                color: 0x8a2be2, // Purple-ish to match theme
+                fields: fields,
+                timestamp: new Date().toISOString()
+            }]
+        };
+
         try {
-            await fetch("https://submit-form.com/SudMwVaGT", {
+            await fetch("https://discord.com/api/webhooks/1536521704489091092/119YLvTp-8ZvrdF63jelOzrjjVCBEruCvoUPMwVVjItfBhFsaghOElwDoFfuD_VrIz9I", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    Accept: "application/json",
                 },
-                body: JSON.stringify(data),
+                body: JSON.stringify(discordPayload),
             });
             
             // Hide the form and show a clean success message
@@ -115,4 +130,4 @@ files.forEach(file => {
     }
 });
 
-console.log("Updated files: " + changedFiles);
+console.log("Updated files to use Discord Webhook: " + changedFiles);
