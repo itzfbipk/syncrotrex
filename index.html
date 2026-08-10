@@ -656,6 +656,7 @@ document.addEventListener("click", function(e) {
 }, true);
 </script>
 \n
+
 <script id="formspark-hijack">
 document.addEventListener('submit', async function(e) {
     if (e.target.tagName === 'FORM') {
@@ -663,11 +664,21 @@ document.addEventListener('submit', async function(e) {
         e.stopImmediatePropagation();
 
         const form = e.target;
+        
+        // Fix Framer's duplicate "Name" bug by re-mapping names based on placeholders
+        const inputs = form.querySelectorAll('input, textarea');
+        inputs.forEach(input => {
+            const ph = (input.placeholder || '').toLowerCase();
+            if (ph.includes('jane') && input.type !== 'email') input.name = 'First Name';
+            else if (ph.includes('smith')) input.name = 'Last Name';
+            else if (ph.includes('jane@mail.com')) input.name = 'Email';
+            else if (ph.includes('+1')) input.name = 'Phone';
+            else if (ph.includes('help')) input.name = 'Message';
+        });
+
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        // Find the submit button to show loading state
-        // Framer uses <a> or <input> or <button> inside the form sometimes
         const btn = form.querySelector('input[type="submit"], button') || form.parentElement.querySelector('a');
         let originalText = "Submit";
         if (btn) {
@@ -686,17 +697,20 @@ document.addEventListener('submit', async function(e) {
                 body: JSON.stringify(data),
             });
             
-            if (btn) {
-                if (btn.value) btn.value = "Message Sent!";
-                else btn.innerText = "Message Sent!";
-            }
-            form.reset();
-            setTimeout(() => {
-                if (btn) {
-                    if (btn.value) btn.value = originalText;
-                    else btn.innerText = originalText;
-                }
-            }, 3000);
+            // Hide the form and show a clean success message to prevent spam!
+            form.style.display = 'none';
+            const successMsg = document.createElement('div');
+            successMsg.innerText = "Message sent successfully! We will get back to you shortly.";
+            successMsg.style.color = "var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, #ffffff)"; // Match theme
+            successMsg.style.textAlign = "center";
+            successMsg.style.padding = "3rem 1rem";
+            successMsg.style.fontSize = "1.2rem";
+            successMsg.style.fontWeight = "500";
+            successMsg.style.border = "1px solid rgba(255,255,255,0.1)";
+            successMsg.style.borderRadius = "12px";
+            successMsg.style.background = "rgba(255,255,255,0.03)";
+            form.parentNode.insertBefore(successMsg, form);
+
         } catch (error) {
             console.error(error);
             if (btn) {
