@@ -27537,12 +27537,12 @@ e(() => {
         }
     `}}),
     h("div", {
-        style: { width: "100%", padding: "12px 16px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)" },
+        style: { height: "100%", width: "100%", padding: "16px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)" },
         children: [
             h("div", {
-                style: { display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "6px", marginBottom: "8px" },
+                style: { display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255,255,255,0.05)", paddingBottom: "8px", marginBottom: "12px" },
                 children: [
-                    h("div", { style: { fontSize: "11px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px", lineHeight: 1 }, children: "Strategic Roadmap" }),
+                    h("div", { style: { fontSize: "12px", fontWeight: "500", color: "rgba(255,255,255,0.9)", letterSpacing: "-0.2px", lineHeight: 1 }, children: "Strategic Roadmap" }),
                     h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.4)", fontFamily: "monospace", lineHeight: 1 }, children: "PHASE 1" })
                 ]
             }),
@@ -27554,7 +27554,7 @@ e(() => {
                     h("div", { style: { position: "absolute", left: "14px", top: "6px", width: "1px", backgroundColor: "#c96ef0", animation: "drawLine 1s ease-out forwards" } }),
                     
                     h("div", {
-                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "6px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.2s" },
+                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "8px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.2s" },
                         children: [
                             h("div", { style: { position: "absolute", left: "0px", top: "4px", width: "5px", height: "5px", borderRadius: "50%", backgroundColor: "#c96ef0", animation: "pulseDotPurple 2s infinite", zIndex: 2 } }),
                             h("div", {
@@ -27562,7 +27562,7 @@ e(() => {
                                 children: [
                                     h("div", { style: { fontSize: "11px", fontWeight: "600", color: "white", lineHeight: 1 }, children: "Discovery & Requirements" }),
                                     h("div", {
-                                        style: { padding: "4px 8px", backgroundColor: "rgba(201, 110, 240, 0.05)", border: "1px solid rgba(201, 110, 240, 0.2)", borderRadius: "6px", marginTop: "4px" },
+                                        style: { padding: "6px 10px", backgroundColor: "rgba(201, 110, 240, 0.05)", border: "1px solid rgba(201, 110, 240, 0.2)", borderRadius: "6px", marginTop: "6px" },
                                         children: [
                                             h("div", { style: { fontSize: "9px", color: "#e3a8ff", marginBottom: "4px", lineHeight: 1 }, children: "Analyzing workflow..." }),
                                             h("div", { style: { height: "2px", width: "100%", backgroundColor: "rgba(255,255,255,0.05)", borderRadius: "2px", overflow: "hidden", position: "relative" }, children: 
@@ -27576,7 +27576,7 @@ e(() => {
                     }),
                     
                     h("div", {
-                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "6px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.4s" },
+                        style: { position: "relative", display: "flex", alignItems: "flex-start", marginBottom: "8px", opacity: 0, animation: "slideInRight 0.5s ease-out forwards 0.4s" },
                         children: [
                             h("div", { style: { position: "absolute", left: "1px", top: "4px", width: "3px", height: "3px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.2)", zIndex: 2 } }),
                             h("div", {
@@ -27696,13 +27696,65 @@ e(() => {
                                       className: `framer-mmt41l-container`,
                                       nodeId: `WwTDGLxP7`,
                                       scopeId: `augiA20Il`,
-                                      children: _(Ca, {
-                                        height: `100%`,
-                                        id: `WwTDGLxP7`,
-                                        layoutId: `WwTDGLxP7`,
-                                        style: { width: `100%` },
-                                        width: `100%`,
-                                      }),
+                                      children: [
+
+    h("style", { dangerouslySetInnerHTML: { __html: `
+        @keyframes typeWriter {
+            from { opacity: 0; transform: translateY(2px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    `}}),
+    h("div", {
+        style: { width: "100%", height: "100%", padding: "16px", display: "flex", flexDirection: "column", backgroundColor: "transparent", fontFamily: "var(--framer-font-family, Satoshi, Inter, sans-serif)", boxSizing: "border-box", borderTop: "1px solid rgba(255,255,255,0.05)" },
+        children: [
+            h("div", {
+                style: { flex: 1, backgroundColor: "#0D0D12", borderRadius: "8px", border: "1px solid rgba(255,255,255,0.05)", display: "flex", flexDirection: "column", overflow: "hidden" },
+                children: [
+                    h("div", {
+                        style: { height: "28px", backgroundColor: "rgba(255,255,255,0.03)", borderBottom: "1px solid rgba(255,255,255,0.05)", display: "flex", alignItems: "center", padding: "0 12px", justifyContent: "space-between" },
+                        children: [
+                            h("div", { style: { display: "flex", gap: "8px" }, children: [
+                                h("div", { style: { width: "12px", height: "12px", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "2px", opacity: 0.5 } }),
+                                h("div", { style: { width: "12px", height: "12px", border: "1px solid rgba(255,255,255,0.2)", borderRadius: "2px", opacity: 0.5 } })
+                            ]}),
+                            h("div", { style: { fontSize: "9px", color: "rgba(255,255,255,0.3)" }, children: "automation.py" }),
+                            h("div", { style: { display: "flex", gap: "4px" }, children: [
+                                h("div", { style: { width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.2)" } }),
+                                h("div", { style: { width: "6px", height: "6px", borderRadius: "50%", backgroundColor: "rgba(255,255,255,0.2)" } })
+                            ]})
+                        ]
+                    }),
+                    h("div", {
+                        style: { display: "flex", flex: 1 },
+                        children: [
+                            h("div", {
+                                style: { width: "32px", borderRight: "1px solid rgba(255,255,255,0.05)", backgroundColor: "rgba(255,255,255,0.01)", display: "flex", flexDirection: "column", alignItems: "center", padding: "12px 0", gap: "16px" },
+                                children: [
+                                    h("div", { style: { width: "14px", height: "14px", border: "1.5px solid rgba(255,255,255,0.4)", borderRadius: "2px", backgroundColor: "rgba(255,255,255,0.1)" } }),
+                                    h("div", { style: { width: "14px", height: "14px", border: "1.5px solid rgba(255,255,255,0.2)", borderRadius: "50%", backgroundColor: "transparent" } }),
+                                    h("div", { style: { width: "14px", height: "14px", border: "1.5px solid rgba(255,255,255,0.2)", borderRadius: "2px", backgroundColor: "transparent", transform: "rotate(45deg)" } })
+                                ]
+                            }),
+                            h("div", {
+                                style: { padding: "12px", fontFamily: "monospace", fontSize: "10px", lineHeight: 1.6, color: "rgba(255,255,255,0.7)", display: "flex", flexDirection: "column", gap: "4px" },
+                                children: [
+                                    h("div", { style: { animation: "typeWriter 0.3s ease-out forwards", opacity: 0 }, children: [h("span", { style: { color: "#c96ef0" } }, "if "), "value > self.threshold:"] }),
+                                    h("div", { style: { paddingLeft: "16px", animation: "typeWriter 0.3s ease-out forwards 0.1s", opacity: 0 }, children: ["self.status = ", h("span", { style: { color: "#c96ef0" } }, '"active"')] }),
+                                    h("div", { style: { paddingLeft: "16px", animation: "typeWriter 0.3s ease-out forwards 0.2s", opacity: 0 }, children: [h("span", { style: { color: "#c96ef0" } }, "return "), '"Automation triggered!"'] }),
+                                    h("div", { style: { animation: "typeWriter 0.3s ease-out forwards 0.3s", opacity: 0 }, children: [h("span", { style: { color: "#c96ef0" } }, "else:")] }),
+                                    h("div", { style: { paddingLeft: "16px", marginBottom: "8px", animation: "typeWriter 0.3s ease-out forwards 0.4s", opacity: 0 }, children: [h("span", { style: { color: "#c96ef0" } }, "return "), '"No action taken."'] }),
+                                    h("div", { style: { animation: "typeWriter 0.3s ease-out forwards 0.5s", opacity: 0 }, children: [h("span", { style: { color: "#c96ef0" } }, "def "), h("span", { style: { color: "white" } }, "get_status"), "(self):"] }),
+                                    h("div", { style: { paddingLeft: "16px", animation: "typeWriter 0.3s ease-out forwards 0.6s", opacity: 0 }, children: [h("span", { style: { color: "#c96ef0" } }, "return "), 'f"Status: {self.status}"'] })
+                                ]
+                            })
+                        ]
+                    })
+                ]
+            })
+        ]
+    })
+
+],
                                     }),
                                   }),
                                 }),
