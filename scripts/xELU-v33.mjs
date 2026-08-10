@@ -28578,7 +28578,7 @@ e(() => {
                                       style: {
                                         "--framer-text-alignment": `center`,
                                       },
-                                      children: `The Key Benefits of AI  for Your Business Growth`,
+                                      children: `Built To Make Business Better`,
                                     }),
                                   }),
                                   className: `framer-aqxpr5`,

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const target = "The Key Benefits of AI for Your Business Growth";
+const targets = ["Key Benefits", "Business Growth"];
 
 function searchDir(dir) {
     const list = fs.readdirSync(dir);
@@ -13,9 +13,11 @@ function searchDir(dir) {
             searchDir(fullPath);
         } else if (fullPath.endsWith('.html') || fullPath.endsWith('.mjs') || fullPath.endsWith('.js') || fullPath.endsWith('.json')) {
             const content = fs.readFileSync(fullPath, 'utf8');
-            if (content.includes(target)) {
-                console.log(`Found in: ${fullPath}`);
-            }
+            targets.forEach(target => {
+                if (content.toLowerCase().includes(target.toLowerCase())) {
+                    console.log(`Found "${target}" in: ${fullPath}`);
+                }
+            });
         }
     });
 }
