@@ -39,19 +39,31 @@ document.addEventListener('submit', async function(e) {
             else btn.innerText = "Sending...";
         }
 
-        // Build Discord Embed Payload
+        // Build a BEAUTIFUL Discord Embed
+        const emojiMap = {
+            'First Name': '👤 First Name',
+            'Last Name': '👤 Last Name',
+            'Email': '✉️ Email Address',
+            'Phone': '📞 Phone Number',
+            'Message': '💬 Client Message'
+        };
+
         const fields = Object.entries(data).map(([key, value]) => ({
-            name: key,
-            value: value,
-            inline: key !== 'Message'
+            name: emojiMap[key] || key,
+            value: \`> \${value}\`, // Add markdown quote for cleaner reading
+            inline: false // Stack them vertically for better readability on mobile and PC
         }));
 
         const discordPayload = {
-            content: "🚀 **New Lead from Website!**",
+            content: null, // Remove plain text content to make it look cleaner
             embeds: [{
-                title: "Contact Form Submission",
-                color: 0x8a2be2, // Purple-ish to match theme
+                title: "🚀 New Website Lead!",
+                description: "A potential client just submitted the contact form.",
+                color: 0x9b59b6, // Sleek purple
                 fields: fields,
+                footer: {
+                    text: "Syncrotrex Agency Form"
+                },
                 timestamp: new Date().toISOString()
             }]
         };
@@ -118,10 +130,7 @@ files.forEach(file => {
     let content = fs.readFileSync(file, 'utf8');
     let original = content;
 
-    // Remove old script
     content = content.replace(/<script id="formspark-hijack">[\s\S]*?<\/script>\s*<\/body>/, '</body>');
-
-    // Inject new script
     content = content.replace(/<\/body>/, scriptToInject);
 
     if (content !== original) {
@@ -130,4 +139,4 @@ files.forEach(file => {
     }
 });
 
-console.log("Updated files to use Discord Webhook: " + changedFiles);
+console.log("Updated files to use pretty Discord Webhook: " + changedFiles);
