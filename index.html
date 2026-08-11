@@ -663,6 +663,7 @@ document.addEventListener("click", function(e) {
 
 
 
+
 <script id="formspark-hijack">
 document.addEventListener('submit', async function(e) {
     if (e.target.tagName === 'FORM') {
@@ -730,29 +731,18 @@ document.addEventListener('submit', async function(e) {
                 body: JSON.stringify(discordPayload),
             });
             
-            // Hide the form smoothly
+            // Hide the form and show a clean success message
             form.style.display = 'none';
-            
-            // Minimal, theme-matching success card (matching the E-mail and Phone cards)
             const successMsg = document.createElement('div');
-            successMsg.innerHTML = `
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #fff; margin-right: 12px; margin-bottom: 2px;">
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span style="color: #ffffff; font-size: 1.1rem; font-family: 'Figtree', sans-serif;">Message sent successfully! We will get back to you shortly.</span>
-            `;
-            
-            successMsg.style.display = "flex";
-            successMsg.style.flexDirection = "row";
-            successMsg.style.alignItems = "center";
-            successMsg.style.justifyContent = "center";
-            successMsg.style.padding = "2rem 1.5rem";
+            successMsg.innerText = "Message sent successfully! We will get back to you shortly.";
+            successMsg.style.color = "var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, #ffffff)"; // Match theme
+            successMsg.style.textAlign = "center";
+            successMsg.style.padding = "3rem 1rem";
+            successMsg.style.fontSize = "1.2rem";
+            successMsg.style.fontWeight = "500";
             successMsg.style.border = "1px solid rgba(255,255,255,0.1)";
-            successMsg.style.borderRadius = "8px"; // Standard border radius for Framer cards
-            successMsg.style.background = "linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(138,43,226,0.15) 100%)"; // Exact subtle purple gradient from the Email card
-            successMsg.style.width = "100%";
-            successMsg.style.boxSizing = "border-box";
-            
+            successMsg.style.borderRadius = "12px";
+            successMsg.style.background = "rgba(255,255,255,0.03)";
             form.parentNode.insertBefore(successMsg, form);
 
         } catch (error) {
