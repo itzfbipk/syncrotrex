@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://syncrotrex.vercel.app/sitemap.xml
+Sitemap: https://www.syncrotrex.com/sitemap.xml
