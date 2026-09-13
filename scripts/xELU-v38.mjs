@@ -8780,333 +8780,641 @@ var Ra,
         e.layoutDependency ? t.join(`-`) + e.layoutDependency : t.join(`-`)),
       (so = he(
         b(function (props, ref) {
-          return _('div', {
+          return h('div', {
             ref: ref,
-            className: 'syncrotrex-pricing-wrap',
+            className: 'syncrotrex-pricing-container',
             style: {
               width: '100%',
-              maxWidth: '1200px',
+              maxWidth: '1000px',
               margin: '0 auto',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '48px',
               boxSizing: 'border-box',
               ...props.style,
             },
-            children: _('div', {
-              className: 'syncrotrex-pricing-card',
-              style: {
-                width: '100%',
-                border: '1px solid var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))',
-                borderRadius: '12px',
-                background: 'radial-gradient(80% 80% at 50% 0%, rgba(129, 74, 200, 0.18) 0%, rgba(13, 13, 13, 0.85) 100%)',
-                backdropFilter: 'blur(12px)',
-                WebkitBackdropFilter: 'blur(12px)',
-                padding: '44px 40px',
-                boxSizing: 'border-box',
-                boxShadow: '0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08)',
-                position: 'relative',
-              },
-              children: [
-                h('div', {
-                  style: {
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'flex-start',
-                    flexWrap: 'wrap',
-                    gap: '24px',
-                  },
-                  children: [
-                    h('div', {
-                      style: { flex: '1 1 280px', minWidth: '260px' },
-                      children: [
-                        _('div', {
-                          className: 'framer-V5EfO framer-4el2p framer-1fiq0w framer-v-1fiq0w',
-                          'data-border': !0,
-                          'data-framer-name': 'Badge',
-                          style: {
-                            '--border-bottom-width': '1px',
-                            '--border-color': 'var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))',
-                            '--border-left-width': '1px',
-                            '--border-right-width': '1px',
-                            '--border-style': 'solid',
-                            '--border-top-width': '1px',
-                            backgroundColor: 'var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, 0.8))',
-                            borderRadius: '6px',
-                            padding: '5px 12px',
-                            width: 'fit-content',
-                            display: 'inline-flex',
-                            alignItems: 'center',
-                            marginBottom: '14px',
-                          },
-                          children: _('p', {
-                            className: 'framer-text framer-styles-preset-x6ge9v',
-                            style: {
-                              fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                              fontSize: '14px',
-                              fontWeight: 600,
-                              color: '#ffffff',
-                              margin: 0,
-                              lineHeight: 1,
-                            },
-                            children: 'Pricing',
-                          }),
-                        }),
-                        _('h2', {
-                          className: 'framer-text framer-styles-preset-15k0oiw',
-                          style: {
-                            fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                            fontSize: 'clamp(34px, 4.5vw, 50px)',
-                            fontWeight: 700,
-                            color: '#ffffff',
-                            letterSpacing: '-0.04em',
-                            margin: 0,
-                            lineHeight: 1.1,
-                          },
-                          children: 'What it costs',
-                        }),
-                      ],
-                    }),
-                    _('div', {
-                      style: { maxWidth: '360px', minWidth: '240px', flex: '1 1 240px' },
-                      children: _('p', {
-                        className: 'framer-text framer-styles-preset-trq6qq',
-                        style: {
-                          fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                          fontSize: '15px',
-                          lineHeight: 1.55,
-                          color: 'rgba(255, 255, 255, 0.75)',
-                          margin: 0,
-                          fontWeight: 400,
-                        },
-                        children: 'No quote form, no \"contact us for pricing.\" Here is the number so you can decide whether to bother.',
-                      }),
-                    }),
-                  ],
-                }),
-                _('div', {
-                  style: {
-                    position: 'relative',
-                    width: '100%',
-                    height: '1px',
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    margin: '36px 0 32px 0',
-                  },
-                  children: _('div', {
+            children: [
+              h('div', {
+                style: {
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  textAlign: 'center',
+                  maxWidth: '680px',
+                  gap: '16px',
+                },
+                children: [
+                  _('div', {
+                    className: 'framer-V5EfO framer-4el2p framer-1fiq0w framer-v-1fiq0w',
+                    'data-border': !0,
+                    'data-framer-name': 'Badge',
                     style: {
-                      position: 'absolute',
-                      top: '50%',
-                      left: '14%',
-                      transform: 'translate(-50%, -50%)',
-                      width: '7px',
-                      height: '7px',
-                      borderRadius: '50%',
-                      background: '#ffffff',
-                      boxShadow: '0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(129, 74, 200, 0.8)',
+                      '--border-bottom-width': '1px',
+                      '--border-color': 'var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))',
+                      '--border-left-width': '1px',
+                      '--border-right-width': '1px',
+                      '--border-style': 'solid',
+                      '--border-top-width': '1px',
+                      backgroundColor: 'var(--token-b2fb23d9-6070-4f2d-b3d0-2fe68c4f2aab, rgba(13, 13, 13, 0.8))',
+                      borderRadius: '6px',
+                      padding: '5px 12px',
+                      width: 'fit-content',
+                      display: 'inline-flex',
+                      alignItems: 'center',
                     },
-                  }),
-                }),
-                h('div', {
-                  style: {
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'flex-end',
-                    flexWrap: 'wrap',
-                    gap: '36px',
-                  },
-                  children: [
-                    h('div', {
-                      style: { flex: '1 1 300px', maxWidth: '680px' },
-                      children: [
-                        _('div', {
-                          style: {
-                            fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                            fontSize: '13px',
-                            letterSpacing: '0.04em',
-                            color: 'rgba(255, 255, 255, 0.55)',
-                            textTransform: 'uppercase',
-                            fontWeight: 600,
-                            marginBottom: '12px',
-                          },
-                          children: 'Custom software, SaaS & automation, designed and built',
-                        }),
-                        h('div', {
-                          style: {
-                            fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                            fontSize: 'clamp(46px, 7vw, 76px)',
-                            fontWeight: 700,
-                            color: '#ffffff',
-                            letterSpacing: '-0.04em',
-                            lineHeight: 1,
-                            display: 'flex',
-                            alignItems: 'baseline',
-                            flexWrap: 'wrap',
-                            gap: '4px 12px',
-                            marginBottom: '16px',
-                          },
-                          children: [
-                            _('span', { style: { color: '#ffffff' }, children: '$1,000' }),
-                            _('span', {
-                              style: {
-                                fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                                fontStyle: 'normal',
-                                fontWeight: 500,
-                                fontSize: '0.7em',
-                                color: 'rgba(255, 255, 255, 0.6)',
-                              },
-                              children: 'to',
-                            }),
-                            _('span', { style: { color: '#ffffff' }, children: '$3,000' }),
-                          ],
-                        }),
-                        _('p', {
-                          className: 'framer-text framer-styles-preset-16w1u5n',
-                          style: {
-                            fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                            fontSize: '15px',
-                            lineHeight: 1.6,
-                            color: 'rgba(255, 255, 255, 0.75)',
-                            margin: 0,
-                            fontWeight: 400,
-                          },
-                          children: 'That is the range most of our custom software, SaaS, and automation projects land in, start to finish. Larger platforms and ongoing retainers are quoted separately, and we will tell you upfront on our first call.',
-                        }),
-                        h('div', {
-                          style: {
-                            display: 'flex',
-                            flexWrap: 'wrap',
-                            gap: '10px',
-                            marginTop: '24px',
-                          },
-                          children: [
-                            h('span', {
-                              style: {
-                                fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                                fontSize: '13px',
-                                color: 'rgba(255, 255, 255, 0.85)',
-                                background: 'rgba(255, 255, 255, 0.04)',
-                                border: '1px solid rgba(255, 255, 255, 0.08)',
-                                padding: '6px 14px',
-                                borderRadius: '6px',
-                                fontWeight: 500,
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '6px',
-                              },
-                              children: [
-                                _('svg', {
-                                  width: 14,
-                                  height: 14,
-                                  viewBox: '0 0 256 256',
-                                  fill: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
-                                  children: _('path', {
-                                    d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
-                                  }),
-                                }),
-                                _('span', { children: 'Fixed-Price Scope' }),
-                              ],
-                            }),
-                            h('span', {
-                              style: {
-                                fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                                fontSize: '13px',
-                                color: 'rgba(255, 255, 255, 0.85)',
-                                background: 'rgba(255, 255, 255, 0.04)',
-                                border: '1px solid rgba(255, 255, 255, 0.08)',
-                                padding: '6px 14px',
-                                borderRadius: '6px',
-                                fontWeight: 500,
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '6px',
-                              },
-                              children: [
-                                _('svg', {
-                                  width: 14,
-                                  height: 14,
-                                  viewBox: '0 0 256 256',
-                                  fill: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
-                                  children: _('path', {
-                                    d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
-                                  }),
-                                }),
-                                _('span', { children: '2–4 Week Delivery' }),
-                              ],
-                            }),
-                            h('span', {
-                              style: {
-                                fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
-                                fontSize: '13px',
-                                color: 'rgba(255, 255, 255, 0.85)',
-                                background: 'rgba(255, 255, 255, 0.04)',
-                                border: '1px solid rgba(255, 255, 255, 0.08)',
-                                padding: '6px 14px',
-                                borderRadius: '6px',
-                                fontWeight: 500,
-                                display: 'inline-flex',
-                                alignItems: 'center',
-                                gap: '6px',
-                              },
-                              children: [
-                                _('svg', {
-                                  width: 14,
-                                  height: 14,
-                                  viewBox: '0 0 256 256',
-                                  fill: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
-                                  children: _('path', {
-                                    d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
-                                  }),
-                                }),
-                                _('span', { children: 'Direct Lead Engineer Access' }),
-                              ],
-                            }),
-                          ],
-                        }),
-                      ],
+                    children: _('p', {
+                      className: 'framer-text framer-styles-preset-x6ge9v',
+                      style: {
+                        fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
+                        fontSize: '14px',
+                        fontWeight: 600,
+                        color: '#ffffff',
+                        margin: 0,
+                        lineHeight: 1,
+                      },
+                      children: 'Pricing',
                     }),
-                    _('div', {
-                      style: { flexShrink: 0, minWidth: '220px' },
-                      children: h('a', {
+                  }),
+                  _('h2', {
+                    className: 'framer-text framer-styles-preset-15k0oiw',
+                    style: {
+                      fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
+                      fontSize: 'clamp(32px, 4.5vw, 44px)',
+                      fontWeight: 700,
+                      color: '#ffffff',
+                      letterSpacing: '-0.04em',
+                      margin: 0,
+                      lineHeight: 1.15,
+                    },
+                    children: 'Simple, Project-Based Pricing',
+                  }),
+                  _('p', {
+                    className: 'framer-text framer-styles-preset-trq6qq',
+                    style: {
+                      fontFamily: '"Figtree", "Figtree Placeholder", sans-serif',
+                      fontSize: '16px',
+                      lineHeight: 1.55,
+                      color: 'rgba(255, 255, 255, 0.7)',
+                      margin: 0,
+                      fontWeight: 400,
+                    },
+                    children: 'Most of our custom software, SaaS, and automation projects land between $1,000 and $3,000 with a fixed scope, clear timeline, and zero hidden fees.',
+                  }),
+                ],
+              }),
+              h('div', {
+                style: {
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+                  gap: '24px',
+                  width: '100%',
+                  maxWidth: '960px',
+                  boxSizing: 'border-box',
+                },
+                children: [
+                  h('div', {
+                    style: {
+                      border: '1px solid var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))',
+                      borderRadius: '10px',
+                      background: 'radial-gradient(90% 90% at 50% 0%, rgba(129, 74, 200, 0.22) 0%, rgba(13, 13, 13, 0.9) 100%)',
+                      padding: '36px 32px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      boxShadow: '0 20px 40px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.1)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    },
+                    children: [
+                      h('div', {
+                        children: [
+                          h('div', {
+                            style: {
+                              display: 'flex',
+                              justifyContent: 'space-between',
+                              alignItems: 'center',
+                              marginBottom: '16px',
+                            },
+                            children: [
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '13px',
+                                  fontWeight: 600,
+                                  letterSpacing: '0.04em',
+                                  textTransform: 'uppercase',
+                                  color: 'rgba(255,255,255,0.6)',
+                                },
+                                children: 'Standard Project',
+                              }),
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '12px',
+                                  fontWeight: 600,
+                                  padding: '4px 10px',
+                                  borderRadius: '20px',
+                                  background: 'rgba(129,74,200,0.25)',
+                                  border: '1px solid rgba(129,74,200,0.4)',
+                                  color: '#df7afe',
+                                },
+                                children: 'Most Common',
+                              }),
+                            ],
+                          }),
+                          _('h3', {
+                            style: {
+                              fontFamily: '"Figtree", sans-serif',
+                              fontSize: '22px',
+                              fontWeight: 700,
+                              color: '#ffffff',
+                              margin: '0 0 8px 0',
+                              letterSpacing: '-0.02em',
+                            },
+                            children: 'Custom Software & SaaS',
+                          }),
+                          _('p', {
+                            style: {
+                              fontFamily: '"Figtree", sans-serif',
+                              fontSize: '14px',
+                              lineHeight: 1.5,
+                              color: 'rgba(255,255,255,0.65)',
+                              margin: '0 0 24px 0',
+                            },
+                            children: 'Tailored web apps, automation systems, and SaaS MVPs built start to finish for your business.',
+                          }),
+                          h('div', {
+                            style: {
+                              display: 'flex',
+                              alignItems: 'baseline',
+                              gap: '8px',
+                              marginBottom: '24px',
+                              padding: '16px 0',
+                              borderTop: '1px solid rgba(255,255,255,0.08)',
+                              borderBottom: '1px solid rgba(255,255,255,0.08)',
+                            },
+                            children: [
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '38px',
+                                  fontWeight: 800,
+                                  color: '#ffffff',
+                                  letterSpacing: '-0.03em',
+                                  lineHeight: 1,
+                                },
+                                children: '$1,000 – $3,000',
+                              }),
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.55)',
+                                  fontWeight: 500,
+                                },
+                                children: '/ project',
+                              }),
+                            ],
+                          }),
+                          h('div', {
+                            style: {
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '12px',
+                              marginBottom: '32px',
+                            },
+                            children: [
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'Full-stack custom development' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'Modern responsive UI/UX design' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'API, auth & database integrations' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: '2–4 week average delivery' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'Direct engineer communication' }),
+                                ],
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      h('a', {
                         href: 'https://calendly.com/syncrotrex',
                         target: '_blank',
                         rel: 'noopener',
-                        className: 'syncrotrex-pricing-cta',
                         style: {
-                          display: 'inline-flex',
+                          display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          gap: '10px',
+                          gap: '8px',
                           width: '100%',
-                          maxWidth: '260px',
-                          padding: '15px 28px',
+                          padding: '14px',
                           backgroundColor: 'var(--token-a888adc2-3d05-4d6f-88b7-8dab97418795, rgb(129, 74, 200))',
                           color: '#ffffff',
                           borderRadius: '6px',
-                          border: '1px solid rgba(255, 255, 255, 0.15)',
-                          boxShadow: 'rgba(0, 0, 0, 0.15) 0px 0.7px 0.7px -0.6px, rgba(0, 0, 0, 0.14) 0px 1.8px 1.8px -1.25px, rgba(0, 0, 0, 0.14) 0px 3.6px 3.6px -1.875px, rgba(0, 0, 0, 0.13) 0px 6.8px 6.8px -2.5px, rgba(0, 0, 0, 0.1) 0px 13.6px 13.6px -3.125px, rgba(0, 0, 0, 0.05) 0px 30px 30px -3.75px',
+                          border: '1px solid rgba(255,255,255,0.15)',
+                          boxShadow: '0 4px 20px rgba(129,74,200,0.4)',
                           fontFamily: '"Figtree", sans-serif',
                           fontSize: '15px',
                           fontWeight: 600,
                           textDecoration: 'none',
+                          boxSizing: 'border-box',
                           cursor: 'pointer',
                         },
                         children: [
-                          _('span', { children: 'Book a call' }),
+                          _('span', { children: 'Book a Discovery Call' }),
                           _('svg', {
                             xmlns: 'http://www.w3.org/2000/svg',
                             viewBox: '0 0 256 256',
                             width: 16,
                             height: 16,
                             fill: 'currentColor',
-                            style: { display: 'inline-block' },
                             children: _('path', {
                               d: 'M224.49,136.49l-72,72a12,12,0,0,1-17-17L179,144H40a12,12,0,0,1,0-24H179L135.51,72.49a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z',
                             }),
                           }),
                         ],
                       }),
-                    }),
-                  ],
-                }),
-              ],
-            }),
+                    ],
+                  }),
+                  h('div', {
+                    style: {
+                      border: '1px solid var(--token-313dd4d6-9859-4bdd-889b-954a849d13e3, rgb(34, 34, 34))',
+                      borderRadius: '10px',
+                      background: 'radial-gradient(90% 90% at 50% 0%, rgba(255, 255, 255, 0.04) 0%, rgba(13, 13, 13, 0.9) 100%)',
+                      padding: '36px 32px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      boxShadow: '0 20px 40px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05)',
+                      position: 'relative',
+                      overflow: 'hidden',
+                    },
+                    children: [
+                      h('div', {
+                        children: [
+                          h('div', {
+                            style: {
+                              display: 'flex',
+                              justifyContent: 'space-between',
+                              alignItems: 'center',
+                              marginBottom: '16px',
+                            },
+                            children: [
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '13px',
+                                  fontWeight: 600,
+                                  letterSpacing: '0.04em',
+                                  textTransform: 'uppercase',
+                                  color: 'rgba(255,255,255,0.6)',
+                                },
+                                children: 'Enterprise & Scale',
+                              }),
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '12px',
+                                  fontWeight: 600,
+                                  padding: '4px 10px',
+                                  borderRadius: '20px',
+                                  background: 'rgba(255,255,255,0.06)',
+                                  border: '1px solid rgba(255,255,255,0.1)',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: 'Custom Scope',
+                              }),
+                            ],
+                          }),
+                          _('h3', {
+                            style: {
+                              fontFamily: '"Figtree", sans-serif',
+                              fontSize: '22px',
+                              fontWeight: 700,
+                              color: '#ffffff',
+                              margin: '0 0 8px 0',
+                              letterSpacing: '-0.02em',
+                            },
+                            children: 'Large Platforms & Retainers',
+                          }),
+                          _('p', {
+                            style: {
+                              fontFamily: '"Figtree", sans-serif',
+                              fontSize: '14px',
+                              lineHeight: 1.5,
+                              color: 'rgba(255,255,255,0.65)',
+                              margin: '0 0 24px 0',
+                            },
+                            children: 'For large distributed platforms, complex workflows, or ongoing engineering support.',
+                          }),
+                          h('div', {
+                            style: {
+                              display: 'flex',
+                              alignItems: 'baseline',
+                              gap: '8px',
+                              marginBottom: '24px',
+                              padding: '16px 0',
+                              borderTop: '1px solid rgba(255,255,255,0.08)',
+                              borderBottom: '1px solid rgba(255,255,255,0.08)',
+                            },
+                            children: [
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '38px',
+                                  fontWeight: 800,
+                                  color: '#ffffff',
+                                  letterSpacing: '-0.03em',
+                                  lineHeight: 1,
+                                },
+                                children: 'Custom Scope',
+                              }),
+                              _('span', {
+                                style: {
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.55)',
+                                  fontWeight: 500,
+                                },
+                                children: '/ milestones',
+                              }),
+                            ],
+                          }),
+                          h('div', {
+                            style: {
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '12px',
+                              marginBottom: '32px',
+                            },
+                            children: [
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'Complex multi-system architectures' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'Custom automation & AI workflows' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'High-concurrency cloud scaling' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'Dedicated senior lead engineer' }),
+                                ],
+                              }),
+                              h('div', {
+                                style: {
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '10px',
+                                  fontFamily: '"Figtree", sans-serif',
+                                  fontSize: '14px',
+                                  color: 'rgba(255,255,255,0.85)',
+                                },
+                                children: [
+                                  _('svg', {
+                                    width: 16,
+                                    height: 16,
+                                    viewBox: '0 0 256 256',
+                                    fill: '#814ac8',
+                                    style: { flexShrink: 0 },
+                                    children: _('path', {
+                                      d: 'M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z',
+                                    }),
+                                  }),
+                                  _('span', { children: 'Ongoing maintenance & SLA support' }),
+                                ],
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      h('a', {
+                        href: 'https://calendly.com/syncrotrex',
+                        target: '_blank',
+                        rel: 'noopener',
+                        style: {
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '8px',
+                          width: '100%',
+                          padding: '14px',
+                          backgroundColor: 'rgba(255,255,255,0.06)',
+                          border: '1px solid rgba(255,255,255,0.12)',
+                          color: '#ffffff',
+                          borderRadius: '6px',
+                          fontFamily: '"Figtree", sans-serif',
+                          fontSize: '15px',
+                          fontWeight: 600,
+                          textDecoration: 'none',
+                          boxSizing: 'border-box',
+                          cursor: 'pointer',
+                        },
+                        children: [
+                          _('span', { children: 'Discuss Custom Scope' }),
+                          _('svg', {
+                            xmlns: 'http://www.w3.org/2000/svg',
+                            viewBox: '0 0 256 256',
+                            width: 16,
+                            height: 16,
+                            fill: 'currentColor',
+                            children: _('path', {
+                              d: 'M224.49,136.49l-72,72a12,12,0,0,1-17-17L179,144H40a12,12,0,0,1,0-24H179L135.51,72.49a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z',
+                            }),
+                          }),
+                        ],
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+            ],
           });
         }),
         [],
