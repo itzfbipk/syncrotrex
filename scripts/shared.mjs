@@ -1518,11 +1518,11 @@ var Z,
   });
 function Re(e, t) {
   return {
-    description: `Syncrotrex is a modern AI automation agency template, perfect for AI startups and tech businesses. It’s sleek, responsive, SEO-friendly, and designed to showcase AI solutions with a clean layout, smooth animations, and a conversion-focused approach.`,
+    description: `Syncrotrex is a custom software and SaaS development agency. We build digital products and automations to streamline workflows and drive growth.`,
     favicon: `/images/j5lXnL5djhR8orvNcpRh6LSncY_51.png`,
     robots: `max-image-preview:large`,
     socialImage: `/images/HMAXl2OBQIIUUaPBbnSBuo5EQYE_52.png`,
-    title: `Syncrotrex - AI automation agency template`,
+    title: `Syncrotrex - Custom Software & Automation`,
   };
 }
 var ze = e(() => {});

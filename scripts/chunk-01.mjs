@@ -15,7 +15,7 @@ function r(e, n) {
     elements: {},
     robots: `max-image-preview:large`,
     serializationId: `framer-YPYoS`,
-    title: `${r === void 0 ? `{{Hy_0nvWr3}}` : i(r)} - My Framer Site`,
+    title: `${r === void 0 ? `{{Hy_0nvWr3}}` : i(r)} - Syncrotrex`,
     viewport: `width=device-width`,
   };
 }
