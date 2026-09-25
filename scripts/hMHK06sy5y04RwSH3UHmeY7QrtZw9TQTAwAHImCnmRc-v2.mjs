@@ -782,7 +782,7 @@ e(() => {
                               "data-framer-name": `Email and phone`,
                               children: [
                                 l(T, {
-                                  href: `mailto:mail@test.com`,
+                                  href: `mailto:support@syncrotrex.com`,
                                   motionChild: !0,
                                   nodeId: `QgCCYxfDT`,
                                   scopeId: `atppc3P5_`,
@@ -851,7 +851,7 @@ e(() => {
                                               style: {
                                                 "--framer-text-alignment": `left`,
                                               },
-                                              children: `syncrotrex@gmail.com`,
+                                              children: `support@syncrotrex.com`,
                                             }),
                                           }),
                                           className: `framer-1x85pd0`,
