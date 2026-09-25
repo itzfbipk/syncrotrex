@@ -8989,7 +8989,7 @@ var Ra,
                     },
                     children: [
                       h('a', {
-                        href: 'mailto:support@syncrotrex.com?subject=Project%20Inquiry',
+                        href: '/contact',
                         style: {
                           display: 'inline-flex',
                           alignItems: 'center',
