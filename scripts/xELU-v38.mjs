@@ -9018,9 +9018,7 @@ var Ra,
                     },
                     children: [
                       h('a', {
-                        href: 'https://calendly.com/syncrotrex',
-                        target: '_blank',
-                        rel: 'noopener',
+                        href: 'mailto:support@syncrotrex.com?subject=Project%20Inquiry',
                         style: {
                           display: 'inline-flex',
                           alignItems: 'center',
