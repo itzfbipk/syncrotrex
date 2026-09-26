@@ -1,4 +1,3 @@
-﻿<svg xmlns="http://www.w3.org/2000/svg" width="260" height="43" fill="none">
-  <path fill="#fff" fill-rule="evenodd" d="M0 15v16h5a4 4 0 0 1 4 4v5h12l15-15V9h-5a4 4 0 0 1-4-4V0H15L0 15Zm17 15h-7V19l9-9h7v11l-9 9Z" clip-rule="evenodd"/>
-  <text x="44" y="32" fill="#fff" font-family="Figtree, system-ui, sans-serif" font-weight="900" font-size="25" letter-spacing="0">SYNCROTREX</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="45" viewBox="0 0 688 120" fill="none">
+  <image href="/images/syncrotrex-logo-horizontal-darkmode.png" width="688" height="120" preserveAspectRatio="xMidYMid meet"/>
 </svg>
