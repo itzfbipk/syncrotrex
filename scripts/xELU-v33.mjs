@@ -26195,6 +26195,14 @@ e(() => {
                                     gdVtD7Q8q: `"Syncrotrex built the entire Larpix wallet interface and simulation from scratch. Super fast turnaround, clean UI, and handled all the complex logic smoothly."`,
                                     height: `100%`,
                                     id: `f2uus1ktW`,
+                                    kGOLOSKIR: D_(
+                                      {
+                                        pixelHeight: 665,
+                                        pixelWidth: 666,
+                                        src: `/images/testimonial-armend.png`,
+                                      },
+                                      ``,
+                                    ),
                                     layoutId: `f2uus1ktW`,
                                     rcimQWe5n: `Armend`,
                                     style: { width: `100%` },
@@ -26232,9 +26240,9 @@ e(() => {
                                     id: `nsGUsACpz`,
                                     kGOLOSKIR: D_(
                                       {
-                                        pixelHeight: 126,
-                                        pixelWidth: 111,
-                                        src: `/images/prJVkx4ybEf6YSyZs9EZDABPto.jpg`,
+                                        pixelHeight: 675,
+                                        pixelWidth: 677,
+                                        src: `/images/testimonial-saizuo.png`,
                                       },
                                       ``,
                                     ),
@@ -26275,9 +26283,9 @@ e(() => {
                                     id: `pCDHxpqEY`,
                                     kGOLOSKIR: D_(
                                       {
-                                        pixelHeight: 122,
-                                        pixelWidth: 121,
-                                        src: `/images/HDIEzwzzph6mZtBFYG3fS721U.jpg`,
+                                        pixelHeight: 663,
+                                        pixelWidth: 697,
+                                        src: `/images/testimonial-sam.png`,
                                       },
                                       ``,
                                     ),
@@ -26316,6 +26324,14 @@ e(() => {
                                     gdVtD7Q8q: `"From the first idea to the final product, communication was great and the system works exactly the way our team needed it to. Special thanks to Syncrotrex."`,
                                     height: `100%`,
                                     id: `iF9uM2Zun`,
+                                    kGOLOSKIR: D_(
+                                      {
+                                        pixelHeight: 670,
+                                        pixelWidth: 646,
+                                        src: `/images/testimonial-alex.png`,
+                                      },
+                                      ``,
+                                    ),
                                     layoutId: `iF9uM2Zun`,
                                     rcimQWe5n: `Alex Vance`,
                                     style: { width: `100%` },
