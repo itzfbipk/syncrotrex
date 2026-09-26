@@ -613,18 +613,46 @@ document.addEventListener('submit', async function(e) {
             }]
         };
 
+        const clientEmail = data['Email'] || data['email'] || '';
+        const clientName = `${data['First Name'] || ''} ${data['Last Name'] || ''}`.trim() || 'Website Visitor';
+
+        const emailPayload = {
+            "First Name": data['First Name'] || '',
+            "Last Name": data['Last Name'] || '',
+            "Email": clientEmail,
+            "Phone": data['Phone'] || 'Not provided',
+            "Message": data['Message'] || '',
+            "_subject": `🚀 New Inquiry from ${clientName} - Syncrotrex`,
+            "_replyto": clientEmail,
+            "_template": "table",
+            "_captcha": "false"
+        };
+
         try {
-            await fetch("https://discord.com/api/webhooks/1536521704489091092/119YLvTp-8ZvrdF63jelOzrjjVCBEruCvoUPMwVVjItfBhFsaghOElwDoFfuD_VrIz9I", {
+            // 1. Send direct email to support@syncrotrex.com
+            const emailPromise = fetch("https://formsubmit.co/ajax/support@syncrotrex.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify(emailPayload)
+            }).catch(err => console.warn("Email dispatch note:", err));
+
+            // 2. Also send real-time notification to Discord Webhook
+            const discordPromise = fetch("https://discord.com/api/webhooks/1536521704489091092/119YLvTp-8ZvrdF63jelOzrjjVCBEruCvoUPMwVVjItfBhFsaghOElwDoFfuD_VrIz9I", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(discordPayload),
-            });
+            }).catch(err => console.warn("Discord dispatch note:", err));
+
+            await Promise.allSettled([emailPromise, discordPromise]);
             
             // Hide the form and show a clean success message
             form.style.display = 'none';
             const successMsg = document.createElement('div');
             successMsg.innerText = "Message sent successfully! We will get back to you shortly.";
-            successMsg.style.color = "var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, #ffffff)"; // Match theme
+            successMsg.style.color = "var(--token-ea3f5ec2-80ec-412c-a26e-34872584c90c, #ffffff)";
             successMsg.style.textAlign = "center";
             successMsg.style.padding = "3rem 1rem";
             successMsg.style.fontSize = "1.2rem";
